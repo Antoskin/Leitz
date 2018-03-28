@@ -1,0 +1,96 @@
+.top-line .logo-menu-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-line .logo-menu-wrap .logo {
+  width: 50%;
+}
+
+.top-line .logo-menu-wrap .main-nav-menu {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  justify-content: flex-end;
+}
+
+.top-line .logo-menu-wrap .main-nav-menu a {
+  margin: 0 15px;
+  color: #181515;
+  line-height: 33px;
+  font-size: 13px;
+}
+
+.top-line .logo-menu-wrap .main-nav-menu a:last-child {
+  margin-right: 0;
+}
+
+.top-line .logo-menu-wrap .main-nav-menu a:hover {
+  color: #007cbf;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid #007cbf;
+}
+
+/*main presentation container with video*/
+.main-presentation {
+  position: relative;
+  overflow-x: hidden;
+  height: 550px;
+  background: #000;
+  border-bottom: 6px solid #007cbf;
+}
+
+.main-presentation .presenatation-wrap {
+  /*phoner*/
+  /* div with title and main description */
+}
+
+.main-presentation .presenatation-wrap .contact-phones {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+}
+
+.main-presentation .presenatation-wrap .contact-phones a {
+  color: #fff;
+}
+
+.main-presentation .presenatation-wrap .contact-phones .separate-slash {
+  color: #007cbf;
+  margin: 0 15px;
+}
+
+.main-presentation .presenatation-wrap .the-content-description {
+  color: #fff;
+}
+
+.main-presentation .presenatation-wrap .the-content-description .main-description {
+  /*p*/
+  padding-right: 30%;
+}
+
+.main-presentation .presenatation-wrap .the-content-description .main-buttons {
+  /*first button*/
+  margin-top: 50px;
+  /*sec button*/
+}
+
+.main-presentation .presenatation-wrap .the-content-description .main-buttons .siblin-button {
+  width: 300px;
+  background: transparent;
+  padding: 10px 30px;
+  border: 2px solid #fff;
+  transition: .3s ease;
+}
+
+.main-presentation .presenatation-wrap .the-content-description .main-buttons .siblin-button:first-child {
+  margin-right: 25px;
+}
+
+.main-presentation .presenatation-wrap .the-content-description .main-buttons .siblin-button:hover {
+  background: #007cbf;
+  border-color: #007cbf;
+}
+/*# sourceMappingURL=main.css.map */
