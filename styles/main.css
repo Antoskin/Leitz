@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("../node_modules/normalize.css/normalize.css");
 @font-face {
   font-family: 'helvetica';
   src: url("../font/HelveticaLight/HelveticaLight.ttf");
@@ -17,6 +18,7 @@
 
 body h3 {
   margin: 70px 0 50px;
+  font-size: 48px;
 }
 
 .top-line .logo-menu-wrap {
@@ -268,5 +270,86 @@ body h3 {
   to {
     -webkit-transform: rotate(360deg);
   }
+}
+
+.team-slider-section {
+  padding-bottom: 100px;
+}
+
+.team-slider-section #team-slider {
+  height: 330px;
+  margin-bottom: 50px;
+}
+
+.team-slider-section #team-slider .item {
+  height: 330px;
+  position: relative;
+}
+
+.team-slider-section #team-slider .item .turned-left {
+  position: absolute;
+  left: 62%;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-slider-section #team-slider .item .turned-left span {
+  margin-bottom: 25px;
+}
+
+.team-slider-section #team-slider .item .turned-left p {
+  margin: 0;
+}
+
+.team-slider-section #team-slider .slick-arrow {
+  display: none !important;
+}
+
+.revolv-slide-wrap {
+  width: 100%;
+  height: 600px;
+  border-bottom: 10px solid #007cbf;
+  background: #000;
+  color: #fff;
+  padding-top: 1px;
+}
+
+.revolv-slide-wrap .revo-section-width h3 {
+  margin-top: 100px;
+}
+
+.revolv-slide-wrap .revo-section-width p {
+  max-width: 551px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: 'reg';
+}
+
+/*mapa*/
+.mapa-with-form {
+  height: 480px;
+  width: 100%;
+  position: relative;
+}
+
+.mapa-with-form .the_mapa {
+  position: absolute;
+}
+
+.mapa-with-form #form-customer {
+  position: relative;
+  height: 1x;
+}
+
+.mapa-with-form #form-customer .the_form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+  width: 590px;
+  height: 350px;
+  margin-top: 60px;
 }
 /*# sourceMappingURL=main.css.map */

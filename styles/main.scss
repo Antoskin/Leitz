@@ -1,3 +1,4 @@
+@import url("../node_modules/normalize.css/normalize.css");
 @font-face {
     font-family: 'helvetica';
     src: url("../font/HelveticaLight/HelveticaLight.ttf");
@@ -17,6 +18,7 @@ $hover: #007cbf;
 }
 body h3 {
     margin: 70px 0 50px;
+    font-size: 48px;
 }
 .top-line {
 
@@ -251,9 +253,75 @@ body h3 {
     to{-webkit-transform:rotate(360deg);}
 }
 
+
+.team-slider-section {
+    padding-bottom: 100px;
+    #team-slider {
+        height: 330px;
+        margin-bottom: 50px;
+        .item {
+            height: 330px;
+            //border: 1px solid black;
+            position: relative;
+            .turned-left {
+                //border: 4px solid tomato;
+                position: absolute;
+                left: 62%;
+                height: 330px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                span {margin-bottom: 25px;}
+                p {margin: 0;}
+            }
+        }
+        .slick-arrow {display: none !important}
+    }
+}
   
 
+// section of circle slider
+
+.revolv-slide-wrap {
+    width: 100%;
+    height: 600px;
+    border-bottom: 10px solid $hover;
+    background: #000;
+    color: #fff;
+    padding-top: 1px;
+    .revo-section-width {
+       h3 {margin-top: 100px}
+        p {
+            max-width: 551px;
+            margin: 0 auto;
+            font-size: 20px;
+            font-family: 'reg';
+            // border: 1px solid;
+        }
+    }
+}
 
 
-
-  
+/*mapa*/
+.mapa-with-form {
+    height: 480px;
+    width: 100%;
+    position: relative;
+    .the_mapa {
+        position: absolute;
+    }
+    #form-customer {
+        position: relative;
+        //border: 1px solid red;
+        height: 1x;
+        .the_form {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #fff;
+            width: 590px;
+            height: 350px;
+            margin-top: 60px;
+        }
+    }
+}   
