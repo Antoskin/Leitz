@@ -319,9 +319,49 @@ body h3 {
             top: 0;
             right: 0;
             background: #fff;
-            width: 590px;
+            width: 644px;
             height: 350px;
             margin-top: 60px;
+            h4 {font-size: 33px;text-align: center;}
+            form> input {width: 100%;}
+            form {
+                padding: 0 50px;
+                input {
+                    border-radius: 3px;
+                    height: 45px;
+                    padding: 0 10px;
+                    margin: 5px 0;
+                    border: 1px solid silver;
+                    &::placeholder {
+                        color: silver;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .drod-and-button {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                //border: 1px solid red;
+                input {width: 70%}
+                button {height: 44px;}
+
+
+                
+            }
         }
     }
 }   
+
+
+
+footer {
+    padding: 70px 0;
+    .col {
+        display: flex;
+        flex-direction: column;
+        a {
+            color: #000;
+        }
+    }
+}

@@ -348,8 +348,61 @@ body h3 {
   top: 0;
   right: 0;
   background: #fff;
-  width: 590px;
+  width: 644px;
   height: 350px;
   margin-top: 60px;
+}
+
+.mapa-with-form #form-customer .the_form h4 {
+  font-size: 33px;
+  text-align: center;
+}
+
+.mapa-with-form #form-customer .the_form form > input {
+  width: 100%;
+}
+
+.mapa-with-form #form-customer .the_form form {
+  padding: 0 50px;
+}
+
+.mapa-with-form #form-customer .the_form form input {
+  border-radius: 3px;
+  height: 45px;
+  padding: 0 10px;
+  margin: 5px 0;
+  border: 1px solid silver;
+}
+
+.mapa-with-form #form-customer .the_form form input::placeholder {
+  color: silver;
+  font-size: 16px;
+}
+
+.mapa-with-form #form-customer .the_form .drod-and-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mapa-with-form #form-customer .the_form .drod-and-button input {
+  width: 70%;
+}
+
+.mapa-with-form #form-customer .the_form .drod-and-button button {
+  height: 44px;
+}
+
+footer {
+  padding: 70px 0;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .col a {
+  color: #000;
 }
 /*# sourceMappingURL=main.css.map */
