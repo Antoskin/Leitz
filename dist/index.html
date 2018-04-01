@@ -48,15 +48,63 @@
         </div>
         <!--  animation element put here -->
         <div id="area-for-header-svg">
-            <div class="wrapper-svg">
-                <img class="circle1" src="../img/circle.svg" alt="">
-                <img class="circle2" src="../img/circle2.svg" alt="">
-                <img class="line1" src="../img/line1.svg" alt="">
-                <img class="line2little" src="../img/line2.svg" alt="">
-                <img class="line2" src="../img/line2.svg" alt="">
-                <img class="line-vert1" src="../img/line1.svg" alt="">
-                <img class="line-vert2" src="../img/line2.svg" alt="">
-                <img class="circle-little" src="../img/littleCircle.svg" alt="">
+            <div class="wrapper-svg" id="w-sv">
+                <svg id="circle1" class="circle1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="470px" height="470px"> <path class="circle1-p" fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="round" stroke-linejoin="miter" fill="none"
+                    d="M234.500,467.000 C362.906,467.000 467.000,362.906 467.000,234.500 C467.000,106.094 362.906,2.000 234.500,2.000 C106.093,2.000 2.000,106.094 2.000,234.500 C2.000,362.906 106.093,467.000 234.500,467.000 Z"/>
+               </svg>
+                <svg id="circle2" class="circle2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="398px" height="398px"> <path  fill-rule="evenodd"  stroke="rgb(0, 124, 191)" stroke-width="2px" stroke-linecap="round" stroke-linejoin="miter" fill="none"
+                    d="M198.499,395.000 C307.024,395.000 394.999,307.024 394.999,198.500 C394.999,89.976 307.024,2.000 198.499,2.000 C89.975,2.000 2.000,89.976 2.000,198.500 C2.000,307.024 89.975,395.000 198.499,395.000 Z"/>
+               </svg>
+               
+                <svg class="line1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="80%" height="6px"> <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="round" stroke-linejoin="miter" fill="none"
+                    d="M2.500,2.500 L1034.245,2.500 "/>
+               </svg>
+
+               <svg class="line2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="351px" height="6px"> <path fill-rule="evenodd"  stroke="rgb(0, 124, 191)" stroke-width="2px" stroke-linecap="round" stroke-linejoin="miter" fill="none"
+                    d="M2.594,2.500 L348.000,2.500 "/>
+              </svg>
+
+              <svg class="line2little"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="351px" height="6px"> <path fill-rule="evenodd"  stroke="rgb(0, 124, 191)" stroke-width="2px" stroke-linecap="round" stroke-linejoin="miter" fill="none"
+                d="M2.594,2.500 L348.000,2.500 "/>
+             </svg>
+                
+
+                <svg class="line-vert1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="80%" height="6px"> <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="round" stroke-linejoin="miter" fill="none"
+                    d="M2.500,2.500 L1034.245,2.500 "/>
+                </svg>
+
+                <svg class="line-vert2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="351px" height="6px"> <path fill-rule="evenodd"  stroke="rgb(0, 124, 191)" stroke-width="2px" stroke-linecap="round" stroke-linejoin="miter" fill="none"
+                    d="M2.594,2.500 L348.000,2.500 "/>
+                </svg>
+               
+                <svg class="circle-little"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="32px" height="32px"> <path fill-rule="evenodd"  stroke="rgb(0, 124, 191)" stroke-width="2px" stroke-linecap="round" stroke-linejoin="miter" fill="none"
+                    d="M15.500,28.500 C22.679,28.500 28.500,22.680 28.500,15.500 C28.500,8.320 22.679,2.500 15.500,2.500 C8.320,2.500 2.500,8.320 2.500,15.500 C2.500,22.680 8.320,28.500 15.500,28.500 Z"/>
+               </svg>
+               
             </div>
         </div>
         
@@ -216,11 +264,16 @@
 
 
     
-    <!-- <script src="./bundle.js"></script> -->
-    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
-    <script src="../node_modules/gsap/src/minified/TweenMax.min.js"></script>
+    <script src="./bundle.js"></script>
+    <!-- <script src="../node_modules/gsap/src/minified/TweenMax.min.js"></script> 
+    <script src="../scripts/jquery.drawsvg.min.js"></script>    -->
+    <!-- <script src="../scripts/drawSV.js"></script> -->
+    <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin.min.js"></script> -->
+    
+    <script src="../node_modules/gsap2/TweenMax.min.js"></script>
+    <script src="../node_modules/gsap2/plugins/DrawSVGPlugin.min.js"></script>
+    
     <script src="../scripts/fast.js"></script>
-    <script src="../node_modules/slick-carousel/slick/slick.min.js"></script>
+   
 </body>
 </html>

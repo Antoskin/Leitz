@@ -118,19 +118,19 @@ body h3 {
                 .line1 {
                     position: absolute;
                     width: 1440px;
-                    right: 79px;
+                    right: -180px;
                     top: 176px;
                 }
                 .line2 {
                     position: absolute;
-                    right: 161px;
+                    right: 96px;
                     top: 132px;
                     width: 415px;
                     z-index: 5;
                 }
                 .line2little {
                     position: absolute;
-                    right: 329px;
+                    right: 300px;
                     top: 122px;
                     width: 122px;
                     z-index: 5;
@@ -138,10 +138,9 @@ body h3 {
                 }
                 .line-vert1 {
                     position: absolute;
-                    position: absolute;
-                    bottom: -112px;
+                    bottom: -147px;
                     transform: rotate(90deg);
-                    right: -25px;
+                    right: -58px;
                 }
                 .line-vert2 {
                     position: absolute;
@@ -152,7 +151,7 @@ body h3 {
                 .circle-little {
                     position: absolute;
                     top: 119px;
-                    left: -131px;
+                    left: -67px;
                 }
             }
         }
@@ -257,7 +256,7 @@ body h3 {
     #slider-wrap {
         position: relative;
         .slide {
-            display: flex;
+            display: flex !important;
             align-items: center;
             // justify-content: center;
             width: 100%;
