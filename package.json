@@ -36,6 +36,7 @@
     "materialize-css": "^0.100.2",
     "normalize.css": "^8.0.0",
     "scrollmagic": "^2.0.5",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "vivus": "^0.4.3"
   }
 }
