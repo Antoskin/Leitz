@@ -84,7 +84,6 @@ body h3 {
 .main-presentation .main-presentation-shadow {
   overflow: hidden;
   position: relative;
-  border: 1px solid red;
   height: 621px;
   background: rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
@@ -111,6 +110,7 @@ body h3 {
   position: absolute;
   left: 50%;
   z-index: 3;
+  transform: rotate(180deg);
 }
 
 .main-presentation .main-presentation-shadow #area-for-header-svg .wrapper-svg .circle2 {
@@ -119,21 +119,24 @@ body h3 {
   top: 0;
   bottom: 0;
   margin: auto;
+  transform: rotate(180deg);
 }
 
 .main-presentation .main-presentation-shadow #area-for-header-svg .wrapper-svg .line1 {
   position: absolute;
   width: 1440px;
-  right: -180px;
+  right: 223px;
   top: 176px;
+  transform: rotate(180deg);
 }
 
 .main-presentation .main-presentation-shadow #area-for-header-svg .wrapper-svg .line2 {
   position: absolute;
-  right: 96px;
+  right: 160px;
   top: 132px;
   width: 415px;
   z-index: 5;
+  transform: rotate(180deg);
 }
 
 .main-presentation .main-presentation-shadow #area-for-header-svg .wrapper-svg .line2little {
@@ -163,6 +166,7 @@ body h3 {
   position: absolute;
   top: 119px;
   left: -67px;
+  transform: rotate(-90deg);
 }
 
 .main-presentation .presenatation-wrap {

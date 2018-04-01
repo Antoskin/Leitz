@@ -85,7 +85,6 @@ body h3 {
     .main-presentation-shadow { 
         overflow: hidden;
         position: relative;
-        border: 1px solid red;
         height: 621px;
         background: rgba(0, 0, 0, 0.5);
         box-sizing: border-box;
@@ -107,6 +106,7 @@ body h3 {
                     position: absolute;
                     left: 50%;
                     z-index: 3;
+                    transform: rotate(180deg);
                 }
                 .circle2 {
                     position: absolute;
@@ -114,19 +114,22 @@ body h3 {
                     top: 0;
                     bottom: 0;
                     margin: auto;
+                    transform: rotate(180deg);
                 }
                 .line1 {
                     position: absolute;
                     width: 1440px;
-                    right: -180px;
+                    right:223px;
                     top: 176px;
+                    transform: rotate(180deg);
                 }
                 .line2 {
                     position: absolute;
-                    right: 96px;
+                    right: 160px;
                     top: 132px;
                     width: 415px;
                     z-index: 5;
+                    transform: rotate(180deg);
                 }
                 .line2little {
                     position: absolute;
@@ -135,6 +138,7 @@ body h3 {
                     width: 122px;
                     z-index: 5;
                     height: 7px;
+                   
                 }
                 .line-vert1 {
                     position: absolute;
@@ -152,6 +156,7 @@ body h3 {
                     position: absolute;
                     top: 119px;
                     left: -67px;
+                    transform: rotate(-90deg);
                 }
             }
         }
