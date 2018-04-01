@@ -99,7 +99,6 @@ $(document).ready( function() {
             drawSVG:'100%'
           })
 
-
       }
       headSVG();
 
