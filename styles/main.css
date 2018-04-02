@@ -245,11 +245,10 @@ body h3 {
 
 /* ещё не готов  */
 .service-steps {
-  height: 820px;
+  height: 420px;
 }
 
 .service-steps .widthest-container {
-  height: 620px;
   border: 1px solid rebeccapurple;
 }
 

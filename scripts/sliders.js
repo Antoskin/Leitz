@@ -1,8 +1,10 @@
+import {slick} from 'slick-carousel'
+
 export default function() {
     $('#slider-wrap').slick({
         dots: true,
         infinite: false,
-        speed: 1000,
+        speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
@@ -12,7 +14,7 @@ export default function() {
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              infinite: true,
+              
               dots: true
             }
           },

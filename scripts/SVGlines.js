@@ -1,8 +1,11 @@
-import {TweenMax} from 'gsap';
+import { TimelineMax, TimelineLite, TweenMax } from 'gsap';
 import '../node_modules/gsap2/plugins/DrawSVGPlugin.min';
+import scrollAnimate from './scrollHandler'
 
 export default function() {
     const tm = TweenMax;
+    
+    scrollAnimate();
 
     let c1 =  $('.circle1 path'),
         c2 =  $('.circle2 path'),
@@ -26,7 +29,7 @@ export default function() {
     tm.from(l5, 2, {drawSVG:'0%', opacity:0.5}).delay(4);
 
     // logo
-    tm.from('.logo-img',1, { y:'-200',opacity:'0.5'}).delay(7)
+    tm.from('.logo-img',1, { y:'-200',opacity:'0.5'}).delay(1)
     // nav menu
     tm.staggerFrom('.main-nav-menu a', 0.5, {marginTop: -15,opacity:0}, 0.3);
     tm.from( '.contact-phones', 1, { y:'10', opacity:0 } )
@@ -35,5 +38,6 @@ export default function() {
     tm.from('.main-description', 2, {y:'10',opacity:0});
     tm.from('.main-buttons', 2, {y:'10',opacity:0}).delay(2);
    
-    
+    //background
+    tm.fromTo('.main-presentation-shadow',1, {backgroundColor:'#000'},{backgroundColor:'rgba(0, 0, 0, 0.5)'}).delay(5);
 }
