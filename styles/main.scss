@@ -25,6 +25,9 @@ body h3 {
     font-size: 48px;
     font-weight: 100;
 }
+body .material-tooltip {
+    background: $hover !important;
+}
 .top-line {
 
     .logo-menu-wrap {
@@ -99,7 +102,7 @@ body h3 {
             margin: auto;
             .wrapper-svg {
                 position: relative;
-                border: 1px solid rgb(15, 12, 12);
+                //border: 1px solid rgb(15, 12, 12);
                 height: 472px;
                 width: 472px;
                 .circle1 {
@@ -158,6 +161,7 @@ body h3 {
                     left: -67px;
                     transform: rotate(-90deg);
                 }
+                
             }
         }
      }
@@ -323,11 +327,6 @@ body h3 {
                 button {
                     transition: 0.3s ease;
                     opacity: 0;
-                }
-            }
-            .slick-active {
-                button {
-                    opacity: 1 !important;
                     width: 15px;
                     height: 15px;
                     background: $hover;
@@ -335,6 +334,11 @@ body h3 {
                     font-size: 1px;
                     border: none;
                     border-radius: 50%;
+                }
+            }
+            .slick-active {
+                button {
+                    opacity: 1 !important;
                 }
             }
         }
@@ -356,12 +360,12 @@ body h3 {
         // height: 630px;
         height: 936px;
         .item {
-            height: 936px;
+           
             //border: 1px solid black;
             position: relative;
            
             position: relative;
-            img {
+            .main {
                 position: absolute;
                 left: 0;
                 top: 0;
@@ -370,6 +374,38 @@ body h3 {
                 height: 100%;
                 width: auto;
                 margin: auto;
+            }
+            
+            .absol-images  {
+                position: relative;
+                max-width: 1300px;
+                height: 936px;
+                //border: 1px dashed green;
+                margin: 0 auto;
+               
+                .w1,.w2,.w3,.w4 {
+                    transition: 0.7s ease;
+                    position: absolute;
+                    opacity: 0;
+                    transform: scale(1.01);
+                    &:hover {opacity: 1;transform: scale(0.99);}
+                }
+                .w1 {
+                    bottom: -38px;
+                    left: -12px;
+                }
+                .w2 {
+                    top: 98px;
+                    left: 381px;
+                }
+                .w3 {
+                    top: 133px;
+                    right: 326px;
+                }
+                .w4 {
+                    top: 66px;
+                    right: -8px;
+                }
             }
         
         }
@@ -398,19 +434,21 @@ body h3 {
                 button {
                     transition: 0.3s ease;
                     opacity: 0;
+                    // width: 10px;
+                    // height: 12px;
+                    height: 20px;
+                    width: 20px;
+                    color: $hover;
+                    font-size: 1px;
+                    border: none;
+                    border-radius: 50%;
                 }
             }
             .slick-active {
                 background: $hover;
                 button {
                     opacity: 1 !important;
-                    width: 10px;
-                    height: 12px;
                     background: $hover;
-                    color: $hover;
-                    font-size: 1px;
-                    border: none;
-                    border-radius: 50%;
                 }
             }
         }
@@ -435,7 +473,6 @@ body h3 {
   
 
 // section of circle slider
-
 .revolv-slide-wrap {
     position: relative;
     width: 100%;
@@ -444,6 +481,53 @@ body h3 {
     background: #252525;
     color: #fff;
     padding-top: 1px;
+    overflow: hidden;
+    // svg
+    .revo-slider-svg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100px;
+        height: 180px;
+        //border: 1px solid red;
+        .revo-slider-svg-wrap{
+            width: 100px;
+            height: 180px;
+            position: relative;
+            .line-rev1 {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 1440px;
+                transform: rotate(180deg);
+            }
+            .line-rev2 {
+                position: absolute;
+                bottom: 5px;
+                transform: rotate(90deg);
+                right: -77px;
+            }
+            .line-rev3 {
+                position: absolute;
+                bottom: -80px;
+                transform: rotate(90deg);
+                right: 51px;
+                width: 82px;
+            }
+            .circle-rev-little {
+                position: absolute;
+                bottom: -193px;
+                left: -14px;
+                transform: rotate(180deg);
+            }
+            .circle-rev-little-white {
+                position: absolute;
+                right: 1031px;
+                bottom: -14px;
+                transform: rotate(-90deg);
+            }
+        }
+    }
     .revo-section-width {
         position: relative;
        h3 {margin-top: 73px; margin-bottom: 55px}
@@ -464,7 +548,6 @@ body h3 {
         right: 0;
         margin: auto;
         bottom: 0;
-        //border: 1px solid red;
         display: flex;
         justify-content: center;
         overflow: hidden;
@@ -473,7 +556,6 @@ body h3 {
             .c {
                 width: 130px !important;
                 height: 130px !important;
-                // border: 3px solid $hover !important;
             }
             .who-is {
                 //opacity: 1 !important;
@@ -582,6 +664,10 @@ body h3 {
                         font-size: 20px;
                         p {margin-top: 3px;}
                     }
+                    .hidden-comment {
+                        // opacity: 0;
+                        visibility: hidden;
+                    }
                 }
             }
         }
@@ -656,6 +742,8 @@ body h3 {
 
 footer {
     padding: 75px 0;
+    height: 328px;
+    overflow: hidden;
     .col {
        
         .foot-cen {
