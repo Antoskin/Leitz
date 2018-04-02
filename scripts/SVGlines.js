@@ -1,11 +1,13 @@
 import { TimelineMax, TimelineLite, TweenMax } from 'gsap';
 import '../node_modules/gsap2/plugins/DrawSVGPlugin.min';
 import scrollAnimate from './scrollHandler'
+// import spinner from './spinner'
 
 export default function() {
     const tm = TweenMax;
     
     scrollAnimate();
+    // spinner();
 
     let c1 =  $('.circle1 path'),
         c2 =  $('.circle2 path'),

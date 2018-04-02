@@ -5,9 +5,11 @@ import sv from './SVGlines'
 
 
 
+
 $(document).ready(function() {
 	sliders();
 	sv();
-	
+
+
 	console.log('!');
 })
