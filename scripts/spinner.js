@@ -51,5 +51,15 @@ export default function () {
       }
   
   })
+
+// changer of comments text
+  $('.losso, .b').delegate(``, 'mouseover', 'mouseout', function(e) {
+        if(e.type == `mouseover`) {
+            // console.log('!');
+            let the_text = $('#knob .active .hidden-comment').text();
+            console.log(the_text);
+            $('.revo-section-width p').text(the_text);
+        }
+    })
   
 }

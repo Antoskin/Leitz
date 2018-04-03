@@ -240,12 +240,13 @@ body .material-tooltip {
     //height: 820px;
     padding-bottom: 50px;
     .widthest-container {
+        max-width: 1068px;
         height: 645px;
         //border: 1px solid rgb(205, 202, 207);
         position: relative;
         .steps-wrapper {
             width: 575px;
-            height: 342px;
+            height: 340px;
             //border: 1px solid red;
             margin-top: 50px;
             position: relative;
@@ -281,7 +282,6 @@ body .material-tooltip {
                 right: 0;
             }
            .sibl-step {
-                // background: green;
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
@@ -292,7 +292,26 @@ body .material-tooltip {
                 width: 125px;
                 height: 120px;
                 cursor: pointer;
-                border: 2px solid $hover;
+                border: 5px solid silver;
+                transform: scale(0.3);
+                p{opacity: 0}
+                .blue-owl {
+                    position: absolute;
+                    right: -5px;
+                    bottom: 0;
+                    width: 40px;
+                    height: 40px;
+                    font-size: 20px;
+                    background: $hover;
+                    color: #fff;
+                    // text-align: center;
+                    // padding-top: 4px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    opacity: 0;
+                }
             }
             .fi-line {
                 position: absolute;
@@ -323,19 +342,13 @@ body .material-tooltip {
                 top: 119px;
                 right: 60px;
             }
-            .blue-owl {
+            .las-line {
                 position: absolute;
-                right: -5px;
-                bottom: 0;
-                width: 40px;
-                height: 40px;
-                font-size: 20px;
-                background: $hover;
-                color: #fff;
-                text-align: center;
-                padding-top: 4px;
-                border-radius: 50%;
+                right: -50px;
+                transform: rotate(90deg);
+                bottom: 7px;
             }
+      
         }
         .image-target {
             float: right;

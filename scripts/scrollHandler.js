@@ -2,27 +2,6 @@
 export default function() {
     var controller = new ScrollMagic.Controller();
     
-    // var tm = new TimelineLite();
-    // tm.add(TweenMax.from('.tit1',2,{opacity:0, y: 20}));
-    // new ScrollMagic.Scene({
-    //      triggerElement: '.service-steps',
-    //      triggerHook: 0.8,
-    //      reverse: false
-    // }).setTween(tm)
-    // .addTo(controller)
-    // .addIndicators({name : 'starts from'})
-
-    // test
-    // var tm1 = new TimelineLite();
-    // tm1.add(TweenMax.from('.tit2',2,{opacity:0, y: 20}));
-    // new ScrollMagic.Scene({
-    //      triggerElement: '.team-slider-section',
-    //      triggerHook: 0.8,
-    //      reverse: false
-    // }).setTween(tm1)
-    // .addTo(controller)
-    // .addIndicators({name : 'starts from'})
-
 
     // presentation div
     let tm2 = new TimelineLite();
@@ -77,17 +56,32 @@ export default function() {
         reverse: false
     }).setTween(tm5)
     .addTo(controller)
-   
+
+
+    // ETAPS
+    let tm6 = new TimelineLite();
+    tm6.staggerTo('.sibl-step',1, { scale:1,borderColor:'#007cbf',borderWidth:'3px'},0.2).delay(2);
+    tm6.staggerFromTo('.sibl-step p', .5, {y:-20}, { y:0, opacity:1, scale:1 }, .2)
+     new ScrollMagic.Scene({
+         triggerElement: '.widthest-container',
+         triggerHook: 0.7,
+         reverse: false
+     }).setTween(tm6)
+     .addTo(controller)
+
+     let tm7 = new TimelineLite();
+     tm7.staggerFromTo('.blue-owl', .5, {y:20}, { y:0, opacity:1 }, .2).delay(4);
+     tm7.from('.image-target', 2, {opacity:0, y: -40 }).delay(4);
+     tm7.from('.steps-wrapper svg path', 2, { drawSVG:'0%' });
+      new ScrollMagic.Scene({
+          triggerElement: '.widthest-container',
+          triggerHook: 0.7,
+          reverse: false
+      }).setTween(tm7)
+      .addTo(controller)
+
+
 
     console.log(`scroll`)
 
-
-    // little slider
-//     let tm3 = new TimelineLite();
-//     tm3.add(TweenMax.staggerFrom('.slick-dots li',1, {y:'10'}))
-//     new ScrollMagic.Scene({
-//         triggerElement: '.presentation-slider',
-//         triggerHook: 0.6,
-//    }).setTween(tm2)
-//    .addTo(controller)
 }

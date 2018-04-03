@@ -20,7 +20,6 @@ $(document).ready( function() {
 	// 						'transform' : 'rotate(' + (i-1)*45 + 'deg)'
 	// 	});
 	// }
-    
 
 
 	let but = $('.team-button');
@@ -45,17 +44,9 @@ $(document).ready( function() {
 	})
 
 
-	$('.losso, .b').delegate(``, 'mouseover', 'mouseout', function(e) {
-		if(e.type == `mouseover`) {
-			// console.log('!');
-			let the_text = $('#knob .active .hidden-comment').text();
-			console.log(the_text);
-			$('.revo-section-width p').text(the_text);
-		}
-	})
-	//slick-track
+	
 
-	//slick-slide slick-current slick-active
-    
+	TweenMax.to('.sibl-step',1.5, { opacity:1 });
+
 
 })

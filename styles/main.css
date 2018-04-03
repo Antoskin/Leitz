@@ -252,13 +252,14 @@ body .material-tooltip {
 }
 
 .service-steps .widthest-container {
+  max-width: 1068px;
   height: 645px;
   position: relative;
 }
 
 .service-steps .widthest-container .steps-wrapper {
   width: 575px;
-  height: 342px;
+  height: 340px;
   margin-top: 50px;
   position: relative;
   float: left;
@@ -311,7 +312,28 @@ body .material-tooltip {
   width: 125px;
   height: 120px;
   cursor: pointer;
-  border: 2px solid #007cbf;
+  border: 5px solid silver;
+  transform: scale(0.3);
+}
+
+.service-steps .widthest-container .steps-wrapper .sibl-step p {
+  opacity: 0;
+}
+
+.service-steps .widthest-container .steps-wrapper .sibl-step .blue-owl {
+  position: absolute;
+  right: -5px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background: #007cbf;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  opacity: 0;
 }
 
 .service-steps .widthest-container .steps-wrapper .fi-line {
@@ -348,18 +370,11 @@ body .material-tooltip {
   right: 60px;
 }
 
-.service-steps .widthest-container .steps-wrapper .blue-owl {
+.service-steps .widthest-container .steps-wrapper .las-line {
   position: absolute;
-  right: -5px;
-  bottom: 0;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
-  background: #007cbf;
-  color: #fff;
-  text-align: center;
-  padding-top: 4px;
-  border-radius: 50%;
+  right: -50px;
+  transform: rotate(90deg);
+  bottom: 7px;
 }
 
 .service-steps .widthest-container .image-target {
