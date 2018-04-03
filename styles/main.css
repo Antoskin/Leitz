@@ -248,11 +248,157 @@ body .material-tooltip {
 
 /* ещё не готов  */
 .service-steps {
-  height: 420px;
+  padding-bottom: 50px;
 }
 
 .service-steps .widthest-container {
-  border: 1px solid rebeccapurple;
+  height: 645px;
+  position: relative;
+}
+
+.service-steps .widthest-container .steps-wrapper {
+  width: 575px;
+  height: 342px;
+  margin-top: 50px;
+  position: relative;
+  float: left;
+}
+
+.service-steps .widthest-container .steps-wrapper .fi-step-svg, .service-steps .widthest-container .steps-wrapper .fi-step-div {
+  position: absolute;
+}
+
+.service-steps .widthest-container .steps-wrapper .s-step-svg, .service-steps .widthest-container .steps-wrapper .s-step-div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.service-steps .widthest-container .steps-wrapper .t-step-svg, .service-steps .widthest-container .steps-wrapper .t-step-div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.service-steps .widthest-container .steps-wrapper .f-step-svg, .service-steps .widthest-container .steps-wrapper .f-step-div {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.service-steps .widthest-container .steps-wrapper .fir-step-div {
+  position: absolute;
+  right: 0;
+}
+
+.service-steps .widthest-container .steps-wrapper .se-step-div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.service-steps .widthest-container .steps-wrapper .sibl-step {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: #007cbf;
+  width: 125px;
+  height: 120px;
+  cursor: pointer;
+  border: 2px solid #007cbf;
+}
+
+.service-steps .widthest-container .steps-wrapper .fi-line {
+  position: absolute;
+  top: 119px;
+  left: 60px;
+}
+
+.service-steps .widthest-container .steps-wrapper .s-line {
+  position: absolute;
+  transform: rotate(90deg);
+  bottom: 7px;
+  left: 171px;
+}
+
+.service-steps .widthest-container .steps-wrapper .t-line {
+  position: absolute;
+  top: 119px;
+  right: 0px;
+  left: 0;
+  margin: auto;
+}
+
+.service-steps .widthest-container .steps-wrapper .fo-line {
+  position: absolute;
+  right: 173px;
+  transform: rotate(90deg);
+  top: 7px;
+}
+
+.service-steps .widthest-container .steps-wrapper .fir-line {
+  position: absolute;
+  top: 119px;
+  right: 60px;
+}
+
+.service-steps .widthest-container .steps-wrapper .blue-owl {
+  position: absolute;
+  right: -5px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background: #007cbf;
+  color: #fff;
+  text-align: center;
+  padding-top: 4px;
+  border-radius: 50%;
+}
+
+.service-steps .widthest-container .image-target {
+  float: right;
+  width: 395px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-steps .widthest-container .image-target img {
+  height: 440px;
+}
+
+.service-steps .widthest-container .image-target .infa {
+  background: #007cbf;
+  width: 395px;
+  color: #fff;
+  padding: 20px 30px;
+  height: 205px;
+}
+
+.service-steps .widthest-container .image-target .infa h4 {
+  margin-top: 0px;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.service-steps .widthest-container .image-target .infa p {
+  font-size: 11px;
+}
+
+.service-steps .widthest-container .image-target .infa button {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 15px 30px;
+  width: 100%;
+  font-size: 22px;
 }
 
 /* ещё не готов  */
@@ -312,11 +458,23 @@ body .material-tooltip {
   padding-left: 8%;
 }
 
+.presentation-slider #slider-wrap .slide .right-slider-side .eluminate-olw {
+  width: 250px;
+  height: 250px;
+  border: 4px solid #007cbf;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .presentation-slider #slider-wrap .slide .right-slider-side img {
   animation-name: spinnerRotate;
   -webkit-animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
+  transform: scale(0.5);
 }
 
 .presentation-slider #slider-wrap .slick-dots {
@@ -361,24 +519,66 @@ body .material-tooltip {
   display: none !important;
 }
 
-@-webkit-keyframes spinnerRotate {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-  }
+.team-slider-section {
+  position: relative;
 }
 
 .team-slider-section h3 {
   margin: 65px 0 65px;
 }
 
-.team-slider-section #team-slider {
+.team-slider-section #choose-team-slide {
+  opacity: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
   height: 936px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.team-slider-section #choose-team-slide .item-team {
+  width: 50%;
+  height: 50%;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.team-slider-section #choose-team-slide .item-team img {
+  text-align: center;
+  filter: grayscale(100%);
+  transition: 0.3s ease;
+}
+
+.team-slider-section #choose-team-slide .item-team .team-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #007cbf;
+  border: none;
+  color: #fff;
+  padding: 15px 80px;
+}
+
+.team-slider-section #choose-team-slide .item-team:hover img {
+  filter: grayscale(0%) !important;
+}
+
+.team-slider-section #team-slider {
+  opacity: 0;
+  height: 936px;
+  z-index: -1;
 }
 
 .team-slider-section #team-slider .item {
+  overflow: hidden;
   position: relative;
   position: relative;
 }

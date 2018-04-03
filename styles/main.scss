@@ -238,10 +238,138 @@ body .material-tooltip {
 /* ещё не готов  */ 
 .service-steps {
     //height: 820px;
-    height: 420px;
+    padding-bottom: 50px;
     .widthest-container {
-        // height: 620px;
-        border: 1px solid rebeccapurple;
+        height: 645px;
+        //border: 1px solid rgb(205, 202, 207);
+        position: relative;
+        .steps-wrapper {
+            width: 575px;
+            height: 342px;
+            //border: 1px solid red;
+            margin-top: 50px;
+            position: relative;
+            float: left;
+            .fi-step-svg, .fi-step-div {
+                position: absolute;
+            }
+            .s-step-svg, .s-step-div  {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            .t-step-svg, .t-step-div {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+            }
+            .f-step-svg, .f-step-div {
+                position: absolute;
+                right: 0;
+                left: 0;
+                margin: auto;
+            }
+            .fir-step-div {
+                position: absolute;
+                right: 0;
+            }
+            .se-step-div {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+           .sibl-step {
+                // background: green;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 15px;
+                font-weight: bold;
+                color: $hover;
+                width: 125px;
+                height: 120px;
+                cursor: pointer;
+                border: 2px solid $hover;
+            }
+            .fi-line {
+                position: absolute;
+                top: 119px;
+                left: 60px;
+            }
+            .s-line {
+                position: absolute;
+                transform: rotate(90deg);
+                bottom: 7px;
+                left: 171px;
+            }
+            .t-line {
+                position: absolute;
+                top: 119px;
+                right: 0px;
+                left: 0;
+                margin: auto;
+            }
+            .fo-line {
+                position: absolute;
+                right: 173px;
+                transform: rotate(90deg);
+                top: 7px;
+            }
+            .fir-line {
+                position: absolute;
+                top: 119px;
+                right: 60px;
+            }
+            .blue-owl {
+                position: absolute;
+                right: -5px;
+                bottom: 0;
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+                background: $hover;
+                color: #fff;
+                text-align: center;
+                padding-top: 4px;
+                border-radius: 50%;
+            }
+        }
+        .image-target {
+            float: right;
+            width: 395px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                height: 440px;
+            }
+            .infa {
+                background: $hover;
+                width: 395px;
+                color: #fff;
+                padding: 20px 30px;
+                height: 205px;
+                h4 {
+                    margin-top: 0px;
+                    font-size: 20px;
+                    margin-bottom: 5px;
+                }
+                p {
+                    font-size: 11px;
+                }
+                button {
+                    background: transparent;
+                    border: 1px solid #fff;
+                    padding: 15px 30px;
+                    width: 100%;
+                    font-size: 22px;
+                }
+            }
+        }
     }
 }
 /* ещё не готов  */
@@ -294,11 +422,23 @@ body .material-tooltip {
                 justify-content: center;
                 align-items: center;
                 padding-left: 8%;
+                
+                .eluminate-olw {
+                    width: 250px;
+                    height: 250px;
+                    border: 4px solid $hover;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: rgba(0, 0, 0, 0.5);
+                }
                 img {
                     animation-name: spinnerRotate;
                     -webkit-animation-duration: 5s;
                     -webkit-animation-iteration-count: infinite;
                     -webkit-animation-timing-function: linear;
+                    transform: scale(0.5);
                     &:hover {
                       
                     }
@@ -346,24 +486,68 @@ body .material-tooltip {
     }
 }
 
-@-webkit-keyframes spinnerRotate
-{
-    from{-webkit-transform:rotate(0deg);}
-    to{-webkit-transform:rotate(360deg);}
-}
+// @-webkit-keyframes spinnerRotate
+// {
+//     from{-webkit-transform:rotate(0deg);}
+//     to{-webkit-transform:rotate(360deg);}
+// }
 
 .team-slider-section {
+    position: relative;
    h3 {
     margin: 65px 0 65px;
    }
+   #choose-team-slide {
+       opacity: 1;
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       width: 100%;
+       z-index: 99;
+       //border: 1px solid red;
+       height: 936px;
+       max-width: 1440px;
+       margin: auto;
+       .item-team {
+           width: 50%;
+          //border: 1px solid greenyellow;
+           height: 50%;
+           float: left;
+           overflow: hidden;
+           text-align: center;
+           display: flex;
+           justify-content: center;
+           position: relative;
+           img {
+               text-align: center;
+               filter: grayscale(100%);
+               transition: 0.3s ease;
+           }
+           .team-button {
+               position: absolute;
+                bottom: 0;
+                left: 0;
+                background: $hover;
+                border: none;
+                color: #fff;
+                padding: 15px 80px;
+           }
+           &:hover {
+                img {
+                    filter: grayscale(0%) !important;
+                }
+           }
+        }
+   }
     #team-slider {
         // height: 630px;
+        opacity: 0;
         height: 936px;
+        z-index: -1;
         .item {
-           
-            //border: 1px solid black;
+           overflow: hidden;
             position: relative;
-           
             position: relative;
             .main {
                 position: absolute;

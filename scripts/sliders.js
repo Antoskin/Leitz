@@ -54,14 +54,14 @@ export default function() {
 
 
 
-    //   second slider
+    //   TEAM
     $('#team-slider').slick({
         prevArrow:"</span><img class='a-left control-c prev slick-prev' src='../img/left.png'>",
         nextArrow:"<img class='a-right control-c next slick-next' src='../img/left.png'>",
         // centerMode: true,
         // centerPadding: '200px',
         dots: true,
-        infinite: true,
+        infinite: false,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
