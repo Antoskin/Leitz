@@ -294,14 +294,14 @@ body .material-tooltip {
                 cursor: pointer;
                 border: 5px solid silver;
                 transform: scale(0.3);
-                p{opacity: 0}
+                p {opacity: 0; transition: 2s ease; transition-delay: 1s;}
                 .blue-owl {
                     position: absolute;
                     right: -5px;
                     bottom: 0;
-                    width: 40px;
-                    height: 40px;
-                    font-size: 20px;
+                    width: 20px;
+                    height: 20px;
+                    font-size: 10px;
                     background: $hover;
                     color: #fff;
                     // text-align: center;
@@ -311,7 +311,18 @@ body .material-tooltip {
                     align-items: center;
                     border-radius: 50%;
                     opacity: 0;
+                    transition: 0.2s ease;
+                    transition-delay: 1s;
                 }
+            }
+            .actived {
+               .blue-owl {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+                opacity: 1;
+               }
+               p {opacity: 1}
             }
             .fi-line {
                 position: absolute;

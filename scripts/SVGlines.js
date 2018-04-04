@@ -31,7 +31,7 @@ export default function() {
     tm.from(l5, 2, {drawSVG:'0%', opacity:0.5}).delay(4);
 
     // logo
-    tm.from('.logo-img',1, { y:'-200',opacity:'0.5'}).delay(1)
+    tm.from('.logo-img',1, { opacity:'0.2', scale: 0}).delay(1)
     // nav menu
     tm.staggerFrom('.main-nav-menu a', 0.5, {marginTop: -15,opacity:0}, 0.3);
     tm.from( '.contact-phones', 1, { y:'10', opacity:0 } )
@@ -41,5 +41,6 @@ export default function() {
     tm.from('.main-buttons', 2, {y:'10',opacity:0}).delay(2);
    
     //background
-    tm.fromTo('.main-presentation-shadow',1, {backgroundColor:'#000'},{backgroundColor:'rgba(0, 0, 0, 0.5)'}).delay(5);
+    tm.fromTo('.main-presentation-shadow',1, {backgroundColor:'#000'},{backgroundColor:'rgba(0, 0, 0, 0.3)'}).delay(5);
+    // tm.to('.main-presentation', 6, {backgroundSize:'105%'}).delay(6);
 }

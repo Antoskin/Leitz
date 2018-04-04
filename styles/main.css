@@ -318,15 +318,17 @@ body .material-tooltip {
 
 .service-steps .widthest-container .steps-wrapper .sibl-step p {
   opacity: 0;
+  transition: 2s ease;
+  transition-delay: 1s;
 }
 
 .service-steps .widthest-container .steps-wrapper .sibl-step .blue-owl {
   position: absolute;
   right: -5px;
   bottom: 0;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
   background: #007cbf;
   color: #fff;
   display: flex;
@@ -334,6 +336,19 @@ body .material-tooltip {
   align-items: center;
   border-radius: 50%;
   opacity: 0;
+  transition: 0.2s ease;
+  transition-delay: 1s;
+}
+
+.service-steps .widthest-container .steps-wrapper .actived .blue-owl {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  opacity: 1;
+}
+
+.service-steps .widthest-container .steps-wrapper .actived p {
+  opacity: 1;
 }
 
 .service-steps .widthest-container .steps-wrapper .fi-line {
