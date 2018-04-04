@@ -94,4 +94,24 @@ export default function() {
           }
         ]
       });
+
+      let but = $('.team-button');
+      
+        but.click( function() {
+          
+          let curBut = $(this);
+          let curTeam = curBut.parents('.item-team');
+          TweenMax.to(curTeam, 0.5, { opacity:0 })
+          TweenMax.to('.item-team', 0.5, { opacity:0 }).delay(0.3);
+          
+          TweenMax.fromTo('#team-slider',1,{y: -20}, {opacity:1, y:0,zIndex:100}).delay(1.5);
+          if( curBut.hasClass('tima2') ) {
+            // $('#team-slider .slick-dots li:eq(1)').click();
+          } else if(curBut.hasClass('tima3')) {
+            $('#team-slider .slick-dots li:eq(2)').click();
+          } else if(curBut.hasClass('tima4')) {
+            $('#team-slider .slick-dots li:eq(3)').click();
+          }
+          console.log('Group of team choise')
+      })
 }

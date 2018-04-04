@@ -61,5 +61,4 @@ export default function () {
             $('.revo-section-width p').text(the_text);
         }
     })
-  
 }

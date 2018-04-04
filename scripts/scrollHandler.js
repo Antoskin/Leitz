@@ -1,8 +1,6 @@
 
 export default function() {
     var controller = new ScrollMagic.Controller();
-    
-
     // presentation div
     let tm2 = new TimelineLite();
     tm2.add(TweenMax.fromTo('.presentation-slider-shadow',1, {backgroundColor:'#000'},{backgroundColor:'rgba(0, 0, 0, 0.5)'}))
@@ -22,29 +20,23 @@ export default function() {
         lineR4 = $('.circle-rev-little path'),
         lineR5 = $('.circle-rev-little-white path');
     let tm3 = new TimelineLite();
-    
     tm3.from(lineR1, 1, { drawSVG:'0%' });
     tm3.from(lineR5, 1, { drawSVG:'0%' });
-    
-   
-
     new ScrollMagic.Scene({
         triggerElement: '.revolv-slide-wrap  ',
         triggerHook: 0.5,
         reverse: false
-   }).setTween(tm3)
-   .addTo(controller)
+    }).setTween(tm3).addTo(controller)
    
-   let tm4 = new TimelineLite();
-   tm4.from(lineR2, 1, { drawSVG:'0%' });
-   tm4.from(lineR3, 2, { drawSVG:'0%' });
-   tm4.from(lineR4, 0.5, { drawSVG:'0%' });
-   new ScrollMagic.Scene({
+    let tm4 = new TimelineLite();
+    tm4.from(lineR2, 1, { drawSVG:'0%' });
+    tm4.from(lineR3, 2, { drawSVG:'0%' });
+    tm4.from(lineR4, 0.5, { drawSVG:'0%' });
+    new ScrollMagic.Scene({
         triggerElement: '.revolv-slide-wrap  ',
         triggerHook: 0.7,
         reverse: false
-    }).setTween(tm4)
-    .addTo(controller)
+    }).setTween(tm4).addTo(controller)
 
     let thies = $('#knob')
     let tm5 = new TimelineLite();
@@ -54,31 +46,30 @@ export default function() {
         triggerElement: '.area-for-spinner',
         triggerHook: 0.8,
         reverse: false
-    }).setTween(tm5)
-    .addTo(controller)
+    }).setTween(tm5).addTo(controller)
 
 
     // ETAPS
-    let tm6 = new TimelineLite();
-    tm6.staggerTo('.sibl-step',1, { scale:1,borderColor:'#007cbf',borderWidth:'3px'},0.2).delay(2);
-    tm6.staggerFromTo('.sibl-step p', .5, {y:-20}, { y:0, opacity:1, scale:1 }, .2)
-     new ScrollMagic.Scene({
-         triggerElement: '.widthest-container',
-         triggerHook: 0.7,
-         reverse: false
-     }).setTween(tm6)
-     .addTo(controller)
+    // let tm6 = new TimelineLite();
+    // tm6.staggerTo('.sibl-step',1, { scale:1,borderColor:'#007cbf',borderWidth:'3px'},0.2).delay(2);
+    // tm6.staggerFromTo('.sibl-step p', .5, {y:-20}, { y:0, opacity:1, scale:1 }, .2)
+    //  new ScrollMagic.Scene({
+    //      triggerElement: '.widthest-container',
+    //      triggerHook: 0.7,
+    //      reverse: false
+    //  }).setTween(tm6)
+    //  .addTo(controller)
 
-     let tm7 = new TimelineLite();
-     tm7.staggerFromTo('.blue-owl', .5, {y:20}, { y:0, opacity:1 }, .2).delay(4);
-     tm7.from('.image-target', 2, {opacity:0, y: -40 }).delay(4);
-     tm7.from('.steps-wrapper svg path', 2, { drawSVG:'0%' });
-      new ScrollMagic.Scene({
-          triggerElement: '.widthest-container',
-          triggerHook: 0.7,
-          reverse: false
-      }).setTween(tm7)
-      .addTo(controller)
+    //  let tm7 = new TimelineLite();
+    //  tm7.staggerFromTo('.blue-owl', .5, {y:20}, { y:0, opacity:1 }, .2).delay(4);
+    //  tm7.from('.image-target', 2, {opacity:0, y: -40 }).delay(4);
+    //  tm7.from('.steps-wrapper svg path', 2, { drawSVG:'0%' });
+    //   new ScrollMagic.Scene({
+    //       triggerElement: '.widthest-container',
+    //       triggerHook: 0.7,
+    //       reverse: false
+    //   }).setTween(tm7)
+    //   .addTo(controller)
 
 
 

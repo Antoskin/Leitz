@@ -1,9 +1,5 @@
 $(document).ready( function() {
 
-	$('.tooltipped').tooltip();
-	
-	$('.steps').click(function(){$('body, html').animate({scrollTop:$('.service-steps').offset().top},777)})
-
   // for(var i=1; i<=8; i++)
 	// {
 	// 	var html = '';
@@ -21,32 +17,22 @@ $(document).ready( function() {
 	// 	});
 	// }
 
-
-	let but = $('.team-button');
-
-	but.click( function(e) {
-		e.preventDefault();
-		e.stopPropagation();
-		let curBut = $(this);
-		let curTeam = curBut.parents('.item-team');
-		TweenMax.to(curTeam, 0.5, { opacity:0 })
-		TweenMax.to('.item-team', 0.5, { opacity:0 }).delay(0.3);
-		
-		TweenMax.fromTo('#team-slider',1,{y: -20}, {opacity:1, y:0,zIndex:100}).delay(1.5);
-		if( curBut.hasClass('tima2') ) {
-			// $('#team-slider .slick-dots li:eq(1)').click();
-		} else if(curBut.hasClass('tima3')) {
-			$('#team-slider .slick-dots li:eq(2)').click();
-		} else if(curBut.hasClass('tima4')) {
-			$('#team-slider .slick-dots li:eq(3)').click();
-		}
-		// console.log('ad')
-	})
-
-
-	
-
 	TweenMax.to('.sibl-step',1.5, { opacity:1 });
 
 
+
+
+	let tm6 = new TimelineLite();
+    tm6.staggerTo('.sibl-step',1, { scale:1,borderColor:'#007cbf',borderWidth:'3px'},0.2).delay(2);
+    tm6.staggerFromTo('.sibl-step p', .5, {y:-20}, { y:0, opacity:1, scale:1 }, .2)
+
+
+     let tm7 = new TimelineLite();
+     tm7.staggerFromTo('.blue-owl', .5, {y:20}, { y:0, opacity:1 }, .2).delay(4);
+     tm7.from('.image-target', 2, {opacity:0, y: -40 }).delay(4);
+     tm7.from('.steps-wrapper svg path', 2, { drawSVG:'0%' });
+
+
+
 })
+
