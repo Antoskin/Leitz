@@ -31,7 +31,7 @@ export default function() {
     tm.from(l5, 2, {drawSVG:'0%', opacity:0.5}).delay(4);
 
     // logo
-    tm.from('.logo-img',1, { opacity:'0.2', scale: 0}).delay(1)
+    tm.from('.logo-img',1, { borderRadius:'50%', opacity:'0.2', scale: 0}).delay(1)
     // nav menu
     tm.staggerFrom('.main-nav-menu a', 0.5, {marginTop: -15,opacity:0}, 0.3);
     tm.from( '.contact-phones', 1, { y:'10', opacity:0 } )

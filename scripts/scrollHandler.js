@@ -54,7 +54,7 @@ export default function() {
         tm6.staggerTo('.sibl-step',1, {
             scale:1,
             borderColor:'#007cbf',
-            borderWidth:'3px',
+            borderWidth:'2px',
             className:'+=actived'
             },2).delay(2);
         new ScrollMagic.Scene({

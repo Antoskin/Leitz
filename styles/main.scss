@@ -92,6 +92,7 @@ body .material-tooltip {
         background: rgba(0, 0, 0, 0.5);
         box-sizing: border-box;
         #area-for-header-svg {
+            opacity: 0;
             position: absolute;
             right: 0;
             top: 60px;
@@ -191,6 +192,8 @@ body .material-tooltip {
         }
         /* div with title and main description */
         .the-content-description {
+            display: none;
+            opacity: 0;
             color: #fff;
             h1 { 
                 font-size: 64px;     
@@ -233,9 +236,99 @@ body .material-tooltip {
                 }
             }
         } 
+
+        .the_content-presentation {
+            .wrapper-text-grafic {
+                display: flex;
+                // height: 355px;
+                border: 1px solid #fff;
+                .left-text {
+                    //border: 1px dashed #fff;
+                    color: #fff;
+                    // width: 100px;
+                    height: 355px;
+                    position: relative;
+                    // display: none;
+                    // opacity: 0;
+                    .left-blue-line {
+                        width: 3px;
+                        height: 91px;
+                        background: $hover;
+                        position: absolute;
+                        left: 0;
+                        top: 50px;
+                    }
+                    h2 { 
+                        padding-left: 66px;
+                        font-size: 44px;     
+                        font-weight: 100;
+                        letter-spacing: 3px;
+                        line-height: 59px;
+                        margin-bottom: 20px;            
+                    }
+                    .main-description-presentation {
+                        width: 555px;
+                        font-size: 18px;
+                        padding-top: 10px;
+                        letter-spacing: 1.3px;
+                        line-height: 29px;
+                        
+                        height: 128px;
+                        display: flex;
+                        align-items: flex-end;
+                    }
+                }
+                .grafics {
+                    border: 1px dashed seagreen;
+                    width: 100%;
+                    height: 300px;
+                    .dinamic-grag {
+                        height: 299px;
+                        width: 39px;
+                        //border: 1px solid darkgoldenrod;
+                        margin-right: 3px;
+                        float: left;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        .dinamic-item {
+                            width: 37px;
+                            height: 37px;
+                            background: $hover;
+                            margin-bottom: 5px;
+                        }
+                    }
+                    .compare-grafic {
+                        height: 299px;
+                        width: 39px;
+                        //border: 1px solid darkkhaki;
+                        float: left;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        .compare-item {
+                            width: 37px;
+                            height: 37px;
+                            background: #fff;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+            #steps-in-graf {
+                border: 1px solid #fff;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .but-graf {
+                    margin: 0 20px;
+                }
+            }
+        }
     } 
 }
-/* ещё не готов  */ 
+/* STEPS */ 
 .service-steps {
     //height: 820px;
     padding-bottom: 50px;
@@ -396,7 +489,7 @@ body .material-tooltip {
         }
     }
 }
-/* ещё не готов  */
+/* STEPS end  */
 
 .presentation-slider {
     background: url('../img/chertiozh.png') no-repeat;

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("../node_modules/normalize.css/normalize.css");
 @font-face {
   font-family: 'helvetica';
@@ -94,6 +93,7 @@ body .material-tooltip {
 }
 
 .main-presentation .main-presentation-shadow #area-for-header-svg {
+  opacity: 0;
   position: absolute;
   right: 0;
   top: 60px;
@@ -201,6 +201,8 @@ body .material-tooltip {
 }
 
 .main-presentation .presenatation-wrap .the-content-description {
+  display: none;
+  opacity: 0;
   color: #fff;
 }
 
@@ -246,7 +248,98 @@ body .material-tooltip {
   border-color: #007cbf;
 }
 
-/* ещё не готов  */
+.main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic {
+  display: flex;
+  border: 1px solid #fff;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text {
+  color: #fff;
+  height: 355px;
+  position: relative;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text .left-blue-line {
+  width: 3px;
+  height: 91px;
+  background: #007cbf;
+  position: absolute;
+  left: 0;
+  top: 50px;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text h2 {
+  padding-left: 66px;
+  font-size: 44px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  line-height: 59px;
+  margin-bottom: 20px;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text .main-description-presentation {
+  width: 555px;
+  font-size: 18px;
+  padding-top: 10px;
+  letter-spacing: 1.3px;
+  line-height: 29px;
+  height: 128px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics {
+  border: 1px dashed seagreen;
+  width: 100%;
+  height: 300px;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag {
+  height: 299px;
+  width: 39px;
+  margin-right: 3px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item {
+  width: 37px;
+  height: 37px;
+  background: #007cbf;
+  margin-bottom: 5px;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .compare-grafic {
+  height: 299px;
+  width: 39px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .compare-grafic .compare-item {
+  width: 37px;
+  height: 37px;
+  background: #fff;
+  margin-bottom: 5px;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf {
+  border: 1px solid #fff;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .but-graf {
+  margin: 0 20px;
+}
+
+/* STEPS */
 .service-steps {
   padding-bottom: 50px;
 }
@@ -431,7 +524,7 @@ body .material-tooltip {
   font-size: 22px;
 }
 
-/* ещё не готов  */
+/* STEPS end  */
 .presentation-slider {
   background: url("../img/chertiozh.png") no-repeat;
   background-position: center;
