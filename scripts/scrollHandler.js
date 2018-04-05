@@ -67,7 +67,7 @@ export default function() {
 
     let tm7 = new TimelineLite();
     //  tm7.staggerFromTo('.blue-owl', .5, {y:20}, { y:0, opacity:1 }, .2).delay(4);
-    //  tm7.from('.image-target', 2, {opacity:0, y: -40 }).delay(4);
+    tm7.from('.image-target', 2, {opacity:0, y: -40 }).delay(4);
      tm7.from('.steps-wrapper svg path', 2, { drawSVG:'0%' }).delay(14);
       new ScrollMagic.Scene({
           triggerElement: '.widthest-container',
@@ -75,7 +75,6 @@ export default function() {
           reverse: false
       }).setTween(tm7)
       .addTo(controller)
-
 
 
     console.log(`scroll`)

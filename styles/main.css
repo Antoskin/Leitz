@@ -1,4 +1,7 @@
 @import url("../node_modules/normalize.css/normalize.css");
+@import url("../node_modules/slick-carousel/slick/slick.css");
+@import url("../node_modules/materialize-css/dist/css/materialize.css");
+@import url("../node_modules/animate.css/animate.min.css");
 @font-face {
   font-family: 'helvetica';
   src: url("../font/HelveticaLight/HelveticaLight.ttf");
@@ -167,7 +170,7 @@ body .material-tooltip {
 .main-presentation .main-presentation-shadow #area-for-header-svg .wrapper-svg .circle-little {
   position: absolute;
   top: 119px;
-  left: -67px;
+  left: -65px;
   transform: rotate(-90deg);
 }
 
@@ -261,6 +264,7 @@ body .material-tooltip {
 }
 
 .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text .left-blue-line {
+  opacity: 0;
   width: 3px;
   height: 91px;
   background: #007cbf;
@@ -296,12 +300,12 @@ body .material-tooltip {
 
 .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag {
   height: 299px;
-  width: 39px;
-  margin-right: 3px;
+  width: 37px;
+  margin-right: 5px;
   float: left;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
 }
 
 .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item {
@@ -311,16 +315,37 @@ body .material-tooltip {
   margin-bottom: 5px;
 }
 
+.main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item .stinger {
+  border-top: 1px solid #fff;
+  margin-left: 43px;
+  color: #fff;
+  position: relative;
+  font-size: 30px;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item .stinger .type-service {
+  position: absolute;
+  right: 0;
+  top: -44px;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item .stinger .grows-precent {
+  position: absolute;
+  right: 0;
+  margin-top: 5px;
+}
+
 .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .compare-grafic {
   height: 299px;
   width: 39px;
   float: left;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
 }
 
 .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .compare-grafic .compare-item {
+  opacity: 0;
   width: 37px;
   height: 37px;
   background: #fff;
@@ -336,6 +361,11 @@ body .material-tooltip {
 
 .main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .but-graf {
   margin: 0 20px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 10px 17px;
+  color: #fff;
 }
 
 /* STEPS */

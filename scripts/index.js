@@ -4,11 +4,11 @@ import sliders from './sliders'
 import sv from './SVGlines'
 import spinner from './spinner';
 import stepsAnimation from './steps/stepsAnimation';
-import grafic from './grafic/handleGrafic';
+// import grafic from './grafic/handleGrafic';
 
 
 $(document).ready(function() {
-	grafic();
+	// grafic();
 	stepsAnimation();
 	sliders();
 	sv();
