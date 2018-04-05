@@ -82,21 +82,46 @@ body .material-tooltip {
 .main-presentation {
     padding: auto;
     position: relative;
-    
-    background: url('../img/main.png') no-repeat;
-    background-size: cover;
-    background-position: center;
+    overflow: hidden;
+    // background: url('../img/main.png') no-repeat;
+   
     border-bottom: 10px solid $hover;
    
     /*shadow*/ 
+    .main-presentation-background {
+        //display: none;
+        background: url('../img/main.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+     
+        animation: plusMinusBackground 15s infinite;
+        animation-delay: 6s;
+    }
+    .main-presentation-video {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: red;
+    }
     .main-presentation-shadow { 
         overflow: hidden;
         position: relative;
         height: 621px;
         background: rgba(0, 0, 0, 0.5);
+      
         box-sizing: border-box;
         #area-for-header-svg {
             //opacity: 0;
+            //display: none;
             position: absolute;
             right: 0;
             top: 60px;
@@ -344,20 +369,55 @@ body .material-tooltip {
                 //border: 1px solid #fff;
                 height: 200px;
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
+                position: relative;
                 .but-graf {
                     margin: 0 20px;
-                    background: transparent;
-                    border: 1px solid #fff;
+                     background: transparent;
+                    border: 2px solid #fff;
                     border-radius: 50%;
-                    padding: 10px 17px;
+                    padding: 10px 10px;
                     color: #fff;
+                    z-index: 2;
+                    transition: 1s ease;
                 }
+                .actived {
+                    border: 2px solid $hover;
+                    padding: 35px 35px;
+                }
+                // .igla {
+                //     border: 1px solid #fff;
+                //     width: 100%;
+                //     height: 1px;
+                //     position: absolute;
+                //     top: 0;
+                //     bottom: 0;
+                //     margin: auto;
+                //     z-index: 0;
+                // }
             }
         }
     } 
 }
+
+
+@keyframes plusMinusBackground {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
 /* STEPS */ 
 .service-steps {
     //height: 820px;
@@ -519,8 +579,9 @@ body .material-tooltip {
         }
     }
 }
-/* STEPS end  */
 
+
+/* STEPS end  */
 .presentation-slider {
     background: url('../img/chertiozh.png') no-repeat;
     background-position: center;
