@@ -2,6 +2,7 @@ import { hundredPrecent } from './renderGrafic';
 
 export default function() {
     $('.presentation').click( function() {
+        // $(this).addClass('dis');
         setTimeout( () => {
             TweenMax.to('#area-for-header-svg', .5, { opacity: 0, display:'none' }  )
             TweenMax.to('.the-content-description', .5, { opacity: 0 }  )
