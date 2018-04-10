@@ -2,10 +2,10 @@ import grafData from './graficDataList'
 import changeBlock from './changeBlockAnim';
 import { dinamicPrecent } from './renderGrafic';
 
-import autoClicker from './autoChange';
+//import autoClicker from './autoChange';
 
 export default function() {
-    autoClicker();
+    //autoClicker();
     changeBlock() // click presentation button
 
     // dom targets title, text, blue_grafic 
@@ -19,12 +19,14 @@ export default function() {
 
     $('.but-graf').click(function() { //when click rerender actual data from graficDataList
         $('.but-graf').removeClass('actived') //removes and adds active class to owl
-        $(this).addClass('actived')
+       
         var index = $(this).attr('data-ind')
 
         TweenMax.to(shadow, 1, { backgroundColor:'#000' })
         TweenMax.to(shadow, 1, { backgroundColor:'rgba(0, 0, 0, 0.5)' }).delay(1);
-        setTimeout(()=> { walpaper.css({'background':`url(../img/${grafData[index].img}.png)`})},800)
+        setTimeout(()=> { 
+            $(this).addClass('actived')
+            walpaper.css({'background':`url(../img/${grafData[index].img}.png)`})},800)
         titile_2.text( grafData[index].title ) //change title, text
         text_2.text( grafData[index].text )
        
@@ -45,7 +47,7 @@ export default function() {
     
         tma.staggerFrom('.dinamic-item', 0.3, {opacity:0},0.3);
         $('.dinamic-item').last().append(scelet);
-        tma.staggerTo('.stinger',1, {width: '400px'});
+        tma.staggerTo('.stinger',1, {width: '310px'});
     
         let serv = $('.stinger').find('.type-service');
         let prec = $('.stinger').find('.grows-precent-target');

@@ -277,10 +277,13 @@ body .material-tooltip {
 
 .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic {
   display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text {
   color: #fff;
+  width: 555px;
   height: 355px;
   position: relative;
 }
@@ -292,20 +295,20 @@ body .material-tooltip {
   background: #007cbf;
   position: absolute;
   left: 0;
-  top: 50px;
+  top: 62px;
 }
 
 .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text h2 {
-  padding-left: 66px;
-  font-size: 44px;
+  padding-left: 53px;
+  font-size: 45px;
   font-weight: 100;
   letter-spacing: 3px;
   line-height: 59px;
-  margin-bottom: 20px;
+  margin-bottom: 31px;
+  margin-top: 51px;
 }
 
 .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text .main-description-presentation {
-  width: 555px;
   font-size: 18px;
   padding-top: 10px;
   letter-spacing: 1.3px;
@@ -317,7 +320,9 @@ body .material-tooltip {
 
 .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics {
   width: 100%;
-  height: 300px;
+  height: 322px;
+  margin-left: 20px;
+  max-width: 390px;
 }
 
 .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag {
@@ -331,10 +336,10 @@ body .material-tooltip {
 }
 
 .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item {
-  width: 37px;
-  height: 37px;
+  width: 35px;
+  height: 35px;
   background: #007cbf;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item .stinger {
@@ -342,13 +347,13 @@ body .material-tooltip {
   margin-left: 43px;
   color: #fff;
   position: relative;
-  font-size: 30px;
+  font-size: 42px;
 }
 
 .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item .stinger .type-service {
   position: absolute;
   right: 0;
-  top: -44px;
+  top: -70px;
 }
 
 .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item .stinger .grows-precent {
@@ -368,55 +373,93 @@ body .material-tooltip {
 
 .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .compare-grafic .compare-item {
   opacity: 0;
-  width: 37px;
-  height: 37px;
+  width: 35px;
+  height: 35px;
   background: #fff;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf {
-  height: 200px;
+  height: 156px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  max-width: 961px;
+  margin: 0 auto;
 }
 
 .main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .but-graf {
-  margin: 0 20px;
+  padding: 5px;
   border: 2px solid #fff;
   border-radius: 50%;
-  padding: 10px 10px;
-  color: #fff;
-  z-index: 2;
-  transition: 1s ease;
-  transition-delay: 1s;
-  position: relative;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .but-graf .wrapper-lizer {
+  transition: .5s ease;
+  width: 15px;
+  height: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  opacity: 0;
 }
 
-.main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .but-graf .wave-owl {
-  position: absolute;
-  border: 2px solid transparent;
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  transition: 0.6s ease;
+.main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .but-graf .wrapper-lizer .lizer {
+  height: 5px;
+  border: 2px solid #fff;
+  width: 2px;
+  margin: 0 1px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: .6s linear;
+  transition-delay: 1s;
 }
 
 .main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .actived {
-  border: 2px solid transparent;
-  transform: scale(0.5);
+  border-color: #007cbf;
 }
 
-.main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .actived .wave-owl {
-  border: 2px solid #007cbf;
-  transition-delay: 2s;
-  transform: scale(2);
-  cursor: pointer;
+.main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .actived .wrapper-lizer {
+  width: 105px;
+  height: 105px;
+  opacity: 1;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .actived .wrapper-lizer .lizer {
+  opacity: 1;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .actived .wrapper-lizer .lizer:nth-child(2), .main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .actived .wrapper-lizer .lizer:nth-child(10) {
+  height: 6px;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .actived .wrapper-lizer .lizer:nth-child(3), .main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .actived .wrapper-lizer .lizer:nth-child(9) {
+  height: 10px;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .actived .wrapper-lizer .lizer:nth-child(4), .main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .actived .wrapper-lizer .lizer:nth-child(8) {
+  height: 16px;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .actived .wrapper-lizer .lizer:nth-child(5) {
+  height: 25px;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .actived .wrapper-lizer .lizer:nth-child(7) {
+  height: 30px;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .actived .wrapper-lizer .lizer:nth-child(6) {
+  height: 45px;
+}
+
+.main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .string-liner {
+  border-top: 1px dashed #fff;
+  height: 2px;
+  width: 100%;
 }
 
 @keyframes plusMinusBackground {
