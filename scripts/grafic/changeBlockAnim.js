@@ -2,6 +2,7 @@ import { hundredPrecent } from './renderGrafic';
 
 export default function() {
     $('.presentation').click( function() {
+       
         // $(this).addClass('dis');
         setTimeout( () => {
             TweenMax.to('#area-for-header-svg', .5, { opacity: 0, display:'none' }  )
@@ -19,6 +20,6 @@ export default function() {
             hundredPrecent(6);
             let tmax = new TimelineMax();
             tmax.staggerTo('.compare-item', 0.3, {opacity:1}, 0.1 );
-        }, 3000 )
+        }, 2000 )
     });
 }
