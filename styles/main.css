@@ -427,7 +427,7 @@ body .material-tooltip {
 .main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .but-graf .wrapper-lizer .lizer {
   height: 5px;
   border: 2px solid #fff;
-  width: 2px;
+  width: 5px;
   margin: 0 1px;
   border-radius: 5px;
   opacity: 0;
@@ -436,7 +436,7 @@ body .material-tooltip {
 }
 
 .main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .actived {
-  border-color: transparent;
+  border-color: #007cbf;
 }
 
 .main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .actived .wrapper-lizer {
