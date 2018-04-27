@@ -491,6 +491,209 @@ body .material-tooltip {
   }
 }
 
+/*first slider*/
+.first-slider-wrapper {
+  height: 649px;
+  border-bottom: 10px solid #007cbf;
+  background: url("../img/flider.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.first-slider-wrapper .first-slider-wrapper-cont {
+  border: 1px solid transparent;
+  height: 100%;
+  position: relative;
+}
+
+.first-slider-wrapper .quatro-normal {
+  width: 50%;
+  margin-top: 58px;
+}
+
+.first-slider-wrapper .quatro-normal h3 {
+  margin: 0 0 75px;
+  line-height: 55px;
+  font-size: 45px;
+}
+
+.first-slider-wrapper .quatro-normal h4 {
+  font-size: 36px;
+  font-family: 'thin';
+  border-bottom: 2px solid #007cbf;
+  display: inline;
+  padding-bottom: 6px;
+  letter-spacing: 2px;
+}
+
+.first-slider-wrapper .quatro-normal p {
+  line-height: 28px;
+  font-family: 'reg';
+  font-size: 17px;
+}
+
+.first-slider-wrapper .control-point {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  bottom: 44px;
+  right: 460px;
+  z-index: 20;
+}
+
+.first-slider-wrapper .control-point .horizontal-line {
+  width: 2000px;
+  right: 0;
+  border: 1px solid skyblue;
+  border-bottom: 2px solid black;
+  position: absolute;
+  bottom: 0;
+}
+
+.first-slider-wrapper .control-point .quatro-rotated {
+  position: absolute;
+  left: 150px;
+  width: 480px;
+  height: 730px;
+  bottom: -161px;
+  border-left: 2px solid black;
+  transform: rotate(29deg);
+  overflow: hidden;
+}
+
+.first-slider-wrapper .control-point .quatro-rotated .wrap_image_f_slider {
+  position: absolute;
+  left: -121px;
+  bottom: 140px;
+  width: 482px;
+  height: 330px;
+  border: 2px solid black;
+  transform: rotate(-29deg);
+  overflow: hidden;
+}
+
+.first-slider-wrapper .control-point .quatro-rotated .wrap_image_f_slider img {
+  height: 100%;
+  width: auto;
+}
+
+/*steps*/
+.wrapper-steps {
+  height: 790px;
+  background: url("../img/chertji.jpg") no-repeat;
+  background-size: cover;
+  border-bottom: 10px solid #007cbf;
+  position: relative;
+}
+
+.wrapper-steps .double-title-for-steps h3 {
+  color: #fff;
+  line-height: 2.2;
+  text-align: center;
+  margin: 0;
+  font-size: 42px;
+  font-family: 'thin';
+}
+
+.wrapper-steps .double-title-for-steps h3 span {
+  color: #007cbf;
+}
+
+.wrapper-steps .close-title-blue-line {
+  position: absolute;
+  border-bottom: 10px solid #007cbf;
+  width: 100%;
+  top: 100px;
+}
+
+.wrapper-steps .steps-tabler {
+  width: 820px;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  height: 100%;
+  position: relative;
+}
+
+.wrapper-steps .steps-tabler .steps-labels {
+  width: 145px;
+  height: 291px;
+  position: absolute;
+  right: 74px;
+  top: -47px;
+  transform: rotate(-90deg);
+}
+
+.wrapper-steps .steps-tabler .steps-labels div {
+  height: 40px;
+  width: 144px;
+  margin-bottom: 10px;
+  background: #007cbf;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  line-height: 1;
+}
+
+.wrapper-steps .steps-tabler .wrapper-stepses {
+  width: 100%;
+  height: 330px;
+  margin-top: 250px;
+  position: relative;
+}
+
+.wrapper-steps .steps-tabler .wrapper-stepses .agranka {
+  width: 190px;
+  height: 100%;
+  border-top: 2px solid #007cbf;
+  border-left: 2px solid #007cbf;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.wrapper-steps .steps-tabler .wrapper-stepses .name-of-instrument {
+  position: absolute;
+  top: -65px;
+  color: #fff;
+}
+
+.wrapper-steps .steps-tabler .wrapper-stepses .step-item {
+  width: 100%;
+  height: 20px;
+  height: 40px;
+  position: relative;
+}
+
+.wrapper-steps .steps-tabler .wrapper-stepses .step-item p {
+  color: #fff;
+  font-family: 'thin';
+  line-height: 39px;
+  border-bottom: 1px solid #007cbf;
+  width: 527px;
+}
+
+.wrapper-steps .steps-tabler .wrapper-stepses .step-item .quotres-cont {
+  position: absolute;
+  width: 291px;
+  height: 40px;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.wrapper-steps .steps-tabler .wrapper-stepses .step-item .quotres-cont .q {
+  width: 40px;
+  height: 40px;
+  background: #007cbf;
+  margin-right: 10px;
+}
+
+.wrapper-steps .steps-tabler .wrapper-stepses .step-item .quotres-cont .q:last-child {
+  margin-right: 2px;
+}
+
 /*mapa*/
 .mapa-with-form {
   height: 457px;
