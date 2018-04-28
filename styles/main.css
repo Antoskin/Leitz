@@ -501,6 +501,20 @@ body .material-tooltip {
   overflow: hidden;
 }
 
+.first-slider-wrapper .line-vert2 {
+  position: absolute;
+  transform: rotate(90deg);
+  right: -54px;
+  width: 259px;
+}
+
+.first-slider-wrapper .circle-little {
+  position: absolute;
+  top: 130px;
+  right: 59px;
+  transform: rotate(-180deg);
+}
+
 .first-slider-wrapper .first-slider-wrapper-cont {
   border: 1px solid transparent;
   height: 100%;
@@ -510,6 +524,52 @@ body .material-tooltip {
 .first-slider-wrapper .quatro-normal {
   width: 50%;
   margin-top: 58px;
+}
+
+.first-slider-wrapper .quatro-normal .slider-fill-result .slide-imager {
+  opacity: 0;
+}
+
+.first-slider-wrapper .quatro-normal .slider-fill-result .slick-dots {
+  position: absolute;
+  left: 0;
+  right: -444px;
+  top: -160px;
+  display: flex;
+  justify-content: center;
+  padding-right: 120px;
+}
+
+.first-slider-wrapper .quatro-normal .slider-fill-result .slick-dots li {
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  margin: 0 17px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-slider-wrapper .quatro-normal .slider-fill-result .slick-dots li button {
+  transition: 0.3s ease;
+  opacity: 0;
+  width: 15px;
+  height: 15px;
+  background: #007cbf;
+  color: #007cbf;
+  font-size: 1px;
+  border: none;
+  border-radius: 50%;
+}
+
+.first-slider-wrapper .quatro-normal .slider-fill-result .slick-dots .slick-active button {
+  opacity: 1 !important;
+}
+
+.first-slider-wrapper .quatro-normal .slider-fill-result .slick-arrow {
+  display: none !important;
 }
 
 .first-slider-wrapper .quatro-normal h3 {
@@ -522,7 +582,7 @@ body .material-tooltip {
   font-size: 36px;
   font-family: 'thin';
   border-bottom: 2px solid #007cbf;
-  display: inline;
+  display: table-cell;
   padding-bottom: 6px;
   letter-spacing: 2px;
 }
@@ -538,7 +598,7 @@ body .material-tooltip {
   height: 5px;
   position: absolute;
   bottom: 44px;
-  right: 460px;
+  right: 550px;
   z-index: 20;
 }
 
@@ -639,7 +699,7 @@ body .material-tooltip {
 .wrapper-steps .steps-tabler .wrapper-stepses {
   width: 100%;
   height: 330px;
-  margin-top: 250px;
+  margin-top: 240px;
   position: relative;
 }
 

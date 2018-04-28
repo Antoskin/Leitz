@@ -6,7 +6,6 @@ import spinner from './spinner';
 import stepsAnimation from './steps/stepsAnimation';
 import grafic from './grafic/handleGrafic';
 
-
 $(document).ready(function() {
 	grafic();
 	stepsAnimation();
@@ -19,5 +18,5 @@ $(document).ready(function() {
 	$('.modal').modal();
 	// anchor
 	$('.steps').click(() => {$('body, html').animate({scrollTop:$('.service-steps').offset().top},777)})
-	console.log('!');
+	//console.log('!ss');
 })

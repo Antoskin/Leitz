@@ -5,11 +5,11 @@ module.exports = {
   entry: './scripts/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'main.js',
+    publicPath: 'dist/'
   },
-  devtool: 'inline-source-map',
   devServer: {
-    contentBase: './dist'
+    overlay: true
   },
   module: {
         rules: [

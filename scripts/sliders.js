@@ -1,7 +1,7 @@
 import {slick} from 'slick-carousel'
 
 export default function() {
-    $('#slider-wrap').slick({
+    $('.slider-fill-result').slick({
         dots: true,
         infinite: false,
         speed: 300,
@@ -36,20 +36,29 @@ export default function() {
       });
 
       // transitions
-      var hh = $('.slick-slide').find('h2');
-      var pp = $('.slick-slide').find('p');
-      //TweenMax.from(hh,2,{ opacity:'0' })
-      var ii = $('.right-slider-side img')
+      let hh = $('.slick-slide').find('h4'),
+          pp = $('.slick-slide').find('p'),
+          target_chenj = $('.wrap_image_f_slider'),
+          target_img_chej = $('.wrap_image_f_slider img')
     
       $('.slick-dots li').click( function() {
-        TweenMax.to(hh, 0.1 ,{ y:'20', opacity:'0' })
-        TweenMax.to(hh, 1 ,{ y:'0', opacity:'1' }).delay(0.5)
+
+        let for_change_img = $(`.slick-current .slide-imager`).attr(`src`);
+        setTimeout( () => {
+          target_img_chej.attr(`src`,for_change_img)
+        },500 )
+        
+
+        
+
+        TweenMax.to(hh, 0.1 ,{ x:'-20', opacity:'0' })
+        TweenMax.to(hh, 1 ,{ x:'0', opacity:'1' }).delay(0.5)
     
         TweenMax.to(pp, 0.1 ,{ y:'-20', opacity:'0' })
         TweenMax.to(pp, 1 ,{ y:'0', opacity:'1' }).delay(0.5)
     
-        //TweenMax.to(ii, 0.1 ,{scale:0.3, opacity:'0' })
-        // TweenMax.to(ii, 1 ,{ scale:'1', opacity:'1' }).delay(0.5)
+        TweenMax.to(target_chenj, 1 ,{ x: -485, y: 270, ease: Expo.easeOut })
+        TweenMax.to(target_chenj, 1 ,{ x: 0, y: 0, ease: Expo.easeOut }).delay(1)
       } ) 
 
 
@@ -95,23 +104,4 @@ export default function() {
         ]
       });
 
-      let but = $('.team-button');
-      
-        but.click( function() {
-          
-          let curBut = $(this);
-          let curTeam = curBut.parents('.item-team');
-          TweenMax.to(curTeam, 0.5, { opacity:0 })
-          TweenMax.to('.item-team', 0.5, { opacity:0 }).delay(0.3);
-          
-          TweenMax.fromTo('#team-slider',1,{y: -20}, {opacity:1, y:0,zIndex:100}).delay(1.5);
-          if( curBut.hasClass('tima2') ) {
-            // $('#team-slider .slick-dots li:eq(1)').click();
-          } else if(curBut.hasClass('tima3')) {
-            $('#team-slider .slick-dots li:eq(2)').click();
-          } else if(curBut.hasClass('tima4')) {
-            $('#team-slider .slick-dots li:eq(3)').click();
-          }
-          console.log('Group of team choise')
-      })
 }
