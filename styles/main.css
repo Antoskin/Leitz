@@ -636,6 +636,11 @@ body .material-tooltip {
 .first-slider-wrapper .control-point .quatro-rotated .wrap_image_f_slider img {
   height: 100%;
   width: auto;
+  transition: 3s ease;
+}
+
+.first-slider-wrapper .control-point .quatro-rotated .wrap_image_f_slider img:hover {
+  transform: scale(1.1);
 }
 
 /*steps*/
@@ -732,6 +737,7 @@ body .material-tooltip {
   line-height: 39px;
   border-bottom: 1px solid #007cbf;
   width: 527px;
+  cursor: pointer;
 }
 
 .wrapper-steps .steps-tabler .wrapper-stepses .step-item .quotres-cont {
@@ -752,6 +758,17 @@ body .material-tooltip {
 
 .wrapper-steps .steps-tabler .wrapper-stepses .step-item .quotres-cont .q:last-child {
   margin-right: 2px;
+}
+
+.wrapper-steps .item-processing {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  border: 1px solid red;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 80%;
 }
 
 /*mapa*/

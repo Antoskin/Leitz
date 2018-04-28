@@ -600,6 +600,10 @@ body .material-tooltip {
                 img {
                     height: 100%;
                     width: auto;
+                    transition: 3s ease;
+                    &:hover {
+                        transform: scale(1.1)
+                    }
                 }
             }
         }
@@ -695,7 +699,7 @@ body .material-tooltip {
                     line-height: 39px;
                     border-bottom: 1px solid $hover;
                     width: 527px;
-                
+                    cursor: pointer;
                 }
                 .quotres-cont {
                     position: absolute;
@@ -717,6 +721,16 @@ body .material-tooltip {
                 }
             }
         }
+    }
+    .item-processing {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        border: 1px solid red;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 80%;
     }
 }
 

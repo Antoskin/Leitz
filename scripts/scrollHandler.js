@@ -77,6 +77,5 @@ export default function() {
       .addTo(controller)
 
 
-    console.log(`scroll`)
-
+    //console.log(`scroll`)
 }

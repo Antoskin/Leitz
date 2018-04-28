@@ -1,17 +1,17 @@
 import $ from 'jquery';
 import {materialize} from 'materialize-css';
 import sliders from './sliders'
+import processItem from './grafic/procesSteps';
 import sv from './SVGlines'
-import spinner from './spinner';
-import stepsAnimation from './steps/stepsAnimation';
 import grafic from './grafic/handleGrafic';
 
 $(document).ready(function() {
-	grafic();
-	stepsAnimation();
-	sliders();
-	sv();
-	spinner();
+	$('#preloader').delay(1000).fadeOut(666);
+	processItem()
+	sliders()
+	grafic()
+	sv()
+	//spinner();
 
 	// materializecss
 	$('.tooltipped').tooltip();
