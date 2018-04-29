@@ -1,5 +1,6 @@
 import $ from 'jquery'
 import data from './instrumentsList'
+import {animationAppear, firstAppear} from './processesAnimation'
 import { TweenMax } from 'gsap';
 
 export default function (e) {
@@ -14,6 +15,10 @@ export default function (e) {
         title_descr = target.find(`.porocess-title`),
         descript = target.find(`.process-description`);
     
+    // if grafic has old quatros - delete them 
+    if($(`.quotr-cont`).children()) {
+        $(`.quotr-cont div`).remove()
+    }
     // pushed grafic
     let quatro_graf_wrap = target.find(`.quotr-cont`),
         quatro_graf_infa = curentProcess['process'].map( (i, ident ) => {
@@ -41,29 +46,8 @@ export default function (e) {
                     console.log(curentProcess['process'][id]['the_proc'])
                 },500 )
                 
-                animetionAppear()
+                animationAppear()
         } )
 }
 
 
-function animetionAppear() {
-    const tm = TweenMax
-   
-    tm.to(`.porocess-title`, .5, {x:-30,opacity:0})
-    tm.to(`.porocess-title`, 1, {x:0,opacity:1}).delay(.5)
-
-    tm.to(`.process-description`, 0.1 ,{ y:'-20', opacity:'0' })
-    tm.to(`.process-description`, 1 ,{ y:'0', opacity:'1' }).delay(0.5)
-}
-
-function firstAppear() {
-    const tm = TweenMax
-
-    tm.from(`.thumb-instrument-wrap`, 1, {scale:.4, opacity:0} )
-    tm.from(`.instrument`, .6, {x:-30, opacity:0} )
-    tm.from(`.porocess-title`, .6, {x:-30, opacity:0} ).delay(1)
-    tm.from(`.process-description`, .6 ,{ y:'-20', opacity:'0' }).delay(1)
-
-    tm.staggerFrom(`.quotr-cont> div`, .6, { opacity:0, y: -10 },.1).delay(1)
-   
-}

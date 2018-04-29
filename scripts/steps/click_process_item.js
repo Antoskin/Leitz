@@ -1,10 +1,10 @@
-import $ from 'jquery'
+// import $ from 'jquery'
 
-export default function() {
+// export default function() {
 
-    $(`.quotr-cont> div`).click( function() {
+//     $(`.quotr-cont> div`).click( function() {
         
-    } )
+//     } )
 
 
-}
+// }

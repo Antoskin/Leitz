@@ -790,6 +790,7 @@ body .material-tooltip {
 .wrapper-steps .item-processing .left-side .instrument {
   font-size: 33px;
   line-height: 35px;
+  cursor: w-resize;
 }
 
 .wrapper-steps .item-processing .left-side .thumb-instrument-wrap {
