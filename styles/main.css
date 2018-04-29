@@ -17,6 +17,11 @@
   src: url("../font/HelveticaThin/HelveticaThin.ttf");
 }
 
+@font-face {
+  font-family: 'medium';
+  src: url("../font/HelveticaMedium/HelveticaMedium.ttf");
+}
+
 * {
   font-family: 'helvetica';
   box-sizing: border-box;
@@ -703,7 +708,7 @@ body .material-tooltip {
 
 .wrapper-steps .steps-tabler .wrapper-stepses {
   width: 100%;
-  height: 330px;
+  height: 350px;
   margin-top: 240px;
   position: relative;
 }
@@ -736,7 +741,7 @@ body .material-tooltip {
   font-family: 'thin';
   line-height: 39px;
   border-bottom: 1px solid #007cbf;
-  width: 527px;
+  width: 528px;
   cursor: pointer;
   margin-top: 10px;
 }
@@ -766,11 +771,82 @@ body .material-tooltip {
   display: none;
   position: absolute;
   bottom: 0;
-  border: 1px solid red;
   left: 0;
   right: 0;
   margin: auto;
   height: 80%;
+  opacity: 0;
+}
+
+.wrapper-steps .item-processing .left-side {
+  width: 50%;
+  color: #fff;
+}
+
+.wrapper-steps .item-processing .left-side .instrument-name {
+  margin: 0 0 40px;
+}
+
+.wrapper-steps .item-processing .left-side .instrument {
+  font-size: 33px;
+  line-height: 35px;
+}
+
+.wrapper-steps .item-processing .left-side .thumb-instrument-wrap {
+  width: 380px;
+  height: 380px;
+  border: 2px solid #007cbf;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.wrapper-steps .item-processing .left-side .thumb-instrument-wrap .thumb-instrument {
+  height: 100%;
+  width: auto;
+}
+
+.wrapper-steps .item-processing .right-side {
+  width: 50%;
+  color: #fff;
+  overflow: hidden;
+}
+
+.wrapper-steps .item-processing .right-side .quotr-cont {
+  width: 330px;
+  height: 40px;
+  margin-top: 70px;
+}
+
+.wrapper-steps .item-processing .right-side .quotr-cont .q, .wrapper-steps .item-processing .right-side .quotr-cont .qw {
+  width: 40px;
+  height: 40px;
+  background: #007cbf;
+  margin-right: 10px;
+  float: left;
+  cursor: pointer;
+}
+
+.wrapper-steps .item-processing .right-side .quotr-cont .qw {
+  background: #fff !important;
+  cursor: not-allowed;
+}
+
+.wrapper-steps .item-processing .right-side .porocess-title {
+  font-size: 38px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+
+.wrapper-steps .item-processing .right-side .process-description {
+  text-align: justify;
+  padding-right: 20px;
+}
+
+.showed {
+  display: flex !important;
+  opacity: 1 !important;
 }
 
 /*mapa*/
