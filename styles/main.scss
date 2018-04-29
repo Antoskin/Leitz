@@ -648,7 +648,7 @@ body .material-tooltip {
          
             //border: 1px solid skyblue;
             position: absolute;
-            right: 74px;
+            right: 72px;
             top: -47px;
             transform: rotate(-90deg);
             div {
@@ -700,23 +700,24 @@ body .material-tooltip {
                     border-bottom: 1px solid $hover;
                     width: 527px;
                     cursor: pointer;
+                    margin-top: 10px;
                 }
                 .quotres-cont {
                     position: absolute;
-                    width: 291px;
+                    width: 330px;
                     height: 40px;
-                    //border: 1px solid tomato;
-                    right: 0;
-                    bottom:0;
-                    display: flex;
-                    .q {
+                    /* border: 1px solid tomato; */
+                    right: -30px;
+                    bottom: 0;
+                    .q, .qw {
                         width: 40px;
                         height: 40px;
                         background: #007cbf;
-                        margin-right: 10px;
-                        &:last-child {
-                            margin-right: 2px
-                        }
+                        margin-left: 10px;
+                        float: left;
+                    }
+                    .qw {
+                        background: #fff !important;
                     }
                 }
             }

@@ -684,7 +684,7 @@ body .material-tooltip {
   width: 145px;
   height: 291px;
   position: absolute;
-  right: 74px;
+  right: 72px;
   top: -47px;
   transform: rotate(-90deg);
 }
@@ -738,26 +738,28 @@ body .material-tooltip {
   border-bottom: 1px solid #007cbf;
   width: 527px;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .wrapper-steps .steps-tabler .wrapper-stepses .step-item .quotres-cont {
   position: absolute;
-  width: 291px;
+  width: 330px;
   height: 40px;
-  right: 0;
+  /* border: 1px solid tomato; */
+  right: -30px;
   bottom: 0;
-  display: flex;
 }
 
-.wrapper-steps .steps-tabler .wrapper-stepses .step-item .quotres-cont .q {
+.wrapper-steps .steps-tabler .wrapper-stepses .step-item .quotres-cont .q, .wrapper-steps .steps-tabler .wrapper-stepses .step-item .quotres-cont .qw {
   width: 40px;
   height: 40px;
   background: #007cbf;
-  margin-right: 10px;
+  margin-left: 10px;
+  float: left;
 }
 
-.wrapper-steps .steps-tabler .wrapper-stepses .step-item .quotres-cont .q:last-child {
-  margin-right: 2px;
+.wrapper-steps .steps-tabler .wrapper-stepses .step-item .quotres-cont .qw {
+  background: #fff !important;
 }
 
 .wrapper-steps .item-processing {

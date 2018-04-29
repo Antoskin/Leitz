@@ -4,7 +4,7 @@ const instrumentList = [
         instrument : 'Пила дискова(HW)',
         process: [
             { washing:'Миття', status: true },
-            { deterioration:'Оцінка зносу', status: true },
+            { deterioration:'Оцінка зносу', status: false },
             { sharpening:'Загострення', status: false },
             { balansing:'Балансування', status: true },
             { control:'Контроль', status: true },
@@ -18,8 +18,8 @@ const instrumentList = [
         process: [
             { washing:'Миття', status: true },
             { deterioration:'Оцінка зносу', status: true },
-            { sharpening:'Загострення', status: false },
-            { balansing:'Балансування', status: true },
+            { sharpening:'Загострення', status: true },
+            { balansing:'Балансування', status: false },
             { control:'Контроль', status: true },
             { leftover: 'Залишок ресурсу', status: true }
         ],
@@ -31,10 +31,10 @@ const instrumentList = [
         process: [
             { washing:'Миття', status: true },
             { deterioration:'Оцінка зносу', status: true },
-            { sharpening:'Загострення', status: false },
+            { sharpening:'Загострення', status: true },
             { balansing:'Балансування', status: true },
             { control:'Контроль', status: true },
-            { leftover: 'Залишок ресурсу', status: true }
+            { leftover: 'Залишок ресурсу', status: false }
         ],
         description: 'Lorem Ipsum',
         imageUrl: 'l1'
@@ -56,7 +56,7 @@ const instrumentList = [
         instrument : 'Профільні ножі (HW/HSS)',
         process: [
             { washing:'Миття', status: true },
-            { deterioration:'Оцінка зносу', status: true },
+            { deterioration:'Оцінка зносу', status: false },
             { sharpening:'Загострення', status: false },
             { balansing:'Балансування', status: true },
             { control:'Контроль', status: true },
@@ -72,7 +72,7 @@ const instrumentList = [
             { deterioration:'Оцінка зносу', status: true },
             { sharpening:'Загострення', status: false },
             { balansing:'Балансування', status: true },
-            { control:'Контроль', status: true },
+            { control:'Контроль', status: false },
             { leftover: 'Залишок ресурсу', status: true }
         ],
         description: 'Lorem Ipsum',
@@ -81,14 +81,16 @@ const instrumentList = [
     {
         instrument : 'Насадні фрези (DIA/HW/HSS)',
         process: [
-            { washing:'Миття', status: true },
+            { washing:'Миття', status: false },
             { deterioration:'Оцінка зносу', status: true },
             { sharpening:'Загострення', status: false },
             { balansing:'Балансування', status: true },
             { control:'Контроль', status: true },
-            { leftover: 'Залишок ресурсу', status: true }
+            { leftover: 'Залишок ресурсу', status: false }
         ],
         description: 'Lorem Ipsum',
         imageUrl: 'l3'
     },
 ]
+
+export default instrumentList
