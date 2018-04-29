@@ -1,23 +1,15 @@
-import steps from './stepsList';
+import $ from 'jquery'
+import { TweenMax } from 'gsap';
 
-export default function() {
-    const forChage = $('.image-target'), //DOM of imageTarget
-        h = forChage.find(`h4`),
-        p = forChage.find(`p`),
-        img = forChage.find('img');
-    $('.sibl-step').click( function() { //when click step imageTarget changes over 300ms
-        let the_step = $(this),
-        num = the_step.attr('data-num'); 
-        animationForImageTarget()
-        setTimeout( () => {
-            h.text(steps[num].title);
-            p.text(steps[num].text);
-            img.attr('src', steps[num].url);
-        },300 )
-    })
+export default function(e) {
+    const tm = TweenMax
 
-    function animationForImageTarget() { // animation when imageTarget changes
-        TweenMax.to('.image-target', 0.3, { opacity:0, y:-20 });
-        TweenMax.to('.image-target', 0.3, { opacity:1, y:0 }).delay(0.3);
-    }
+    console.log(e)
+    //$(`.step-item p`).click( function() {
+        tm.to(`.agranka`,1,{width:'1px', height:'1px', opacity:0})
+        tm.to(`.name-of-instrument`,1,{opacity:0})
+        tm.staggerTo(`.wrapper-stepses .step-item`,1,{opacity:0,x:10},0.2)
+        tm.staggerTo(`.steps-labels div`,1, {opacity:0,x:-10},.3)
+    //} )
+
 }

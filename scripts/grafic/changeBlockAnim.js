@@ -2,11 +2,9 @@ import { hundredPrecent } from './renderGrafic';
 
 export default function() {
     $('.presentation').click( function() {
-       
-        // $(this).addClass('dis');
         setTimeout( () => {
-            TweenMax.to('#area-for-header-svg', .5, { opacity: 0, display:'none' }  )
-            TweenMax.to('.the-content-description', .5, { opacity: 0 }  )
+            TweenMax.to('#area-for-header-svg', .5, { opacity: 0, display:'none' })
+            TweenMax.to('.the-content-description', .5, { opacity: 0 })
             TweenMax.to('.the-content-description', .5, { display: 'none' }  ).delay(0.5)
             TweenMax.to('.contact-phones', .5, { opacity: 0 }  )
         },1000 )

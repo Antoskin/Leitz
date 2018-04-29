@@ -1,13 +1,13 @@
 import $ from 'jquery';
 import {materialize} from 'materialize-css';
 import sliders from './sliders'
-import processItem from './grafic/procesSteps';
+import processSteps from './steps';
 import sv from './SVGlines'
 import grafic from './grafic/handleGrafic';
 
 $(document).ready(function() {
 	$('#preloader').delay(1000).fadeOut(666);
-	processItem()
+	processSteps()
 	sliders()
 	grafic()
 	sv()
