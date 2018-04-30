@@ -64,14 +64,18 @@ export default function() {
 
 
     //   TEAM
-    $('#team-slider').slick({
-        prevArrow:"</span><img class='a-left control-c prev slick-prev' src='../img/left.png'>",
-        nextArrow:"<img class='a-right control-c next slick-next' src='../img/left.png'>",
+
+
+
+    $(`.slider-of-res`).slick({
+        prevArrow:"<span class='before-button'><img class='a-left control-c prev slick-prev' src='../img/prevf.png'></span>",
+        nextArrow:"<span class='after-button'><img class='a-right control-c next slick-next' src='../img/right.png'></span>",
         // centerMode: true,
         // centerPadding: '200px',
-        dots: true,
-        infinite: false,
-        speed: 500,
+        draggable: false,
+        dots: false,
+        infinite: true,
+        speed: 2000,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
@@ -103,5 +107,9 @@ export default function() {
           }
         ]
       });
+
+      let teamSlider = $(`.slider-of-res`)
+      teamSlider.find(`.place-for-arrows-cus .prev-ar`).append($(`.before-button`))
+      teamSlider.find(`.place-for-arrows-cus .next-ar`).append($(`.after-button`))
 
 }

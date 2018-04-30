@@ -615,6 +615,7 @@ body .material-tooltip {
 }
 
 
+/* THIRD */ 
 /*steps*/
 .wrapper-steps {
     height: 790px;
@@ -626,7 +627,7 @@ body .material-tooltip {
         h3 {
             color: #fff;
             line-height: 2.2;
-            text-align: center;
+            // text-align: center;
             margin: 0;
             font-size: 42px;
             font-family: 'thin';
@@ -644,7 +645,7 @@ body .material-tooltip {
         width: 820px;
         margin: 0 auto;
         border: 1px solid transparent;
-        height: 100%;
+        // height: 100%;
         //max-height: 544px;
         position: relative;
         .steps-labels {
@@ -810,6 +811,138 @@ body .material-tooltip {
     opacity: 1 !important;
 }
 
+
+/* FOUR */ 
+
+.resident-slider-wrapper {
+    //height: 700px;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    border-bottom: 10px solid $hover;
+    // border-top: 10px solid $hover;
+    border-left: 10px solid $hover;
+    .double-title-for-stepz {
+        margin-bottom: 0;
+        h3 {
+            color: #000;
+            line-height: 2.2;
+            // text-align: center;
+            margin: 0;
+            font-size: 42px;
+            font-family: 'thin';
+            span {color: $hover}
+        }
+    }
+
+    
+
+        .slider-of-res {
+            border: 1px solid teal;
+            //height: 500px;
+            width: 100%;
+            background: url('../img/sback.jpg') no-repeat;
+            background-size: cover;
+            .slick-slide {
+                .slide-item {
+                    //display: flex;
+                    .left-side {
+                        width: 550px;
+                        float: left;
+                        //border: 1px solid green;
+                        height: 578px;
+                        //overflow: hidden;
+                        img {
+                            height: 100%;
+                            width: auto;
+                        }
+                    }
+                    .right-side {
+                        position: relative;
+                        height: 578px;
+                        //width: 100%;
+                        padding: 44px 70px 20px 20px;
+                        margin-left: 570px;
+                        
+                        p {margin: 0}
+                        .name, .position {
+                            font-size: 32px;
+                            font-family: 'medium';
+                            position: relative;
+                            min-height: 50px;
+                            span {
+                                position: absolute;
+                            }
+
+                        }
+                        .position {
+                            border-bottom: 2px solid #000;
+                            display: inline-block;
+                            min-width: 144px;
+                        }
+                        .description {
+                            text-align: justify;
+                            font-size: 18px;
+                            font-weight: 600;
+                            font-style: italic;
+                            margin: 20px 0 30px;
+                            max-height: 244px;
+                            //overflow-y: hidden;
+                            position: relative;
+                            //border: 1px solid red;
+                            height: 100%;
+                            span {
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                //height: 100%;
+                                //border: 1px solid tomato;
+                            }
+                        }
+                        .contacts {
+                            //border: 1px solid tomato;
+                            display: flex;
+                            flex-direction: column;
+                            position: absolute;
+                            bottom: 0;
+                            a {
+                                color: #000;
+                                font-family: 'medium';
+                                margin: 0;
+                            }
+                            .place-for-arrows-cus {
+                                width: 300px;
+                                height: 50px;
+                                //border: 1px solid #d84d93;
+                                display: flex;
+
+                                .prev-ar, .next-ar {
+                                    width: 50%;
+                                    //border: 1px solid green;
+                                    cursor: pointer;
+                                    padding-top: 15px;
+                                    // display: flex;
+                                    // align-items: center;
+                                    // justify-content: center;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:nth-child(odd) {
+                    .left-side {
+                        float: right !important;
+                    }
+                    .right-side {
+                        margin-right: 570px !important;
+                        margin-left: 0 !important;
+                    }
+                }
+            }
+        }
+    
+    
+} 
 
 
 
