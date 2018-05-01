@@ -4,6 +4,7 @@ import sliders from './recidents'
 import processSteps from './steps';
 import sv from './SVGlines'
 import grafic from './grafic/handleGrafic';
+import feed  from './feetback'
 
 $(document).ready(function() {
 	$('#preloader').delay(1000).fadeOut(666);
@@ -11,6 +12,7 @@ $(document).ready(function() {
 	sliders()
 	grafic()
 	sv()
+	feed()
 	//spinner();
 
 	// materializecss

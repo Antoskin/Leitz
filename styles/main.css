@@ -1000,7 +1000,7 @@ body h3 {
   width: 156px;
   position: absolute;
   left: 0;
-  bottom: 40px;
+  bottom: 80px;
   z-index: 21;
 }
 
@@ -1057,6 +1057,7 @@ body h3 {
   margin-bottom: 10px;
   background: #007cbf;
   position: relative;
+  overflow: visible !important;
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf .q:first-child {
@@ -1066,8 +1067,8 @@ body h3 {
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf .q .stinger-two {
   position: absolute;
   right: 0;
-  width: 744px;
-  height: 178px;
+  width: 0;
+  height: 0;
   border-top: 1px solid #fff;
   top: 20px;
   border-left: 1px solid #fff;
@@ -1080,6 +1081,7 @@ body h3 {
   font-size: 13px;
   text-align: center;
   padding-top: 13px;
+  opacity: 0;
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap:nth-child(even) .q {
