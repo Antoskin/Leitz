@@ -33,9 +33,7 @@ body h3 {
     font-size: 48px;
     font-weight: 100;
 }
-body .material-tooltip {
-    background: $hover !important;
-}
+
 #preloader {
     position: fixed;
     top: 0;
@@ -98,7 +96,7 @@ body .material-tooltip {
 }
 
 
-/*main presentation container with video*/ 
+/*main presentation container */ 
 .main-presentation {
     padding: auto;
     position: relative;
@@ -475,7 +473,7 @@ body .material-tooltip {
     }
 }
 
-
+//*TWO* 
 /*first slider*/
 .first-slider-wrapper {
     height: 649px;
@@ -615,8 +613,7 @@ body .material-tooltip {
 }
 
 
-/* THIRD */ 
-/*steps*/
+/* THREE */ 
 .wrapper-steps {
     height: 790px;
     background: url('../img/chertji.jpg') no-repeat;
@@ -805,7 +802,6 @@ body .material-tooltip {
     }
 }
 
-
 .showed {
     display: flex !important;
     opacity: 1 !important;
@@ -813,7 +809,6 @@ body .material-tooltip {
 
 
 /* FOUR */ 
-
 .resident-slider-wrapper {
     //height: 700px;
     width: 100%;
@@ -940,10 +935,146 @@ body .material-tooltip {
                 }
             }
         }
-    
-    
 } 
 
+
+/*FIVE*/
+.wrapper-feetback {
+    height: 600px;
+    background: #191919;
+    .double-title-for-stepz {
+        margin-bottom: 0;
+        h3 {
+            color: #fff;
+            line-height: 2.2;
+            // text-align: center;
+            margin: 0;
+            font-size: 42px;
+            font-family: 'thin';
+            span {color: $hover}
+        }
+    }
+    //.the_wrap_feed>.place-for-ava>+.the_wrap_graf    place-for-text
+    .the_wrap_feed {
+        width: 820px;
+        height: 444px;
+       // border: 1px solid #fff;
+        margin: 40px auto 0;
+        position: relative;
+        color: #fff;
+        .place-for-ava {
+            width: 156px;
+            //height: 210px;
+            //border: 1px solid $hover;
+            position: absolute;
+            left: 0;
+            bottom: 40px;
+            // border-radius: 50%;
+            z-index: 21;
+            .the-ava {
+                width: 135px;
+                height: 135px;
+                border: 2px solid $hover;
+                border-radius: 50%;
+                margin: 0 auto;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+            .who-is {
+                p{margin: 0; text-align: center;}
+                .name-feed {
+
+                }
+                .position-feed {
+                    font-size: 13px;
+                    font-family: 'thin'
+                }
+            }
+         }
+         .the_wrap_graf {
+             width: 520px;
+           // height: 300px;
+            //border: 1px solid $hover;
+            position: absolute;
+            right: 0;
+            // .way-of-white-line {
+            //     width: 620px;
+            //     height: 100px;
+            //     border: 1px solid $hover;
+            //     position: absolute;
+            //     right: 0;
+            // }
+            .year-wrap {
+                width: 40px;
+                height: 330px;
+                //border: 1px solid $hover;
+                float: left;
+                margin-left: 56px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                .graf {
+                    width: 40px;
+                    height: 290px;
+                    //background: salmon;
+
+                    display: flex;
+                    flex-direction: column-reverse;
+
+                    justify-content: flex-start;
+                    .q {
+                        width: 40px;
+                        height: 40px;
+                        margin-bottom: 10px;
+                        background: $hover;
+                        position: relative;
+                        &:first-child {
+                            margin-bottom: 0;
+                        }
+                        .stinger-two {
+                            position: absolute;
+                            right: 0;
+                            width: 744px;
+                            height: 178px;
+                            border-top: 1px solid #fff;
+                            top: 20px;
+                            border-left: 1px solid #fff;
+                        }
+                    }
+                }
+                .num-of-year {
+                    //background: seagreen;
+                    width: 40px;
+                    height: 40px;
+                    color: $hover;
+                    font-size: 13px;
+                    text-align: center;
+                    padding-top: 13px;
+                }
+                &:nth-child(even) {
+                    .q { background: #fff !important }
+                    .num-of-year { color: #fff }
+                }
+            }
+        }
+        .place-for-text {
+            width: 480px;
+            height: 110px;
+            //border: 1px solid $hover;
+            position: absolute;
+            bottom: 0;
+            right: 50px;
+            text-align: center;
+            justify-content: center;
+            font-style: italic;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}  
 
 
 /*mapa*/
