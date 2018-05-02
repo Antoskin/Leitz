@@ -10,25 +10,18 @@ export default function() {
     let n = feedbackList[1].grafic
     render(n)
     feedScroll()
-    //fadeIn()
-    // setTimeout( () => {
-    //     let n = feedbackList[1].grafic
-    //     render(n)
-    //     fadeIn() //show animation
-       
-    // },2000 )
-    //render(1,2,5)
 
-    let loo = 0;
-    $(`#testsr`).click(function() {
 
-        $(`.year-wrap .graf`).children().remove()
+    // let loo = 0;
+    // $(`#testsr`).click(function() {
 
-        setTimeout( () => {
-            render(feedbackList[loo].grafic)
-        },2000 )
-        { loo >= 2 ? loo = 0: loo++ }
-    })
+    //     $(`.year-wrap .graf`).children().remove()
+
+    //     setTimeout( () => {
+    //         render(feedbackList[loo].grafic)
+    //     },1000 )
+    //     { loo >= 2 ? loo = 0: loo++ }
+    // })
 
     
 

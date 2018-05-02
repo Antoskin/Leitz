@@ -19,6 +19,6 @@ $(document).ready(function() {
 	$('.tooltipped').tooltip();
 	$('.modal').modal();
 	// anchor
-	$('.steps').click(() => {$('body, html').animate({scrollTop:$('.service-steps').offset().top},777)})
+	$('.steps').click(() => {$('body, html').animate({scrollTop:$('.double-title-for-steps').offset().top},777)})
 	//console.log('!ss');
 })
