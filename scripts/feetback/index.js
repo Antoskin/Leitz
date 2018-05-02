@@ -7,7 +7,7 @@ import feedbackList from './feedList'
 
 
 export default function() {
-    let n = feedbackList[1].grafic
+    let n = feedbackList[0].grafic
     render(n)
     feedScroll()
 

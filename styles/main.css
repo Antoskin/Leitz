@@ -72,6 +72,12 @@ body h3 {
   z-index: 9;
 }
 
+.top-line .logo-menu-wrap .logo .browser-default {
+  max-width: 60px;
+  margin-left: 150px;
+  margin-top: 6px;
+}
+
 .top-line .logo-menu-wrap .main-nav-menu {
   width: 50%;
   display: flex;
@@ -931,6 +937,12 @@ body h3 {
   top: 0;
 }
 
+.resident-slider-wrapper .slider-of-res .slick-slide .slide-item .right-side .change-position-of-slider {
+  position: absolute;
+  opacity: 0;
+  z-index: -100;
+}
+
 .resident-slider-wrapper .slider-of-res .slick-slide .slide-item .right-side .contacts {
   display: flex;
   flex-direction: column;
@@ -1121,14 +1133,23 @@ body h3 {
   height: 1x;
 }
 
+.mapa-with-form #form-customer .show-cont-form-button {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
 .mapa-with-form #form-customer .the_form {
+  z-index: -1;
+  opacity: 0;
   position: absolute;
   top: 0;
-  right: -52px;
+  right: 0;
   background: #fff;
   width: 628px;
   height: 334px;
   margin-top: 60px;
+  transition: 0.3s ease;
 }
 
 .mapa-with-form #form-customer .the_form h3 {
@@ -1171,10 +1192,21 @@ body h3 {
   height: 44px;
 }
 
+.showedF {
+  opacity: 1 !important;
+  z-index: 5 !important;
+}
+
 footer {
   padding: 75px 0;
   height: 328px;
   overflow: hidden;
+  background: #007cbf;
+  position: relative;
+}
+
+footer .container {
+  max-width: 888px;
 }
 
 footer .col .foot-cen {
@@ -1184,11 +1216,21 @@ footer .col .foot-cen {
   margin: 0 auto;
 }
 
-footer .col p {
-  padding-bottom: 6px;
+footer .col p b {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
 }
 
 footer .col a {
-  color: #000;
+  color: #fff;
+}
+
+footer .footer-logo {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 /*# sourceMappingURL=main.css.map */

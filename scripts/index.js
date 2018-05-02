@@ -1,24 +1,30 @@
 import $ from 'jquery';
 import {materialize} from 'materialize-css';
 import sliders from './recidents'
-import processSteps from './steps';
+import processSteps from './processSteps';
 import sv from './SVGlines'
-import grafic from './grafic/handleGrafic';
+import mainPresentation from './presentation/handleGrafic';
 import feed  from './feetback'
+import map from './map'
 
 $(document).ready(function() {
-	$('#preloader').delay(1000).fadeOut(666);
+	
+	$('#preloader').delay(1000).fadeOut(666); //тут задержка
+	mainPresentation()
 	processSteps()
 	sliders()
-	grafic()
+	
 	sv()
 	feed()
+	map()
 	//spinner();
 
 	// materializecss
 	$('.tooltipped').tooltip();
 	$('.modal').modal();
+
 	// anchor
 	$('.steps').click(() => {$('body, html').animate({scrollTop:$('.double-title-for-steps').offset().top},777)})
-	//console.log('!ss');
+
+	
 })

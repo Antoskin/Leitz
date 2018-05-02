@@ -68,6 +68,12 @@ body h3 {
                 top: 0;
                 z-index: 9;
             }
+            //language
+            .browser-default {
+                max-width: 60px;
+                margin-left: 150px;
+                margin-top: 6px;
+            }
         }
         .main-nav-menu {
             width: 50%;
@@ -894,6 +900,11 @@ body h3 {
                                 //border: 1px solid tomato;
                             }
                         }
+                        .change-position-of-slider {
+                            position: absolute;
+                            opacity: 0;
+                            z-index: -100;
+                        }
                         .contacts {
                             //border: 1px solid tomato;
                             display: flex;
@@ -1092,14 +1103,22 @@ body h3 {
         position: relative;
         //border: 1px solid red;
         height: 1x;
+        .show-cont-form-button {
+            position: absolute;
+            right: 0;
+            top:10px;
+        }
         .the_form {
+            z-index: -1;
+            opacity: 0;
             position: absolute;
             top: 0;
-            right: -52px;
+            right: 0;
             background: #fff;
             width: 628px;
             height: 334px;
             margin-top: 60px;
+            transition: 0.3s ease;
             h3 {margin: 30px 0; letter-spacing: 0}
             form> input {width: 100%;}
             form {
@@ -1131,10 +1150,20 @@ body h3 {
     }
 }   
 
+.showedF {
+    opacity: 1 !important;
+    z-index: 5 !important;
+}
+
 footer {
     padding: 75px 0;
     height: 328px;
     overflow: hidden;
+    background: $hover;
+    position: relative;
+    .container {
+        max-width: 888px;
+    }
     .col {
        
         .foot-cen {
@@ -1144,9 +1173,25 @@ footer {
             width: 185px;
             margin: 0 auto;
         }
-        p{padding-bottom: 6px}
-        a {
-            color: #000;
+        p {
+            //padding-bottom: 6px;color: #fff;
+            //border-bottom: 1px solid #fff;
+            b {
+                color: #fff;
+                border-bottom: 1px solid #fff;
+                //text-decoration: underline;
+                padding-bottom: 5px;
+            }
         }
+        a {
+            color: #fff;
+        }
+    }
+    .footer-logo {
+        position: absolute;
+        left: 10px;
+        top:0;
+        bottom: 0;
+        margin: auto;
     }
 }
