@@ -3,7 +3,7 @@
 export default function(num) {
 
     console.log(arguments[0][0])
-    let qutr = `<div class="q waves-effect waves-light"></div>`
+    let qutr = `<div class="q"></div>`
     
     for(let i = 0; i < arguments[0][0]; i++) {
         $(`.graf-one`).append(qutr) }
@@ -23,12 +23,8 @@ export default function(num) {
     for(let i = 0; i < arguments[0][5]; i++) {
         $(`.graf-six`).append(qutr) 
     }
-    let sk = `<article class="stinger-two"></article>`
-    setTimeout(() => {
-        $(`.graf-six .q`).last().append(sk)
-    },3000)
 
-
+    
 
 
 

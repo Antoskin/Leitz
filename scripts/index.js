@@ -9,7 +9,8 @@ import map from './map'
 
 $(document).ready(function() {
 	
-	$('#preloader').delay(1000).fadeOut(666); //тут задержка
+	
+	console.log(`done`)
 	mainPresentation()
 	processSteps()
 	sliders()
@@ -26,5 +27,5 @@ $(document).ready(function() {
 	// anchor
 	$('.steps').click(() => {$('body, html').animate({scrollTop:$('.double-title-for-steps').offset().top},777)})
 
-	
+	$('#preloader').delay(1000).fadeOut(666); //тут задержка
 })
