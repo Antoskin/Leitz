@@ -1,5 +1,5 @@
 import $ from 'jquery'
-import {fadeIn, feedScroll, showString, hideString} from './animation'
+import {feedScroll, drawSV, delSV} from './animation'
 import render from './render_grafics'
 import feedbackList from './feedList'
 import switchActiveGraf from './activeGraf'
@@ -16,31 +16,23 @@ export default function() {
     //showString()
 
     $(`.q`).click( function() {
-
-        if( $(this).parent(`.graf`).hasClass(`active_graf`) ) return false
+        
+        delSV()
+       
+       if( $(this).parent(`.graf`).hasClass(`active_graf`) ) return false
 
        $(`.graf`).removeClass(`active_graf`)
-        $(this).parent(`.graf`).addClass(`active_graf`)
+       $(this).parent(`.graf`).addClass(`active_graf`)
         
-        hideString()
+        // hideString()
         setTimeout( () => {
-            showString()
-        },2000 )
+            drawSV()
+        },100 )
+
+
     } )
 
 
-    // let loo = 0;
-    // $(`#testsr`).click(function() {
-
-    //     $(`.year-wrap .graf`).children().remove()
-
-    //     setTimeout( () => {
-    //         render(feedbackList[loo].grafic)
-    //     },1000 )
-    //     { loo >= 2 ? loo = 0: loo++ }
-    // })
-
-    
 
 
 }

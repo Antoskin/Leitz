@@ -1070,6 +1070,17 @@ body h3 {
   position: relative;
   overflow: visible !important;
 }
+.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf .q .graf1 {
+position: absolute;
+    width: 723px;
+    right: 20px;
+    top: 17px;
+    transform: rotate(180deg);
+
+}
+.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf .q .graf1 path {
+  opacity: 0
+}
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf .q:first-child {
   margin-bottom: 0;

@@ -75,12 +75,12 @@ export default function() {
         draggable: false,
         dots: false,
         infinite: true,
-        speed: 2000,
+        speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
         autoplaySpeed: 5000,
-        // fade: true,
+        fade: true,
         responsive: [
           {
             breakpoint: 1024,
