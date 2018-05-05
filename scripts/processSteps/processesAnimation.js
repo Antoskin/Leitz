@@ -34,7 +34,7 @@ export function firstAppear() {
     tm.fromTo(`.porocess-title`, .6, {x:-30, opacity:0},{x:0,opacity:1} ).delay(1)
     tm.fromTo(`.process-description`, .6 ,{ y:'-20', opacity:'0' },{y:0,opacity:1}).delay(1)
 
-    tm.staggerFrom(`.quotr-cont> div`, .6, { opacity:0, y: -10 },.1)
+    tm.staggerFromTo(`.quotr-cont> div`, .6, { opacity:0, y: -10 },{opacity:1,y:0},.1)
    
 }
 
@@ -48,4 +48,14 @@ export function lastAppear() {
 
     tm.staggerTo(`.quotr-cont> div`, .6, { opacity:0, y: -10 },.1)
    
+}
+
+export function changeItem() {
+     const tm = TweenMax
+    tm.fromTo(`.thumb-instrument-wrap`, 1, {scale:1,opacity:1}, {scale:.4, opacity:0} )
+    tm.fromTo(`.instrument`, .6, {x:0,opacity:1}, {x:-30, opacity:0} )
+    tm.fromTo(`.porocess-title`, .6, {x:0,opacity:1}, {x:-30, opacity:0} ).delay(1)
+    tm.fromTo(`.process-description`, .6 , {y:0,opacity:1}, { y:'-20', opacity:'0' }).delay(1)
+
+    tm.staggerTo(`.quotr-cont> div`, .6, { opacity:0, y: -10 },.1)
 }

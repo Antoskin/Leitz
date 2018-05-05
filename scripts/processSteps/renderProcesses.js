@@ -16,8 +16,8 @@ export default function() {
         } )
 
         //4
-        let structure = `<div class="step-item" data-id=${index} >
-                            <p>${i.instrument}</p>
+        let structure = `<div class="step-item">
+                            <p data-id=${index} >${i.instrument}</p>
                             <div class="quotres-cont">
                                 ${quatres}
                             </div>

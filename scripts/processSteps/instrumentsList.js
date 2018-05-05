@@ -24,7 +24,7 @@ const instrumentList = [
             { the_proc: 'Залишок ресурсу', status: false, description: 'Lorem Lorem Lorem Lorem' }
         ],
         description: 'Lorem Ipsum',
-        imageUrl: 'l2'
+        imageUrl: '../../img/l1.jpg'
     },
     {
         instrument : 'Пили дисковi(HSS)',
@@ -37,7 +37,7 @@ const instrumentList = [
             { the_proc: 'Залишок ресурсу', status: false, description: 'Lorem Lorem Lorem Lorem' }
         ],
         description: 'Lorem Ipsum',
-        imageUrl: 'l1'
+        imageUrl: '../../img/l2.jpg'
     },
     {
         instrument : 'Стругальні ножі (HW/HSS)',
@@ -50,7 +50,7 @@ const instrumentList = [
             { the_proc: 'Залишок ресурсу', status: false, description: 'Lorem Lorem Lorem Lorem' }
         ],
         description: 'Lorem Ipsum',
-        imageUrl: 'l2'
+        imageUrl: '../../img/l1.jpg'
     },
     {
         instrument : 'Профільні ножі (HW/HSS)',
@@ -63,7 +63,7 @@ const instrumentList = [
             { the_proc: 'Залишок ресурсу', status: false, description: 'Lorem Lorem Lorem Lorem' }
         ],
         description: 'Lorem Ipsum',
-        imageUrl: 'l1'
+        imageUrl: '../../img/l2.jpg'
     },
     {
         instrument : 'Кінцеві фрези (DIA/HW/HSS)',
