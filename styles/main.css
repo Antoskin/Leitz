@@ -73,7 +73,7 @@ body h3 {
 }
 
 .top-line .logo-menu-wrap .logo .browser-default {
-  max-width: 60px;
+  max-width: 67px;
   margin-left: 150px;
   margin-top: 6px;
 }
@@ -499,7 +499,7 @@ body h3 {
 
 /*first slider*/
 .first-slider-wrapper {
-  height: 649px;
+  height: 656px;
   border-bottom: 10px solid #007cbf;
   background: url("../img/flider.jpg") no-repeat;
   background-size: cover;
@@ -528,7 +528,7 @@ body h3 {
 }
 
 .first-slider-wrapper .quatro-normal {
-  width: 50%;
+  width: 60%;
   margin-top: 58px;
 }
 
@@ -539,8 +539,8 @@ body h3 {
 .first-slider-wrapper .quatro-normal .slider-fill-result .slick-dots {
   position: absolute;
   left: 0;
-  right: -444px;
-  top: -160px;
+  right: -411px;
+  top: -163px;
   display: flex;
   justify-content: center;
   padding-right: 120px;
@@ -549,9 +549,9 @@ body h3 {
 .first-slider-wrapper .quatro-normal .slider-fill-result .slick-dots li {
   height: 25px;
   width: 25px;
-  border: 2px solid #000;
+  border: 1px solid #000;
   border-radius: 50%;
-  margin: 0 17px;
+  margin: 0 16px;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -579,9 +579,10 @@ body h3 {
 }
 
 .first-slider-wrapper .quatro-normal h3 {
-  margin: 0 0 75px;
+  margin: 0 0 87px;
   line-height: 55px;
   font-size: 45px;
+  letter-spacing: 3px;
 }
 
 .first-slider-wrapper .quatro-normal h4 {
@@ -589,41 +590,40 @@ body h3 {
   font-family: 'thin';
   border-bottom: 2px solid #007cbf;
   display: table-cell;
-  padding-bottom: 6px;
-  letter-spacing: 2px;
+  padding-bottom: 0;
+  letter-spacing: 3px;
 }
 
 .first-slider-wrapper .quatro-normal p {
   line-height: 28px;
   font-family: 'reg';
-  font-size: 17px;
+  font-size: 19px;
 }
 
 .first-slider-wrapper .control-point {
   width: 5px;
   height: 5px;
   position: absolute;
-  bottom: 44px;
-  right: 550px;
+  bottom: 29px;
+  right: 435px;
   z-index: 20;
 }
 
 .first-slider-wrapper .control-point .horizontal-line {
   width: 2000px;
   right: 0;
-  border: 1px solid skyblue;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
   position: absolute;
   bottom: 0;
 }
 
 .first-slider-wrapper .control-point .quatro-rotated {
   position: absolute;
-  left: 150px;
+  left: 151px;
   width: 480px;
   height: 730px;
   bottom: -161px;
-  border-left: 2px solid black;
+  border-left: 1px solid black;
   transform: rotate(29deg);
   overflow: hidden;
 }
@@ -634,7 +634,7 @@ body h3 {
   bottom: 140px;
   width: 482px;
   height: 330px;
-  border: 2px solid black;
+  border: 1px solid black;
   transform: rotate(-29deg);
   overflow: hidden;
 }
@@ -651,7 +651,7 @@ body h3 {
 
 /* THREE */
 .wrapper-steps {
-  height: 790px;
+  height: 728px;
   background: url("../img/chertji.jpg") no-repeat;
   background-size: cover;
   border-bottom: 10px solid #007cbf;
@@ -662,8 +662,8 @@ body h3 {
   color: #fff;
   line-height: 2.2;
   margin: 0;
-  font-size: 42px;
-  font-family: 'thin';
+  font-size: 46px;
+  letter-spacing: 3px;
 }
 
 .wrapper-steps .double-title-for-steps h3 span {
@@ -688,44 +688,48 @@ body h3 {
   width: 145px;
   height: 291px;
   position: absolute;
-  right: 72px;
-  top: -47px;
+  right: 74px;
+  top: -45px;
   transform: rotate(-90deg);
 }
 
 .wrapper-steps .steps-tabler .steps-labels div {
-  height: 40px;
-  width: 144px;
-  margin-bottom: 10px;
+  height: 35px;
+  width: 139px;
+  margin-bottom: 9px;
   background: #007cbf;
   color: #fff;
   display: flex;
   align-items: center;
   padding-left: 10px;
-  line-height: 1;
+  line-height: .8;
 }
 
 .wrapper-steps .steps-tabler .wrapper-stepses {
   width: 100%;
-  height: 350px;
-  margin-top: 240px;
+  height: 304px;
+  margin-top: 211px;
   position: relative;
 }
 
 .wrapper-steps .steps-tabler .wrapper-stepses .agranka {
-  width: 190px;
+  width: 248px;
   height: 100%;
   border-top: 2px solid #007cbf;
   border-left: 2px solid #007cbf;
   position: absolute;
-  top: -10px;
-  left: -10px;
+  top: -5px;
+  left: -5px;
 }
 
 .wrapper-steps .steps-tabler .wrapper-stepses .name-of-instrument {
   position: absolute;
-  top: -65px;
+  top: -56px;
   color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  left: 10px;
+  letter-spacing: 2px;
 }
 
 .wrapper-steps .steps-tabler .wrapper-stepses .step-item {
@@ -733,16 +737,19 @@ body h3 {
   height: 20px;
   height: 40px;
   position: relative;
+  padding-left: 10px;
 }
 
 .wrapper-steps .steps-tabler .wrapper-stepses .step-item p {
   color: #fff;
   font-family: 'thin';
-  line-height: 39px;
+  line-height: 34px;
   border-bottom: 1px solid #007cbf;
   width: 528px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 4px;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 .wrapper-steps .steps-tabler .wrapper-stepses .step-item .quotres-cont {
@@ -755,11 +762,15 @@ body h3 {
 }
 
 .wrapper-steps .steps-tabler .wrapper-stepses .step-item .quotres-cont .q, .wrapper-steps .steps-tabler .wrapper-stepses .step-item .quotres-cont .qw {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   background: #007cbf;
-  margin-left: 10px;
+  margin-left: 9px;
   float: left;
+}
+
+.wrapper-steps .steps-tabler .wrapper-stepses .step-item .quotres-cont .q:first-child {
+  margin-left: 8px;
 }
 
 .wrapper-steps .steps-tabler .wrapper-stepses .step-item .quotres-cont .qw {
@@ -790,6 +801,23 @@ body h3 {
   font-size: 33px;
   line-height: 35px;
   cursor: w-resize;
+  margin-bottom: 0;
+}
+
+.wrapper-steps .item-processing .left-side .change-item-process {
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+  transition: color .3s ease;
+}
+
+.wrapper-steps .item-processing .left-side .change-item-process i {
+  font-size: 27px;
+  cursor: pointer;
+}
+
+.wrapper-steps .item-processing .left-side .change-item-process i:hover {
+  color: #007cbf;
 }
 
 .wrapper-steps .item-processing .left-side .thumb-instrument-wrap {
@@ -851,6 +879,7 @@ body h3 {
 
 /* FOUR */
 .resident-slider-wrapper {
+  height: 667px;
   width: 100%;
   overflow: hidden;
   background-size: cover;
@@ -863,11 +892,10 @@ body h3 {
 }
 
 .resident-slider-wrapper .double-title-for-stepz h3 {
-  color: #000;
   line-height: 2.2;
   margin: 0;
-  font-size: 42px;
-  font-family: 'thin';
+  font-size: 46px;
+  letter-spacing: 3px;
 }
 
 .resident-slider-wrapper .double-title-for-stepz h3 span {
@@ -875,16 +903,16 @@ body h3 {
 }
 
 .resident-slider-wrapper .slider-of-res {
-  border: 1px solid teal;
   width: 100%;
   background: url("../img/sback.jpg") no-repeat;
   background-size: cover;
 }
 
 .resident-slider-wrapper .slider-of-res .slick-slide .slide-item .left-side {
-  width: 550px;
+  width: 505px;
   float: left;
-  height: 578px;
+  height: 100%;
+  overflow: hidden;
 }
 
 .resident-slider-wrapper .slider-of-res .slick-slide .slide-item .left-side img {
@@ -894,9 +922,9 @@ body h3 {
 
 .resident-slider-wrapper .slider-of-res .slick-slide .slide-item .right-side {
   position: relative;
-  height: 578px;
-  padding: 44px 70px 20px 20px;
-  margin-left: 570px;
+  height: 555px;
+  padding: 9px 130px 20px 20px;
+  margin-left: 513px;
 }
 
 .resident-slider-wrapper .slider-of-res .slick-slide .slide-item .right-side p {
@@ -915,7 +943,7 @@ body h3 {
 }
 
 .resident-slider-wrapper .slider-of-res .slick-slide .slide-item .right-side .position {
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #000;
   display: inline-block;
   min-width: 144px;
 }
@@ -925,7 +953,7 @@ body h3 {
   font-size: 18px;
   font-weight: 600;
   font-style: italic;
-  margin: 20px 0 30px;
+  margin: 20px 0 0px;
   max-height: 244px;
   position: relative;
   height: 100%;
@@ -947,17 +975,18 @@ body h3 {
   display: flex;
   flex-direction: column;
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
 }
 
 .resident-slider-wrapper .slider-of-res .slick-slide .slide-item .right-side .contacts a {
   color: #000;
   font-family: 'medium';
   margin: 0;
+  font-size: 20px;
 }
 
 .resident-slider-wrapper .slider-of-res .slick-slide .slide-item .right-side .contacts .place-for-arrows-cus {
-  width: 300px;
+  width: 485px;
   height: 50px;
   display: flex;
 }
@@ -975,6 +1004,7 @@ body h3 {
 .resident-slider-wrapper .slider-of-res .slick-slide:nth-child(odd) .right-side {
   margin-right: 570px !important;
   margin-left: 0 !important;
+  padding-right: 0;
 }
 
 /*FIVE*/
@@ -991,8 +1021,8 @@ body h3 {
   color: #fff;
   line-height: 2.2;
   margin: 0;
-  font-size: 42px;
-  font-family: 'thin';
+  font-size: 46px;
+  letter-spacing: 3px;
 }
 
 .wrapper-feetback .double-title-for-stepz h3 span {
@@ -1000,24 +1030,24 @@ body h3 {
 }
 
 .wrapper-feetback .the_wrap_feed {
-  width: 820px;
+  width: 750px;
   height: 444px;
-  margin: 40px auto 0;
+  margin: 47px auto 0;
   position: relative;
   color: #fff;
 }
 
 .wrapper-feetback .the_wrap_feed .place-for-ava {
-  width: 156px;
+  width: 180px;
   position: absolute;
-  left: 0;
-  bottom: 80px;
+  left: -25px;
+  bottom: 109px;
   z-index: 21;
 }
 
 .wrapper-feetback .the_wrap_feed .place-for-ava .the-ava {
-  width: 135px;
-  height: 135px;
+  width: 125px;
+  height: 125px;
   border: 2px solid #007cbf;
   border-radius: 50%;
   margin: 0 auto;
@@ -1030,6 +1060,7 @@ body h3 {
 .wrapper-feetback .the_wrap_feed .place-for-ava .who-is p {
   margin: 0;
   text-align: center;
+  font-size: 17px;
 }
 
 .wrapper-feetback .the_wrap_feed .place-for-ava .who-is .position-feed {
@@ -1038,14 +1069,14 @@ body h3 {
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf {
-  width: 520px;
+  width: 491px;
   position: absolute;
   right: 0;
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap {
-  width: 40px;
-  height: 330px;
+  width: 35px;
+  height: 305px;
   float: left;
   margin-left: 56px;
 }
@@ -1055,95 +1086,24 @@ body h3 {
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf {
-  width: 40px;
-  height: 290px;
+  width: 35px;
+  height: 255px;
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-start;
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf .q {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 10px;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 9px;
   background: #007cbf;
   position: relative;
   overflow: visible !important;
 }
-.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf .q .graf1 {
-position: absolute;
-    width: 723px;
-    right: 20px;
-    top: 17px;
-    transform: rotate(180deg);
-
-}
-.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf .q .graf1 path {
-  opacity: 0
-}
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf .q:first-child {
   margin-bottom: 0;
-}
-
-.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf .q .stinger-two {
-  position: absolute;
-  right: 20px;
-  width: 0;
-  height: 0;
-  border-top: 1px solid #fff;
-  bottom: 20px;
-}
-
-.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf .q .stinger-two .left_border {
-  position: absolute;
-  left: -1px;
-  top: 0;
-  height: 0;
-  border-left: 1px solid #fff;
-}
-
-.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-one .stinger-two {
-  max-width: 550px;
-  border-right: 1px solid #fff;
-}
-
-.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-two .stinger-two {
-  max-width: 338px;
-  border-right: 1px solid #fff;
-}
-
-.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-three .stinger-two {
-  max-width: 435px;
-  border-right: 1px solid #fff;
-}
-
-.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-three .stinger-two .left_border {
-  max-height: 37px;
-}
-
-.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-four .stinger-two {
-  max-width: 531px;
-}
-
-.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-four .stinger-two .left_border {
-  max-height: 37px;
-}
-
-.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-five .stinger-two {
-  max-width: 627px;
-}
-
-.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-five .stinger-two .left_border {
-  max-height: 87px;
-}
-
-.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-six .stinger-two {
-  max-width: 723px;
-}
-
-.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-six .stinger-two .left_border {
-  max-height: 136px;
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .num-of-year {
@@ -1152,7 +1112,7 @@ position: absolute;
   color: #007cbf;
   font-size: 13px;
   text-align: center;
-  padding-top: 13px;
+  padding-top: 15px;
   opacity: 0;
 }
 
@@ -1168,14 +1128,15 @@ position: absolute;
   width: 480px;
   height: 110px;
   position: absolute;
-  bottom: 0;
+  bottom: 25px;
   right: 50px;
   text-align: center;
   justify-content: center;
   font-style: italic;
-  font-size: 13px;
+  font-size: 16px;
   display: flex;
   align-items: center;
+  line-height: 19px;
 }
 
 .q-test {
@@ -1184,7 +1145,7 @@ position: absolute;
 
 /*mapa*/
 .mapa-with-form {
-  height: 457px;
+  height: 460px;
   width: 100%;
   position: relative;
 }
@@ -1201,7 +1162,13 @@ position: absolute;
 .mapa-with-form #form-customer .show-cont-form-button {
   position: absolute;
   right: 0;
-  top: 10px;
+  top: 62px;
+  /* padding: 20px 10px; */
+  /* line-height: 34px; */
+  height: 48px;
+  font-size: 15px;
+  width: 180px;
+  padding: 0;
 }
 
 .mapa-with-form #form-customer .the_form {
@@ -1211,15 +1178,16 @@ position: absolute;
   top: 0;
   right: 0;
   background: #fff;
-  width: 628px;
-  height: 334px;
-  margin-top: 60px;
+  width: 425px;
+  height: 216px;
+  margin-top: 124px;
   transition: 0.3s ease;
 }
 
 .mapa-with-form #form-customer .the_form h3 {
-  margin: 30px 0;
+  margin: 16px 0 20px;
   letter-spacing: 0;
+  font-size: 31px;
 }
 
 .mapa-with-form #form-customer .the_form form > input {
@@ -1227,20 +1195,20 @@ position: absolute;
 }
 
 .mapa-with-form #form-customer .the_form form {
-  padding: 0 50px;
+  padding: 0 30px;
 }
 
 .mapa-with-form #form-customer .the_form form input {
   border-radius: 3px;
-  height: 45px;
+  height: 31px;
   padding: 0 10px;
-  margin: 6px 0;
+  margin: 4px 0;
   border: 1px solid silver;
 }
 
 .mapa-with-form #form-customer .the_form form input::placeholder {
   color: silver;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .mapa-with-form #form-customer .the_form .drod-and-button {
@@ -1250,11 +1218,14 @@ position: absolute;
 }
 
 .mapa-with-form #form-customer .the_form .drod-and-button input {
-  width: 70%;
+  width: 75%;
 }
 
 .mapa-with-form #form-customer .the_form .drod-and-button button {
   height: 44px;
+  height: 31px;
+  font-size: 10px;
+  padding: 0px 13px;
 }
 
 .showedF {
@@ -1263,8 +1234,8 @@ position: absolute;
 }
 
 footer {
-  padding: 75px 0;
-  height: 328px;
+  padding: 45px 0;
+  height: 271px;
   overflow: hidden;
   background: #007cbf;
   position: relative;
@@ -1289,12 +1260,13 @@ footer .col p b {
 
 footer .col a {
   color: #fff;
+  font-size: 14px;
 }
 
 footer .footer-logo {
   position: absolute;
   left: 10px;
-  top: 0;
+  top: -44px;
   bottom: 0;
   margin: auto;
 }

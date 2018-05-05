@@ -8,10 +8,9 @@ export function fadeOut () {
         tm.staggerTo(`.wrapper-stepses .step-item`,1,{opacity:0,y:-10},0.2)
         tm.staggerTo(`.steps-labels div`,1, {opacity:0,x:-10},.3)
 }
-
 export function fadeIn () {
     const tm = TweenMax
-        tm.to(`.agranka`,1,{width:'190px', height:'100%', opacity:1})
+        tm.to(`.agranka`,1,{width:'248px', height:'100%', opacity:1})
         tm.to(`.name-of-instrument`,1,{opacity:1})
         tm.staggerTo(`.wrapper-stepses .step-item`,1,{opacity:1,y:0},0.2)
         tm.staggerTo(`.steps-labels div`,1, {opacity:1,x:0},.3)

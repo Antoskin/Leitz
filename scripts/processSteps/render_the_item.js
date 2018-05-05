@@ -6,7 +6,8 @@ import { TweenMax } from 'gsap';
 export default function (e) {
    
 
-    let curentProcess = data[e]
+    var curentProcess = data[e]
+
 
     const target = $(`.item-processing`);
 
@@ -43,7 +44,7 @@ export default function (e) {
                 setTimeout( () => {
                     title_descr.text(curentProcess['process'][id]['the_proc'])
                     descript.text(curentProcess['process'][id]['description'])
-                    console.log(curentProcess['process'][id]['the_proc'])
+                    //console.log(curentProcess['process'][id]['the_proc'])
                 },500 )
                 
                 animationAppear()

@@ -2,7 +2,7 @@
 
 export default function(num) {
 
-    console.log(arguments[0][0])
+    // console.log(arguments[0][0])
     let qutr = `<div class="q"></div>`
     
     for(let i = 0; i < arguments[0][0]; i++) {

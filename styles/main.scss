@@ -22,6 +22,7 @@
 
 $black: #181515;
 $hover: #007cbf;
+$w: 1px;
 * {
     font-family: 'helvetica';
     box-sizing: border-box;
@@ -70,7 +71,7 @@ body h3 {
             }
             //language
             .browser-default {
-                max-width: 60px;
+                max-width: 67px;
                 margin-left: 150px;
                 margin-top: 6px;
             }
@@ -482,7 +483,7 @@ body h3 {
 //*TWO* 
 /*first slider*/
 .first-slider-wrapper {
-    height: 649px;
+    height: 656px;
     //border: 1px solid tomato;
     border-bottom: 10px solid $hover;
     background: url('../img/flider.jpg') no-repeat;
@@ -508,24 +509,24 @@ body h3 {
     }
     .quatro-normal {
         //border: 1px solid red;
-        width: 50%;
+        width: 60%;
         margin-top: 58px;
         .slider-fill-result {
             .slide-imager {opacity: 0}
             .slick-dots {
                 position: absolute;
                 left: 0;
-                right: -444px;
-                top: -160px;
+                right: -411px;
+                top: -163px;
                 display: flex;
                 justify-content: center;
                 padding-right: 120px;
                 li {
                     height: 25px;
                     width: 25px;
-                    border: 2px solid #000;
+                    border: $w solid #000;
                     border-radius: 50%;
-                    margin: 0 17px;
+                    margin: 0 16px;
                     cursor: pointer;
                     display: flex;
                     justify-content: center;
@@ -551,23 +552,23 @@ body h3 {
             .slick-arrow {display: none !important}
         }
         h3 {
-            //font-size: 48px;
-            margin: 0 0 75px;
+            margin: 0 0 87px;
             line-height: 55px;
-            font-size:45px
+            font-size: 45px;
+            letter-spacing: 3px;
         }
         h4 {
             font-size: 36px;
             font-family: 'thin';
             border-bottom: 2px solid #007cbf;
             display: table-cell;
-            padding-bottom: 6px;
-            letter-spacing: 2px;
+            padding-bottom: 0;
+            letter-spacing: 3px;
         }
         p {
             line-height: 28px;
             font-family: 'reg';
-            font-size: 17px;
+            font-size: 19px;
         }
     }
     .control-point {
@@ -575,25 +576,25 @@ body h3 {
         height: 5px;
         //border: 2px solid tomato;
         position: absolute;
-        bottom: 44px;
-        right: 550px;
+        bottom: 29px;
+        right: 435px;
         z-index: 20;
         .horizontal-line {
             width: 2000px;
             right: 0;
             //height: 550px;
-            border: 1px solid skyblue;
-            border-bottom: 2px solid black;
+            //border: 1px solid skyblue;
+            border-bottom: $w solid black;
             position: absolute;
             bottom: 0;
         }
         .quatro-rotated {
             position: absolute;
-            left: 150px;
+            left: 151px;
             width: 480px;
             height: 730px;
             bottom: -161px;
-            border-left: 2px solid black;
+            border-left: $w solid black;
             transform: rotate(29deg);
             overflow: hidden;
             .wrap_image_f_slider {
@@ -602,7 +603,7 @@ body h3 {
                 bottom: 140px;
                 width: 482px;
                 height: 330px;
-                border: 2px solid black;
+                border: $w solid black;
                 transform: rotate(-29deg);
                 overflow: hidden;
                 img {
@@ -621,7 +622,7 @@ body h3 {
 
 /* THREE */ 
 .wrapper-steps {
-    height: 790px;
+    height: 728px;
     background: url('../img/chertji.jpg') no-repeat;
     background-size: cover;
     border-bottom: 10px solid $hover;
@@ -630,10 +631,10 @@ body h3 {
         h3 {
             color: #fff;
             line-height: 2.2;
-            // text-align: center;
             margin: 0;
-            font-size: 42px;
-            font-family: 'thin';
+            font-size: 46px;
+            //font-family: 'thin';
+            letter-spacing: 3px;
             span {color: $hover}
         }
     }
@@ -654,23 +655,20 @@ body h3 {
         .steps-labels {
             width: 145px;
             height: 291px;
-         
-            //border: 1px solid skyblue;
             position: absolute;
-            right: 72px;
-            top: -47px;
+            right: 74px;
+            top: -45px;
             transform: rotate(-90deg);
             div {
-                height: 40px;
-                width: 144px;
-                //border: 1px solid skyblue;
-                margin-bottom: 10px;
+                height: 35px;
+                width: 139px;
+                margin-bottom: 9px;
                 background: #007cbf;
                 color: #fff;
                 display: flex;
                 align-items: center;
                 padding-left: 10px;
-                line-height: 1;
+                line-height: .8;
                 
                
             }
@@ -678,22 +676,26 @@ body h3 {
         .wrapper-stepses {
             //border: 1px solid skyblue;
             width: 100%;
-            height: 350px;
-            margin-top: 240px;
+            height: 304px;
+            margin-top: 211px;
             position: relative;
             .agranka {
-                width: 190px;
+                width: 248px;
                 height: 100%;
                 border-top: 2px solid $hover;
                 border-left: 2px solid $hover;
                 position: absolute;
-                top: -10px;
-                left: -10px;
+                top: -5px;
+                left: -5px;
             }
             .name-of-instrument {
                 position: absolute;
-                top: -65px;
+                top: -56px;
                 color: #fff;
+                font-size: 20px;
+                font-weight: bold;
+                left: 10px;
+                letter-spacing: 2px;
             }
             .step-item {
                 width: 100%;
@@ -701,15 +703,18 @@ body h3 {
                 //border-bottom: 1px solid $hover;
                 height: 40px;
                 position: relative;
+                padding-left: 10px;
            
                 p {
                     color: #fff;
                     font-family: 'thin';
-                    line-height: 39px;
-                    border-bottom: 1px solid $hover;
+                    line-height: 34px;
+                    border-bottom: 1px solid #007cbf;
                     width: 528px;
                     cursor: pointer;
-                    margin-top: 10px;
+                    margin-top: 4px;
+                    font-size: 20px;
+                    text-transform: uppercase;
                 }
                 .quotres-cont {
                     position: absolute;
@@ -719,11 +724,14 @@ body h3 {
                     right: -30px;
                     bottom: 0;
                     .q, .qw {
-                        width: 40px;
-                        height: 40px;
+                        width: 35px;
+                        height: 35px;
                         background: #007cbf;
-                        margin-left: 10px;
+                        margin-left: 9px;
                         float: left;
+                    }
+                    .q:first-child {
+                        margin-left: 8px;
                     }
                     .qw {
                         background: #fff !important;
@@ -754,6 +762,22 @@ body h3 {
                 font-size: 33px;
                 line-height: 35px;
                 cursor: w-resize;
+                margin-bottom: 0;
+            }
+            .change-item-process {
+                //border: 1px solid tomato;
+                width: 380px;
+                display: flex;
+                justify-content: space-between;
+                transition: color .3s ease;
+                i { 
+                    font-size: 27px;
+                    cursor: pointer;
+                    &:hover {
+                        color: $hover
+                     }
+                }
+              
             }
             .thumb-instrument-wrap {
                 width: 380px;
@@ -816,7 +840,7 @@ body h3 {
 
 /* FOUR */ 
 .resident-slider-wrapper {
-    //height: 700px;
+    height: 667px;
     width: 100%;
     overflow: hidden;
     background-size: cover;
@@ -826,12 +850,10 @@ body h3 {
     .double-title-for-stepz {
         margin-bottom: 0;
         h3 {
-            color: #000;
             line-height: 2.2;
-            // text-align: center;
             margin: 0;
-            font-size: 42px;
-            font-family: 'thin';
+            font-size: 46px;
+            letter-spacing: 3px;
             span {color: $hover}
         }
     }
@@ -839,7 +861,7 @@ body h3 {
     
 
         .slider-of-res {
-            border: 1px solid teal;
+            //border: 1px solid teal;
             //height: 500px;
             width: 100%;
             background: url('../img/sback.jpg') no-repeat;
@@ -848,11 +870,11 @@ body h3 {
                 .slide-item {
                     //display: flex;
                     .left-side {
-                        width: 550px;
+                        width: 505px;
                         float: left;
                         //border: 1px solid green;
-                        height: 578px;
-                        //overflow: hidden;
+                        height: 100%;
+                        overflow: hidden;
                         img {
                             height: 100%;
                             width: auto;
@@ -860,10 +882,9 @@ body h3 {
                     }
                     .right-side {
                         position: relative;
-                        height: 578px;
-                        //width: 100%;
-                        padding: 44px 70px 20px 20px;
-                        margin-left: 570px;
+                        height: 555px;
+                        padding: 9px 130px 20px 20px;
+                        margin-left: 513px;
                         
                         p {margin: 0}
                         .name, .position {
@@ -877,7 +898,7 @@ body h3 {
 
                         }
                         .position {
-                            border-bottom: 2px solid #000;
+                            border-bottom: $w solid #000;
                             display: inline-block;
                             min-width: 144px;
                         }
@@ -886,7 +907,7 @@ body h3 {
                             font-size: 18px;
                             font-weight: 600;
                             font-style: italic;
-                            margin: 20px 0 30px;
+                            margin: 20px 0 0px;
                             max-height: 244px;
                             //overflow-y: hidden;
                             position: relative;
@@ -910,14 +931,15 @@ body h3 {
                             display: flex;
                             flex-direction: column;
                             position: absolute;
-                            bottom: 0;
+                            bottom: 10px;
                             a {
                                 color: #000;
                                 font-family: 'medium';
                                 margin: 0;
+                                font-size: 20px;
                             }
                             .place-for-arrows-cus {
-                                width: 300px;
+                                width: 485px;
                                 height: 50px;
                                 //border: 1px solid #d84d93;
                                 display: flex;
@@ -942,6 +964,7 @@ body h3 {
                     .right-side {
                         margin-right: 570px !important;
                         margin-left: 0 !important;
+                        padding-right: 0;
                     }
                 }
             }
@@ -958,33 +981,29 @@ body h3 {
         h3 {
             color: #fff;
             line-height: 2.2;
-            // text-align: center;
             margin: 0;
-            font-size: 42px;
-            font-family: 'thin';
+            font-size: 46px;
+            letter-spacing: 3px;
             span {color: $hover}
         }
     }
     //.the_wrap_feed>.place-for-ava>+.the_wrap_graf    place-for-text
     .the_wrap_feed {
-        width: 820px;
+        width: 750px;
         height: 444px;
-       // border: 1px solid #fff;
-        margin: 40px auto 0;
+        margin: 47px auto 0;
         position: relative;
         color: #fff;
+        //border: 1px solid;
         .place-for-ava {
-            width: 156px;
-            //height: 210px;
-            //border: 1px solid $hover;
+            width: 180px;
             position: absolute;
-            left: 0;
-            bottom: 80px;
-            // border-radius: 50%;
+            left: -25px;
+            bottom: 109px;
             z-index: 21;
             .the-ava {
-                width: 135px;
-                height: 135px;
+                width: 125px;
+                height: 125px;
                 border: 2px solid $hover;
                 border-radius: 50%;
                 margin: 0 auto;
@@ -994,7 +1013,7 @@ body h3 {
                 margin-bottom: 10px;
             }
             .who-is {
-                p{margin: 0; text-align: center;}
+                p{margin: 0; text-align: center;font-size: 17px;}
                 .name-feed {
 
                 }
@@ -1005,7 +1024,7 @@ body h3 {
             }
          }
          .the_wrap_graf {
-             width: 520px;
+             width: 491px;
            // height: 300px;
             //border: 1px solid $hover;
             position: absolute;
@@ -1018,8 +1037,8 @@ body h3 {
             //     right: 0;
             // }
             .year-wrap {
-                width: 40px;
-                height: 330px;
+                width: 35px;
+                height: 305px;
                 //border: 1px solid $hover;
                 float: left;
                 margin-left: 56px;
@@ -1027,75 +1046,24 @@ body h3 {
                     margin-left: 0;
                 }
                 .graf {
-                    width: 40px;
-                    height: 290px;
-                    //background: salmon;
-
+                    width: 35px;
+                    height: 255px;
                     display: flex;
                     flex-direction: column-reverse;
-
                     justify-content: flex-start;
                     .q {
-                        width: 40px;
-                        height: 40px;
-                        margin-bottom: 10px;
+                        width: 35px;
+                        height: 35px;
+                        margin-bottom: 9px;
                         background: $hover;
                         position: relative;
                         overflow: visible !important;
                         &:first-child {
                             margin-bottom: 0;
                         }
-                        .stinger-two {
-                            position: absolute;
-                            right: 20px;
-                            width: 0;
-                            height: 0;
-                            border-top: 1px solid #fff;
-                            bottom: 20px;
-                            //border-left: 1px solid #fff;
-                            .left_border {
-                                position: absolute;
-                                left: -1px;
-                                top: 0;
-                                height: 0;
-                                border-left: 1px solid #fff;
-                            }
-                        }
                     }
                 }
-                .graf-one .stinger-two {
-                    max-width: 550px;
-                     border-right: 1px solid #fff;
-                }
-                .graf-two .stinger-two {
-                    max-width: 338px;
-                    border-right: 1px solid #fff;
-                }
-                .graf-three .stinger-two {
-                    max-width: 435px;
-                    border-right: 1px solid #fff;
-                    .left_border {
-                        max-height: 37px;
-                    }
-                }
-                .graf-four .stinger-two {
-                    max-width: 531px;
-                    .left_border {
-                        max-height: 37px;
-                    }
-                }
-                .graf-five .stinger-two  {
-                    max-width: 627px;
-                    .left_border {
-                        max-height: 87px;
-                    }
-                }
-                .graf-six .stinger-two  {
-                    max-width: 723px;
-                    .left_border {
-                        max-height: 136px;
-                    }
-                }
+        
                 .num-of-year {
                     //background: seagreen;
                     width: 40px;
@@ -1103,7 +1071,7 @@ body h3 {
                     color: $hover;
                     font-size: 13px;
                     text-align: center;
-                    padding-top: 13px;
+                    padding-top: 15px;
                     opacity: 0;
                 }
                 &:nth-child(even) {
@@ -1115,16 +1083,16 @@ body h3 {
         .place-for-text {
             width: 480px;
             height: 110px;
-            //border: 1px solid $hover;
             position: absolute;
-            bottom: 0;
+            bottom: 25px;
             right: 50px;
             text-align: center;
             justify-content: center;
             font-style: italic;
-            font-size: 13px;
+            font-size: 16px;
             display: flex;
             align-items: center;
+            line-height: 19px;
         }
     }
 }  
@@ -1133,7 +1101,7 @@ body h3 {
 
 /*mapa*/
 .mapa-with-form {
-    height: 457px;
+    height: 460px;
     width: 100%;
     position: relative;
     .the_mapa {
@@ -1146,7 +1114,13 @@ body h3 {
         .show-cont-form-button {
             position: absolute;
             right: 0;
-            top:10px;
+            top: 62px;
+            /* padding: 20px 10px; */
+            /* line-height: 34px; */
+            height: 48px;
+            font-size: 15px;
+            width: 180px;
+            padding: 0;
         }
         .the_form {
             z-index: -1;
@@ -1155,23 +1129,23 @@ body h3 {
             top: 0;
             right: 0;
             background: #fff;
-            width: 628px;
-            height: 334px;
-            margin-top: 60px;
+            width: 425px;
+            height: 216px;
+            margin-top: 124px;
             transition: 0.3s ease;
-            h3 {margin: 30px 0; letter-spacing: 0}
+            h3 {margin: 16px 0 20px; letter-spacing: 0;    font-size: 31px;}
             form> input {width: 100%;}
             form {
-                padding: 0 50px;
+                padding: 0 30px;
                 input {
                     border-radius: 3px;
-                    height: 45px;
+                    height: 31px;
                     padding: 0 10px;
-                    margin: 6px 0;
+                    margin: 4px 0;
                     border: 1px solid silver;
                     &::placeholder {
                         color: silver;
-                        font-size: 16px;
+                        font-size: 13px;
                     }
                 }
             }
@@ -1180,10 +1154,13 @@ body h3 {
                 align-items: center;
                 justify-content: space-between;
                 //border: 1px solid red;
-                input {width: 70%}
-                button {height: 44px;}
-
-
+                input {width: 75%}
+                button {
+                    height: 44px;
+                    height: 31px;
+                    font-size: 10px;
+                    padding: 0px 13px;
+                }
                 
             }
         }
@@ -1196,10 +1173,10 @@ body h3 {
 }
 
 footer {
-    padding: 75px 0;
-    height: 328px;
+    padding: 45px 0;
+    height: 271px;
     overflow: hidden;
-    background: $hover;
+    background: #007cbf;
     position: relative;
     .container {
         max-width: 888px;
@@ -1225,12 +1202,13 @@ footer {
         }
         a {
             color: #fff;
+            font-size: 14px;
         }
     }
     .footer-logo {
         position: absolute;
         left: 10px;
-        top:0;
+        top:-44px;
         bottom: 0;
         margin: auto;
     }

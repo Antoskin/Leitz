@@ -1,11 +1,11 @@
 
 export default function() {
 
-    let sk = `<article class="stinger-two">
-                    <div class="left_border"></div>
-            </article>` // линия
+    // let sk = `<article class="stinger-two">
+    //                 <div class="left_border"></div>
+    //         </article>` // линия
 
-    let canv = `<canvas id="test_canv" style="border:1px solid #000000;"></canvas>`
+    // let canv = `<canvas id="test_canv" style="border:1px solid #000000;"></canvas>`
 
     let svh =  `<svg id="line1" class="graf1"
                      xmlns="http://www.w3.org/2000/svg"
