@@ -1,33 +1,34 @@
 import $ from 'jquery'
-import {feedScroll, drawSV, delSV} from './animation'
+import {feedScroll, drawSV, delSV, stringAnimFadeIn, stringAnimFade} from './animation'
 import render from './render_grafics'
 import feedbackList from './feedList'
-import switchActiveGraf from './activeGraf'
+import renderActiveGrafSvg from './activeGraf'
+import handler from './handler'
 
 
 
 
 export default function() {
-    let n = feedbackList[0].grafic
+    let n = feedbackList[0].grafic // 
     render(n)
-    feedScroll()
-    switchActiveGraf()
+    feedScroll() // анимация при скролле
+    renderActiveGrafSvg()
+
+    handler() // переключение фото имени и комментария
 
     //showString()
 
     $(`.q`).click( function() {
         
-        delSV()
-       
-       if( $(this).parent(`.graf`).hasClass(`active_graf`) ) return false
-
+        stringAnimFade()
        $(`.graf`).removeClass(`active_graf`)
        $(this).parent(`.graf`).addClass(`active_graf`)
         
         // hideString()
         setTimeout( () => {
-            drawSV()
-        },100 )
+            stringAnimFadeIn()
+        },1000 )
+       
 
 
     } )

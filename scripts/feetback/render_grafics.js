@@ -9,7 +9,7 @@ export default function(num) {
         $(`.graf-one`).append(qutr) }
 
     for(let i = 0; i < arguments[0][1]; i++) {
-        $(`.graf-two`).append(qutr) }
+        $(`.graf-two `).append(qutr) }
 
     for(let i = 0; i < arguments[0][2]; i++) {
         $(`.graf-three`).append(qutr) }
@@ -23,9 +23,5 @@ export default function(num) {
     for(let i = 0; i < arguments[0][5]; i++) {
         $(`.graf-six`).append(qutr) 
     }
-
-    
-
-
 
 }

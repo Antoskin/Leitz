@@ -5,7 +5,7 @@ export default () => {
     sliders()
 
     $(`.control-c`).click( function() {
-        changeSlide()
+        //changeSlide()
 
        setTimeout( () => {
         let getPos = $(`.slick-current .change-position-of-slider`)
@@ -15,7 +15,9 @@ export default () => {
        }, 100 )
     } )
 
-    
+    let teamSlider = $(`.slider-of-res`)
+    teamSlider.find(`.place-for-arrows-cus .prev-ar`).append($(`.before-button`))
+    teamSlider.find(`.place-for-arrows-cus .next-ar`).append($(`.after-button`))
     
     //console.log(`!`)
 }

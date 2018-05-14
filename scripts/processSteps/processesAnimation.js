@@ -33,7 +33,7 @@ export function firstAppear() {
     tm.fromTo(`.instrument`, .6, {x:-30, opacity:0},{x:0,opacity:1} )
     tm.fromTo(`.porocess-title`, .6, {x:-30, opacity:0},{x:0,opacity:1} ).delay(1)
     tm.fromTo(`.process-description`, .6 ,{ y:'-20', opacity:'0' },{y:0,opacity:1}).delay(1)
-
+    tm.from(`.close-item`,.6,{opacity:0})
     tm.staggerFromTo(`.quotr-cont> div`, .6, { opacity:0, y: -10 },{opacity:1,y:0},.1)
    
 }

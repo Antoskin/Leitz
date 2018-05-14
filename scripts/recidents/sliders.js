@@ -68,8 +68,8 @@ export default function() {
 
 
     $(`.slider-of-res`).slick({
-        prevArrow:"<span class='before-button'><img class='a-left control-c prev slick-prev' src='../img/prevf.png'></span>",
-        nextArrow:"<span class='after-button'><img class='a-right control-c next slick-next' src='../img/right.png'></span>",
+        prevArrow:"<span class='before-button'><img class='a-left control-c prev slick-prev' src='../../img/black-line.png'></span>",
+        nextArrow:"<span class='after-button'><img class='a-right control-c next slick-next' src='./../img/black-line.png'></span>",
         // centerMode: true,
         // centerPadding: '200px',
         draggable: false,
@@ -81,35 +81,9 @@ export default function() {
         autoplay: false,
         autoplaySpeed: 5000,
         fade: true,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
+
       });
 
-      let teamSlider = $(`.slider-of-res`)
-      teamSlider.find(`.place-for-arrows-cus .prev-ar`).append($(`.before-button`))
-      teamSlider.find(`.place-for-arrows-cus .next-ar`).append($(`.after-button`))
+     
 
 }

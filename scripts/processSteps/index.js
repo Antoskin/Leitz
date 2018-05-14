@@ -8,19 +8,17 @@ import { switchNext } from './change_the_item'
 
 export default () => {
     renderProcesses() //render all steps
-    change()
+    
     $(`.step-item p`).click( function() { ////render all steps
         fadeOut() // скрывает все пункты
        
         $(`.step-item`).removeClass(`active`)
         $(this).parent(`.step-item`).addClass('active')
 
-        let d_id = $(this).attr(`data-id`) // узнаём id выбранного пункта
+        let d_id = $(this).attr(`data-id`) // get id выбранного пункта
         renderCard(d_id) // передаём для рендера пункта
-         change => {d_id}
-
-         
-
+        change()
+    
         setTimeout( () => {
             $(`.item-processing`).addClass(`showed`) // show card of the current process
         },2000 )
@@ -28,7 +26,7 @@ export default () => {
     })
 
 
-    $(`.instrument`).click(function() { // go back to table process
+    $(`.instrument, .close-item`).click(function() { // go back to table process
         lastAppear()
         setTimeout( () => {
             fadeIn()

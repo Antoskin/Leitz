@@ -7,7 +7,7 @@ import { changeItem } from './processesAnimation.js'
 export default function(id) {
 	console.log(id) //curent id
 
-	let cur_id = id
+	let cur_id = id||1
 
 	$(`.fas`).click( function( ) {
 		let th = $(this)
