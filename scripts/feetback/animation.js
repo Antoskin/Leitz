@@ -39,7 +39,7 @@ export function feedScroll() {  // first time on scroll animation fadeIn
     
     tm9.staggerFromTo(`.who-is p`, 1, {x:-10,opacity:0},{x:0,opacity:1},.3)
     tm9.fromTo(`.place-for-text`,1, {opacity:0, y:-20}, { opacity:1, y:0}) 
-    tm9.fromTo(`.feedLineold`,.9,{opacity:0},{opacity:1})
+    tm9.staggerFromTo(`.active_graf .feeSV line`,.3, { drawSVG:'0%' },{ drawSVG:'100%' },.3)
     new ScrollMagic.Scene({
             triggerElement: '.the_wrap_feed',
             triggerHook: 0.7,
@@ -49,21 +49,19 @@ export function feedScroll() {  // first time on scroll animation fadeIn
 }
 
 
-
-
 // тесt свг линия
 
-export function drawSV() {
-    let tm = TweenMax
-    tm.fromTo(`.active_graf .graf1 path`, .9, 
-        { drawSVG:'0%', opacity: 0 },
-        { drawSVG:'100%',opacity:1 });
-}
+// export function drawSV() {
+//     let tm = TweenMax
+//     tm.fromTo(`.active_graf .graf1 path`, .9, 
+//         { drawSVG:'0%', opacity: 0 },
+//         { drawSVG:'100%',opacity:1 });
+// }
 
-export function delSV() {
-    let tm = TweenMax
-    tm.to(`.graf1 path`, .5, { drawSVG:'0%', opacity: 0 })
-}
+// export function delSV() {
+//     let tm = TweenMax
+//     tm.to(`.graf1 path`, .5, { drawSVG:'0%', opacity: 0 })
+// }
 
 export function changeFeed() {
     let tm = TweenMax
@@ -77,10 +75,10 @@ export function changeFeed() {
 
 export function stringAnimFade() {
     let tm = TweenMax
-    tm.to(`.feeSV line`,.3, { drawSVG:'0%' })
+    tm.to(`.feeSV line`,.3, { drawSVG:'0%' },.2)
 } 
 
 export function stringAnimFadeIn() {
     let tm = TweenMax
-    tm.staggerTo(`.active_graf .feeSV line`,.3, { drawSVG:'100%' },.3)
+    tm.staggerFromTo(`.active_graf .feeSV line`,.3, { drawSVG:'0%' },{ drawSVG:'100%' },.3)
 } 

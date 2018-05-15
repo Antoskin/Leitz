@@ -92,32 +92,16 @@ export default function() {
                 </svg>`
 
     let lira1 = `<svg id="sloy_1"  class="feeSV feedLineold"
-                data-name="sloy_1" 
-                xmlns="http://www.w3.org/2000/svg" 
-                viewBox="100 210 210 700">
-                <defs>
-                    <style>.cls-1{fill:#fff;stroke:#fff;stroke-miterlimit:10;}</style>
-                </defs>
-
-                <line class="cls-1" x1="575" y1="972.5" x2="575" y2="217.5"/>
-                <line class="cls-1" x1="575" y1="218" x2="-160" y2="218"/>
-                <line class="cls-1" x1="-160" y1="217.5" x2="-160" y2="900"/>
-                
-            </svg>`
-
-    let feedLine = `<svg version="1.1" id="sloy_one" class="feeSV feedLine" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 800 600" style="enable-background:new 0 0 800 600;" xml:space="preserve">
-                        <style type="text/css">
-                        .st0{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
-                        </style>
-                        <line class="st0" x1="-252" y1="418" x2="1250" y2="418"/>
-                        <line class="st0" x1="-252" y1="217.5" x2="-252" y2="472.5"/>
-                        <line class="st0" x1="1250" y1="418" x2="1250" y2="495"/>
-                    </svg>`
-
-
-                    //
-
+                    data-name="sloy_1" 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="100 210 210 700">
+                    <defs>
+                        <style>.cls-1{fill:#fff;stroke:#fff;stroke-miterlimit:10;}</style>
+                    </defs>
+                    <line class="cls-1" x1="575" y1="972.5" x2="575" y2="217.5"/>
+                    <line class="cls-1" x1="575" y1="218" x2="-160" y2="218"/>
+                    <line class="cls-1" x1="-160" y1="217.5" x2="-160" y2="900"/>
+                </svg>`
 
 
     const addCanv = () => { // ф-я добавления линии svg в последний квадрат каждого графика
@@ -128,8 +112,6 @@ export default function() {
             $(`.graf-three .q`).last().append(lira3),
             $(`.graf-two .q`).last().append(lira2),
             $(`.graf-one .q`).last().append(lira1)
-
-            // $(`.graf-one .q`).last().append(lira)
         )
     }
     setTimeout(() => { // добавляем через 3 сек

@@ -1216,6 +1216,7 @@ section h3 {
   width: 704px;
   height: 121px;
   top: 16px;
+  display: none;
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-five .feedLineold {
