@@ -1213,48 +1213,28 @@ section h3 {
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-six .feedLineoldlast {
-  width: 704px;
-  height: 121px;
   top: 16px;
   display: none;
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-five .feedLineold {
-  width: 581px !important;
-  height: 122px;
-  top: -27px;
+  top: -28px;
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-four .feedLineold {
-  width: 493px !important;
-  height: 124px;
   top: -74px;
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-three .feedLineold {
-  width: 400px !important;
-  top: -121px;
-  height: 129px;
+  top: -117px;
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-two .feedLineold {
-  width: 309px !important;
   top: -157px;
-  height: 158px;
-}
-
-.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-two .feedLineold .cls-1 {
-  stroke-width: 6px !important;
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-one .feedLineold {
-  width: 217px !important;
   top: -203px;
-  height: 203px;
-}
-
-.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-one .feedLineold .cls-1 {
-  stroke-width: 5px !important;
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .num-of-year {
@@ -1298,14 +1278,11 @@ section h3 {
   display: block !important;
 }
 
-#sloy_1 {
+#sloy_1, .feeSV {
+  overflow: visible !important;
   position: absolute;
   right: 0;
   bottom: 0;
-}
-
-#sloy_1 .cls-1 {
-  stroke-width: 8px;
 }
 
 /*mapa*/

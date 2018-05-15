@@ -1187,58 +1187,36 @@ section h3 {
                 }
                 .graf-six {
                     .feedLineoldlast {
-                        width: 704px ;
-                        height: 121px ;
                         top: 16px ;
                        display: none
                     }
                 }
                 .graf-five {
                     .feedLineold {
-                        width: 581px !important;
-                        height: 122px ;
-                        top: -27px ;
-                       
+                        top: -28px ;
                     }
                 }
                 .graf-four {
                     .feedLineold {
-                        width: 493px !important;
-                        height: 124px;
                         top: -74px;
-                        .cls-1 {
-                            //stroke-width: 14px !important;
-                        }
                     }
                 }
                 .graf-three {
                     .feedLineold {
-                        width: 400px !important;
-                        top: -121px;
-                        height: 129px;
-                        .cls-1 {
-                            //stroke-width: 30px !important;
-                        }
+                        top: -117px;
                     }
                 }
                 .graf-two {
                     .feedLineold {
-                        width: 309px !important;
                         top: -157px;
-                        height: 158px;
-                        .cls-1 {
-                            stroke-width: 6px !important;
-                        }
+                        // .cls-1 {
+                        //     stroke-width: 6px !important;
+                        // }
                     }
                 }
                 .graf-one {
                     .feedLineold {
-                        width: 217px !important;
                         top: -203px;
-                        height: 203px;
-                        .cls-1 {
-                            stroke-width: 5px !important;
-                        }
                     }
                 }
         
@@ -1281,15 +1259,16 @@ section h3 {
         display: block !important;
     }
 }
-#sloy_1 {
+#sloy_1, .feeSV {
     // width: 200px;
     // height: 200px;
+    overflow: visible !important;
     position: absolute;
     right: 0;
     bottom: 0;
-    .cls-1 {
-        stroke-width: 8px;
-    }
+    // .cls-1 {
+    //     stroke-width: 8px;
+    // }
 }
 
 /*mapa*/
