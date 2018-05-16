@@ -1053,6 +1053,10 @@ section h3 {
                                     // align-items: center;
                                     justify-content:flex-start;
                                     transition: .3s ease-in-out;
+                                    align-items: center;
+                                    .slick-prev {
+                                        margin-top: 1px;
+                                    }
                                     &:hover {
                                         transform: scale(1.1)
                                     }
@@ -1180,7 +1184,10 @@ section h3 {
                         .feedLineold {
                             right: 15px !important;
                             bottom: inherit !important;
-                            display: none;
+                            line {
+                                opacity: 0;
+                            }
+                            //display: none;
                         }
                        
                     }
@@ -1188,7 +1195,6 @@ section h3 {
                 .graf-six {
                     .feedLineoldlast {
                         top: 16px ;
-                       display: none
                     }
                 }
                 .graf-five {
@@ -1198,17 +1204,17 @@ section h3 {
                 }
                 .graf-four {
                     .feedLineold {
-                        top: -74px;
+                        top: -72px;
                     }
                 }
                 .graf-three {
                     .feedLineold {
-                        top: -117px;
+                        top: -116px;
                     }
                 }
                 .graf-two {
                     .feedLineold {
-                        top: -157px;
+                        top: -160px;
                         // .cls-1 {
                         //     stroke-width: 6px !important;
                         // }
@@ -1216,7 +1222,7 @@ section h3 {
                 }
                 .graf-one {
                     .feedLineold {
-                        top: -203px;
+                        top: -204px;
                     }
                 }
         
@@ -1252,23 +1258,14 @@ section h3 {
         }
     }
 }  
-.active_graf {
-    //border: 1px solid red;
-    z-index: 1 !important;
-    .feedLineold,.feedLineoldlast {
-        display: block !important;
-    }
-}
+
+
 #sloy_1, .feeSV {
-    // width: 200px;
-    // height: 200px;
+
     overflow: visible !important;
     position: absolute;
     right: 0;
     bottom: 0;
-    // .cls-1 {
-    //     stroke-width: 8px;
-    // }
 }
 
 /*mapa*/
@@ -1534,6 +1531,9 @@ footer {
 
 
 @media (max-width:870px) {
+    .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf .q .feeSV  {
+        display: none;
+    }
     section h3 {
         font-size: 28px;
     }

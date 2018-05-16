@@ -1089,6 +1089,11 @@ section h3 {
   display: flex;
   justify-content: flex-start;
   transition: .3s ease-in-out;
+  align-items: center;
+}
+
+.resident-slider-wrapper .slider-of-res .slick-slide .slide-item .right-side .contacts .place-for-arrows-cus .prev-ar .slick-prev, .resident-slider-wrapper .slider-of-res .slick-slide .slide-item .right-side .contacts .place-for-arrows-cus .next-ar .slick-prev {
+  margin-top: 1px;
 }
 
 .resident-slider-wrapper .slider-of-res .slick-slide .slide-item .right-side .contacts .place-for-arrows-cus .prev-ar:hover, .resident-slider-wrapper .slider-of-res .slick-slide .slide-item .right-side .contacts .place-for-arrows-cus .next-ar:hover {
@@ -1209,12 +1214,14 @@ section h3 {
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf .q .feedLineold {
   right: 15px !important;
   bottom: inherit !important;
-  display: none;
+}
+
+.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf .q .feedLineold line {
+  opacity: 0;
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-six .feedLineoldlast {
   top: 16px;
-  display: none;
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-five .feedLineold {
@@ -1222,19 +1229,19 @@ section h3 {
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-four .feedLineold {
-  top: -74px;
+  top: -72px;
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-three .feedLineold {
-  top: -117px;
+  top: -116px;
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-two .feedLineold {
-  top: -157px;
+  top: -160px;
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-one .feedLineold {
-  top: -203px;
+  top: -204px;
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .num-of-year {
@@ -1268,14 +1275,6 @@ section h3 {
   display: flex;
   align-items: center;
   line-height: 19px;
-}
-
-.active_graf {
-  z-index: 1 !important;
-}
-
-.active_graf .feedLineold, .active_graf .feedLineoldlast {
-  display: block !important;
 }
 
 #sloy_1, .feeSV {
@@ -1535,6 +1534,9 @@ footer .footer-logo {
 }
 
 @media (max-width: 870px) {
+  .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf .q .feeSV {
+    display: none;
+  }
   section h3 {
     font-size: 28px;
   }

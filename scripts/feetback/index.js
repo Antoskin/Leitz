@@ -1,39 +1,17 @@
 import $ from 'jquery'
-import {feedScroll, drawSV, delSV, stringAnimFadeIn, stringAnimFade} from './animation'
+import { feedScroll,fadeIn } from './animation'
 import render from './render_grafics'
 import feedbackList from './feedList'
-import renderActiveGrafSvg from './activeGraf'
+import SVGst from './SVGstr'
 import handler from './handler'
-
-
 
 
 export default function() {
     let n = feedbackList[0].grafic // 
-    render(n)
+    render(n) // рендер квадратов
     feedScroll() // анимация при скролле
-    renderActiveGrafSvg()
-
+    SVGst() // в каждый квадр добавляет svg
     handler() // переключение фото имени и комментария
 
-    //showString()
-
-    $(`.q`).click( function() {
-        
-        stringAnimFade()
-       $(`.graf`).removeClass(`active_graf`)
-       $(this).parent(`.graf`).addClass(`active_graf`)
-        
-        // hideString()
-        setTimeout( () => {
-            stringAnimFadeIn()
-        },1000 )
-       
-
-
-    } )
-
-
-
-
+    //fadeIn()
 }
