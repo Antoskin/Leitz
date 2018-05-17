@@ -1,6 +1,6 @@
 import $ from 'jquery'
 import data from './instrumentsList'
-import {animationAppear, firstAppear} from './processesAnimation'
+import {changeLabel, firstAppear} from './processesAnimation'
 import { TweenMax } from 'gsap';
 
 export default function (e) {
@@ -33,10 +33,7 @@ export default function (e) {
         title_descr.text(curentProcess['process'][0]['the_proc'])
         descript.text(curentProcess['process'][0]['description'])
         
-        setTimeout( () => { //start first animation in 2 sec
-            firstAppear()
-        },2000 ) 
-
+     
         // switching process in card
         $(`.quotr-cont .q`).click( function() {
             let id = $(this).attr('data-keys')
@@ -47,7 +44,7 @@ export default function (e) {
                     //console.log(curentProcess['process'][id]['the_proc'])
                 },500 )
                 
-                animationAppear()
+                changeLabel()
         } )
 }
 

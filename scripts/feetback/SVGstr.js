@@ -62,10 +62,8 @@ let lira3 = `<svg class="feeSV feedLineold"
                     width="217"
                     height="2"
                     fill:#fff
+                    stroke:#007cbf
                     stroke-width="2px">
-                    <defs>
-                        <style>.cls-1{fill:#fff;stroke:#fff;stroke-miterlimit:10;}</style>
-                    </defs>
                     <line class="cls-1" x1="215" y1="204" x2="215" y2="1"/>
                     <line class="cls-1" x1="215" y1="1" x2="1" y2="1"/>
                     <line class="cls-1" x1="1" y1="1" x2="1" y2="122"/>

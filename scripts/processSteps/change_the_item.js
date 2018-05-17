@@ -34,7 +34,7 @@ export default function(id) {
 	
 		setTimeout( () => {
 			renderCard(cur_id)
-		},1666 )
+		},666 )
 		
 	} )
 }

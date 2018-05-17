@@ -13,7 +13,7 @@ const grafData = [
 		typeService: 'Очистка..',
 		quattro: 5,
         precent: 90,
-        img: 'l2'
+        img: 'l4'
     },
     {
         title: 'ПАРНАЯ ЧИСТКА ДЕТАЛЕЙ',

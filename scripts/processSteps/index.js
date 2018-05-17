@@ -1,5 +1,5 @@
 import $ from 'jquery'
-import { fadeOut, fadeIn, lastAppear } from './processesAnimation'
+import { fadeOut, fadeIn, lastAppear, firstAppear } from './processesAnimation'
 import renderProcesses from './renderProcesses'
 import renderCard from './render_the_item'
 import change from './change_the_item.js'
@@ -8,20 +8,22 @@ import { switchNext } from './change_the_item'
 
 export default () => {
     renderProcesses() //render all steps
+    change()
     
-    $(`.step-item p`).click( function() { ////render all steps
-        fadeOut() // скрывает все пункты
-       
-        $(`.step-item`).removeClass(`active`)
-        $(this).parent(`.step-item`).addClass('active')
-
+    $(`.step-item p`).click( function() { 
+        fadeOut() // скрывает renderProcesses
+        
         let d_id = $(this).attr(`data-id`) // get id выбранного пункта
         renderCard(d_id) // передаём для рендера пункта
-        change()
     
         setTimeout( () => {
             $(`.item-processing`).addClass(`showed`) // show card of the current process
         },2000 )
+
+       setTimeout( () => { //start first animation in 2 sec
+            firstAppear()
+        },2000 ) 
+
 
     })
 

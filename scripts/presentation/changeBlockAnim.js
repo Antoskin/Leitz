@@ -12,15 +12,14 @@ export default function() {
             //hundredPrecent(6);
             let tmax = new TimelineMax();
             tmax.staggerTo('.compare-item', 0.3, {opacity:1}, 0.1 );
-        }, 2000 )
+        }, 500 )
     });
 
 
     // переключает обратно
-
     $(`.close-presentat`).click(function() {
         switchToMain()
-       
+        $('.but-graf').removeClass('actived') 
     })
 
     

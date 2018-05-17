@@ -26,7 +26,7 @@ export default function() {
        
         setTimeout(()=> { 
             $(this).addClass('actived')
-            walpaper.css({'background':`url(../img/${grafData[index].img}.png)`})},800)
+            walpaper.css({'background':`url(../img/${grafData[index].img}.jpg)`})},800)
         titile_2.text( grafData[index].title ) //change title, text
         text_2.text( grafData[index].text )
 

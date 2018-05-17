@@ -68,8 +68,8 @@ export default function() {
 
 
     $(`.slider-of-res`).slick({
-        prevArrow:"<span class='before-button'><img class='a-left control-c prev slick-prev' src='../../img/black-line.png'></span>",
-        nextArrow:"<span class='after-button'><img class='a-right control-c next slick-next' src='./../img/black-line.png'></span>",
+        prevArrow:"<span class='before-button'><img class='a-left control-c prev slick-prev' src='../../img/bleft.png'></span>",
+        nextArrow:"<span class='after-button'><img class='a-right control-c next slick-next' src='../../img/bright.png'></span>",
         // centerMode: true,
         // centerPadding: '200px',
         draggable: false,
