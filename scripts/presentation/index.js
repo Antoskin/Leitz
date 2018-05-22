@@ -3,10 +3,10 @@ import changeBlock from './changeBlockAnim';
 import { dinamicPrecent } from './renderGrafic';
 import {changeItem} from './animation'
 
-//import autoClicker from './autoChange';
+import autoClicker from './autoChange';
 
 export default function() {
-    //autoClicker();
+    autoClicker();
     changeBlock() // click presentation button
 
     // dom targets title, text, blue_grafic 

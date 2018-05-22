@@ -9,10 +9,10 @@ export function feedScroll() {  // first time on scroll animation fadeIn
     tm9.fromTo(`.the-ava`,.3,{scale:0.7,opacity:0},{scale:1,opacity:1})
     tm9.staggerFromTo(`.graf .q`, .5, {opacity:0},{opacity:1}, .1)
     tm9.staggerFromTo(`.num-of-year`, .3, {x:-10,opacity:0},{x:0,opacity:1}, .1)
-    
+  
     tm9.staggerFromTo(`.who-is p`, 1, {x:-10,opacity:0},{x:0,opacity:1},.3)
     tm9.fromTo(`.place-for-text`,1, {opacity:0, y:-20}, { opacity:1, y:0}) 
-   // tm9.fromTo(`.active_graf .feeSV`, 2, { opacity:0 },{ opacity:1 },.2)
+   
     new ScrollMagic.Scene({
             triggerElement: '.the_wrap_feed',
             triggerHook: 0.7,

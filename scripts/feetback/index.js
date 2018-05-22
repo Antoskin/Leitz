@@ -4,6 +4,7 @@ import render from './render_grafics'
 import feedbackList from './feedList'
 import SVGst from './SVGstr'
 import handler from './handler'
+import test from './autoChange'
 
 
 export default function() {
@@ -14,4 +15,5 @@ export default function() {
     handler() // переключение фото имени и комментария
 
     //fadeIn()
+    test()
 }

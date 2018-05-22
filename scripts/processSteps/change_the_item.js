@@ -5,7 +5,7 @@ import { changeItem } from './processesAnimation.js'
 //!!!!!!!!!!!!!! note  => add to .quotr-cont .q   opacity:0
 
 export default function(id) {
-	console.log(id) //curent id
+	//console.log(id) //curent id
 
 	let cur_id = id||1
 

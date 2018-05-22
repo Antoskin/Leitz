@@ -19,5 +19,4 @@ export default () => {
     teamSlider.find(`.place-for-arrows-cus .prev-ar`).append($(`.before-button`))
     teamSlider.find(`.place-for-arrows-cus .next-ar`).append($(`.after-button`))
     
-    //console.log(`!`)
 }

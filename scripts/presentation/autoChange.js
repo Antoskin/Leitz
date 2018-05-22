@@ -1,12 +1,48 @@
 export default function() {
 
-    let numeric  = 0;
 
-        setInterval( () => {
-            $(`.but-graf:eq(${numeric})`).click()
-            numeric++
-        },1500 );
-   
+	let inMaine = 0,
+		inChild = 0,
+		timer = 0,
+		timerVal = 0,
+		delay = 3000
+
+
+	function updateInterval() {
+		if(inMaine && !inChild) {
+			if(!timer) {
+				timer = setInterval(runClick, delay)
+			}
+		} else {
+			if(timer) {
+				clearInterval(timer)
+				timer = 0
+			}
+		}
+	}
+
+	function runClick() {
+		{ timerVal<5 ? ++timerVal : timerVal=0 }
+		$(`.but-graf:eq(${timerVal})`).click()
+	} 
+
+
+
+	$(`.wrapper-text-grafic`).hover(function() {
+		++inMaine
+		updateInterval()
+	},() => {
+		--inMaine
+		updateInterval()
+	})
+
+	$(`.wrapper-lizer`).hover(function() {
+		++inChild
+		updateInterval()
+	},()=> {
+		--inChild
+		updateInterval()
+	})
 
 
 }

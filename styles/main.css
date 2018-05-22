@@ -1107,6 +1107,7 @@ section h3 {
   height: 600px;
   background: #191919;
   overflow: hidden;
+  position: relative;
 }
 
 .wrapper-feetback .double-title-for-stepz {
@@ -1203,15 +1204,8 @@ section h3 {
   margin-bottom: 0;
 }
 
-.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf .q .feedLine {
-  right: 10px;
-  bottom: -22px;
-  width: 600px;
-  position: absolute;
-}
-
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf .q .feedLineold {
-  right: 15px !important;
+  right: 15px;
   bottom: inherit !important;
 }
 
@@ -1219,8 +1213,9 @@ section h3 {
   opacity: 0;
 }
 
-.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-six .feedLineoldlast {
+.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-six .feedLineold {
   top: 16px;
+  right: 0 !important;
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-five .feedLineold {
@@ -1239,8 +1234,9 @@ section h3 {
   top: -160px;
 }
 
-.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-one .feedLineold {
+.wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf-one .feedLineoldlast {
   top: -204px;
+  right: 15px;
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .num-of-year {
@@ -1276,14 +1272,14 @@ section h3 {
   line-height: 19px;
 }
 
+.auto_close {
+  display: none;
+}
+
 .feeSV {
   position: absolute;
   right: 0;
   overflow: visible !important;
-}
-
-.feeSV .cls-1 {
-  stroke: #fff;
 }
 
 /*mapa*/
@@ -1414,6 +1410,42 @@ footer .footer-logo {
   margin: auto;
 }
 
+.move-up {
+  position: fixed;
+  right: 5px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  background: #007cbf;
+  display: flex;
+  align-items: center;
+  z-index: 444;
+  cursor: pointer;
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.move-up img {
+  transform: scale(0.8);
+  width: 100%;
+}
+
+.move-up:hover img {
+  animation: upDow 3s infinite;
+}
+
+@keyframes upDow {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
 @media (max-width: 1200px) {
   .main-presentation .main-presentation-shadow #area-for-header-svg {
     right: -56px;
@@ -1464,6 +1496,38 @@ footer .footer-logo {
   }
   .wrapper-steps .item-processing .right-side .porocess-title {
     margin-top: 5px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text h2 {
+    font-size: 30px;
+    margin-top: 65px;
+    letter-spacing: 1;
+    padding-left: 20px;
+  }
+  .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text .main-description-presentation {
+    font-size: 13px;
+  }
+  .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text .left-blue-line {
+    margin-top: 17px;
+  }
+  .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag, .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .compare-grafic {
+    width: 30px;
+  }
+  .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item, .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .compare-grafic .compare-item {
+    width: 27px;
+    height: 27px;
+  }
+  .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item .stinger {
+    max-width: 200px;
+    font-size: 25px;
+  }
+  .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item .stinger .type-service {
+    top: -45px;
+  }
+  .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text {
+    width: 870px;
   }
 }
 
