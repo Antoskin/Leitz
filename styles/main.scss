@@ -353,7 +353,6 @@ section h3 {
             opacity: 0;
             position: relative;
             .close-presentat {
-
                 position: absolute;
                 right: 0;
                 top: 10px;
@@ -363,6 +362,7 @@ section h3 {
                 height: 28px;
                 background: url('../img/cancel.svg') no-repeat;
                 background-size: cover;
+                border: none;
             }
             .wrapper-text-grafic {
                 display: flex;

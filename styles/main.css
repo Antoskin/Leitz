@@ -367,6 +367,7 @@ section h3 {
   height: 28px;
   background: url("../img/cancel.svg") no-repeat;
   background-size: cover;
+  border: none;
 }
 
 .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic {
