@@ -17,7 +17,7 @@ export default function() {
       .addTo(controller)
 
     let tm9 = new TimelineLite();
-    tm9.staggerFromTo(`.steps-labels div`, .5, {opacity:0,x:-10}, {opacity:1,x:0},.2)
+    tm9.staggerFromTo(`.steps-labels .label`, .5, {opacity:0,x:-10}, {opacity:1,x:0},.2)
     new ScrollMagic.Scene({
            triggerElement: '.steps-tabler',
            triggerHook: 0.7,

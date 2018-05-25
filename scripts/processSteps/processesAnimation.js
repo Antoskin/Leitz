@@ -8,7 +8,7 @@ export function fadeIn () {
         tm.to(`.agranka`,.3,{width:'248px', height:'100%', opacity:1})
         tm.to(`.name-of-instrument`,.3,{opacity:1})
         tm.staggerTo(`.wrapper-stepses .step-item`,.3,{opacity:1,y:0},0.2)
-        tm.staggerTo(`.steps-labels div`,.3, {opacity:1,x:0},.1)
+        tm.staggerTo(`.steps-labels .label`,.3, {opacity:1,x:0},.1)
 }
 
 // Исчезновение всех процессов
@@ -17,7 +17,7 @@ export function fadeOut () {
         tm.to(`.agranka`,.3,{width:'1px', height:'1px', opacity:0})
         tm.to(`.name-of-instrument`,.3,{opacity:0})
         tm.staggerTo(`.wrapper-stepses .step-item`,.3,{opacity:0,y:-10},0.2)
-        tm.staggerTo(`.steps-labels div`,.3, {opacity:0,x:-10},.1)
+        tm.staggerTo(`.steps-labels .label`,.3, {opacity:0,x:-10},.1)
 }
 
 

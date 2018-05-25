@@ -1063,7 +1063,7 @@ section h3 {
 
 .resident-slider-wrapper .slider-of-res .slick-slide .slide-item .right-side .change-position-of-slider {
   position: absolute;
-  opacity: 0;
+  opacity: 0 !important;
   z-index: -100;
 }
 
@@ -1319,7 +1319,7 @@ section h3 {
   right: 0;
   background: #fff;
   width: 425px;
-  height: 216px;
+  height: 250px;
   margin-top: 124px;
   transition: 0.3s ease;
 }

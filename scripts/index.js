@@ -23,7 +23,7 @@ $(document).ready(function() {
 	sv()			   // Прелоад svg 
 	
 	mob_menu()
-	
+
 
 	// anchor
 	$('.steps').click(() => {$('body, html').animate({scrollTop:$('.double-title-for-steps').offset().top},777)})

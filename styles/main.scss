@@ -1031,7 +1031,7 @@ section h3 {
                         }
                         .change-position-of-slider {
                             position: absolute;
-                            opacity: 0;
+                            opacity: 0 !important;
                             z-index: -100;
                         }
                         .contacts {
@@ -1315,7 +1315,7 @@ section h3 {
             right: 0;
             background: #fff;
             width: 425px;
-            height: 216px;
+            height: 250px;
             margin-top: 124px;
             transition: 0.3s ease;
             h3 {margin: 16px 0 20px; letter-spacing: 0;    font-size: 31px;}
