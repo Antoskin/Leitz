@@ -14,7 +14,7 @@
         <img src="../img/logo.png" alt="">    
     </div> 
     <!-- mobile menu plashka -->
-<div id="wrapper">
+
     <section class="top-line">
         <div class=" logo-menu-wrap">
             <article class="logo">
@@ -252,7 +252,7 @@
         </div>
     </section>
 
-    <!-- SECOND -->
+    <!-- FIRST SLIDER -->
     <section class="first-slider-wrapper">
         <svg class="line-vert2"
             xmlns="http://www.w3.org/2000/svg"
@@ -288,7 +288,6 @@
                             <h4>PF</h4>
                             <p>
                                 Ми пропонуємо в усьому світі професійний сервіс для всіх
-                              
                             </p>
                             <img class="slide-imager" src="../img/l2.jpg" alt="">
                         </div>
@@ -334,12 +333,12 @@
                         <div class="horizontal-line"></div>
                         <div class="quatro-rotated">
                             <div class="wrap_image_f_slider">
+                                <!-- here renders image of active slider by js -->
                                 <img src="../img/worker.jpg" alt="">
                             </div>
                         </div>
                 </div>
         </div>
-        
     </section>
 
 
@@ -354,21 +353,22 @@
         <div class="close-title-blue-line"></div>
 
         <div class="steps-tabler">
-            <article class="steps-labels">
-                <div>Миття</div>
-                <div>Оцiнка зносу</div>
-                <div>Загострення</div>
-                <div>Балансування</div>
-                <div>Контроль</div>
-                <div>Залишок ресурсу</div>
-            </article>
-            <section class="wrapper-stepses">
+            <!-- name of process -->
+            <div class="steps-labels">
+                <span class="label">Миття</span>
+                <span class="label">Оцiнка зносу</span>
+                <span class="label">Загострення</span>
+                <span class="label">Балансування</span>
+                <span class="label">Контроль</span>
+                <span class="label">Залишок ресурсу</span>
+            </div>
+            <div class="wrapper-stepses">
                 <div class="agranka"></div>
                 <p class="name-of-instrument">ТИПИ IНСТРУМЕНТIВ</p>
-                <!-- here renders etaps list -->
-            </section>
-
+                <!-- here renders types of instruments list -->
+            </div>
         </div>
+        <!-- the item of chosen instrument -->
         <div class="container item-processing">
             <div class="left-side">
                 <article class="top-articles">
@@ -402,13 +402,11 @@
                     consequuntur quasi.
                 </p>
             </div>
-            <!-- <img src="../img/bclose.png" class="close-item" alt=""> -->
             <span class="close-item"></span>
-            <!-- <i class="far fa-times-circle close-item"></i> -->
         </div> 
     </section>
 
-    <!-- FOUR  second slider -->
+    <!-- FOUR  slider with residents -->
     <section class="resident-slider-wrapper">
         <div class="container">
             <div class="row double-title-for-stepz">
@@ -416,21 +414,21 @@
                 <div class="col l4 m4"><h3 class="wow fadeIn"><span class="change-position-of-slider-targ">Керiвництво</span></h3></div>
             </div>
         </div>
-
+        <!-- initialize slider -->
         <div class="slider-of-res">
-            <!-- <div class="slider-of-res-targ"> -->
-                <div class="slide-item">
-                    <div class="left-side avatar-sl">
-                        <img src="../img/jurgen.jpg" class="" alt="">
-                    </div>
-                    <div class="right-side">
+            <!-- slide -->
+            <div class="slide-item">
+                <div class="left-side avatar-sl">
+                    <img src="../img/jurgen.jpg" class="" alt="">
+                </div>
+                <div class="right-side">
                         <p class="name">Brausewetter Juergen</p>
                         <p class="position">CEO</p>
                         <p class="description " >
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis
                         </p>
                         <p class="change-position-of-slider">Керiвництво</p>
-                        <section class="contacts">
+                        <div class="contacts">
                             <a href="#" class="f-phone">+38 077 777 77 77</a>
                             <a href="#" class="s-phone">+38 076 776 76 76</a>
                             <a href="#" class="e-main">E-Mail: brausewetter@leitz.com</a>
@@ -438,10 +436,11 @@
                                 <div class="prev-ar"></div>
                                 <div class="next-ar"></div> 
                             </div>
-                        </section>
-                    </div>
+                        </div>
                 </div>
-                <div class="slide-item">
+            </div>
+            <!-- slide -->
+            <div class="slide-item">
                     <div class="left-side   avatar-sl">
                         <img src="../img/tatiana.jpg" class="" alt="">
                     </div>
@@ -452,7 +451,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.
                         </p>
                         <p class="change-position-of-slider">Адмiнiстратор</p>
-                        <section class="contacts">
+                        <div class="contacts">
                             <a href="#" class="f-phone">+38 067 251 75 08</a>
                             <a href="#" class="s-phone">+38 076 776 76 76</a>
                             <a href="#" class="e-main">E-Mail: trudenko@leitz.org</a>
@@ -460,10 +459,9 @@
                                 <div class="prev-ar"></div>
                                 <div class="next-ar"></div> 
                             </div>
-                        </section>
+                        </div>
                     </div>
-                </div>
-            <!-- </div> -->
+            </div>
         </div>
 
     </section>
@@ -473,12 +471,12 @@
         <div class="container">
             <div class="row double-title-for-stepz">
                 <div class="col l12 m12 s12"><h3 class="wow fadeIn" id="testsr">ВІДГУКИ НАШИХ КЛІЄНТІВ</h3></div>
-                <!-- <div class="col l4"><h3 class="wow fadeIn"><span>Керiвництво</span></h3></div> -->
             </div>
         </div>
 
        
         <div class="the_wrap_feed">
+            <!-- render avatar, name and position -->
             <div class="place-for-ava">
                 <span><div class="the-ava">
                     <img src="../img/cl.jpg" alt="">
@@ -491,89 +489,69 @@
                     </p>
                 </div>
             </div>
+            <!-- render grafics of yers -->
             <div class="the_wrap_graf">
-                <section class="year-wrap">
-                    <div data-graf="0" class="graf graf-one active_graf">
-                       
-                    </div>
-                    <div class="num-of-year">
-                        1991
-                    </div>
-                </section>
-                <section class="year-wrap">
-                    <div  data-graf="1" class="graf graf-two " >
-                       
-                    </div>
-                    <div class="num-of-year">
-                        1992
-                    </div>
-                </section>
-                <section class="year-wrap">
-                    <div  data-graf="2" class="graf graf-three">
-                        
-                    </div>
-                    <div class="num-of-year">
-                        1999
-                    </div>
-                </section>
-                <section class="year-wrap">
-                    <div  data-graf="3" class="graf graf-four">
-                       
-                    </div>
-                    <div class="num-of-year">
-                        2005
-                    </div>
-                </section>
-                <section class="year-wrap">
-                    <div  data-graf="4" class="graf graf-five">
-                        
-                    </div>
-                    <div class="num-of-year">
-                        2010
-                    </div>
-                </section>
-                <section class="year-wrap">
-                    <div  data-graf="5" class="graf graf-six ">
-                        <!--  -->
-                    </div>
-                    <div class="num-of-year">
-                        2018
-                    </div>
-                </section>
+                <div class="year-wrap">
+                    <!-- grafic -->
+                    <div data-graf="0" class="graf graf-one active_graf"></div>
+                    <!-- year -->
+                    <span class="num-of-year">1991</span>
+                </div>
+                <div class="year-wrap">
+                    <div  data-graf="1" class="graf graf-two "></div>
+                    <span class="num-of-year">1992</span>
+                </div>
+                <div class="year-wrap">
+                    <div  data-graf="2" class="graf graf-three"></div>
+                    <span class="num-of-year">1999</span>
+                </div>
+                <div class="year-wrap">
+                    <div  data-graf="3" class="graf graf-four"></div>
+                    <span class="num-of-year">2005</span>
+                </div>
+                <div class="year-wrap">
+                    <div  data-graf="4" class="graf graf-five"></div>
+                    <span class="num-of-year">2010</span>
+                </div>
+                <div class="year-wrap">
+                    <div  data-graf="5" class="graf graf-six "></div>
+                    <span class="num-of-year">2018</span>
+                </div>
             </div>
+            <!-- render comment -->
             <div class="place-for-text">
                 “Високоякісний інструмент може працювати добре лише в тому випадку, якщо його обслуговуванням займаються професіонали. Саме тому ми обираємо Leitz”
             </div>
         </div>
     </section>
 
+
+    <!-- GOOGLE MAP -->
     <section class="mapa-with-form ">
-            
-        <!-- <iframe class="the_mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7192.109883141649!2d30.5104238312994!3d50.4076610625945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf322af10dc3%3A0x761cf6d67f09a0!2z0YPQuy4g0JrRg9GB0YLQsNC90LDQudGB0LrQsNGPLCAxMywg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1522400071809" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+        <!-- THE MAP -->
         <iframe class="the_mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2330.316871134658!2d30.355165686096843!3d50.43684311115919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5de9a58821e2ffef!2z0JvQldCZ0KLQpiDQmNCd0KHQotCg0KPQnNCV0J3QotCrINCj0JrQoNCQ0JjQndCQINCe0J7Qng!5e0!3m2!1sru!2sua!4v1525522078407" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
         <div id="form-customer" class="container" >
-                    <button class="show-cont-form-button btn blue darken-1 wave-effect">Замовити дзвiнок</button>
-                    <section class="the_form z-depth-5">
-                        <h3 class="center tit">ВИНИКЛИ ЗАПИТАННЯ?</h3>
-                            <form class="" action="#" method="post">
-                                    <input type="text" placeholder="Ваше iм'я">
-                                    <input type="text" placeholder="Номер">
-                                    <article class="drod-and-button">
-                                            <input type="text" placeholder="Оберiть Ваше мiсто">
-                                            <button class="btn blue darken-1">НАДIСЛАТИ</button>
-                                    </article>
-                                </form>
-                    </section>
-
+            <button class="show-cont-form-button btn blue darken-1 wave-effect">Замовити дзвiнок</button>
+                    <!-- CONTACT FORM -->
+            <div class="the_form z-depth-5">
+                <h3 class="center tit">ВИНИКЛИ ЗАПИТАННЯ?</h3>
+                <form class="" action="#" method="post">
+                    <input type="text" placeholder="Ваше iм'я">
+                    <input type="text" placeholder="Номер">
+                    <div class="drod-and-button">
+                        <input type="text" placeholder="Оберiть Ваше мiсто">
+                        <button class="btn blue darken-1">НАДIСЛАТИ</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
 
-<footer>
+<footer class="wrap-footer">
     <div class="container">
         <div class="row ">
             <div class="col l3 m3 s12">
-               
                 <div class="foot-cen wow fadeInUp ">
                     <p><b>Продукцiя</b></p>
                     <a href="#">Пили та ножi</a>
@@ -590,8 +568,8 @@
                         <a href="#">Наша команда</a>
                         <a href="#">Вiдгуки клiентiв</a>
                     </div>
-                </div>
-                <div class="col l3 m3 s12">
+            </div>
+            <div class="col l3 m3 s12">
                         <div class="foot-cen wow fadeInUp"  data-wow-delay="0.4s">
                             <p><b>Новини</b></p>
                             <a href="#">Заходи та події</a>
@@ -599,8 +577,8 @@
                             <a href="#">Інтерв’ю</a>
                             <a href="#">Релізи</a>
                         </div>
-                    </div>
-                    <div class="col l3 m3 s12">
+            </div>
+            <div class="col l3 m3 s12">
                             <div class="foot-cen wow fadeInUp"  data-wow-delay="0.6s">
                                 <p><b>Контакти</b></p>
                                 <a href="#">Зворотній зв’язок</a>
@@ -608,22 +586,21 @@
                                 <a href="#">Соціальні мережі</a>
                                 <a href="#">Кар’єра</a>
                             </div>
-                        </div>
+            </div>
         </div>
     </div>
     <img class=" wow fadeIn footer-logo"  data-wow-duration="1s" src="../img/logo.png" alt="">
 </footer>
-</div>
 
 <!-- mobile menu -->
-<div class="mob-menu-wrap">
-        <i class="far fa-times-circle close-it"></i>
+<nav class="mob-menu-wrap">
+    <i class="far fa-times-circle close-it"></i>
     <a href="#">Головна</a>
     <a href="#">Продукцiя</a>
     <a href="#">Сервiс</a>
     <a href="#">Новини</a>
     <a href="#">Про нас</a>
-</div>
+</nav>
 
 
 <div class="move-up">
@@ -631,18 +608,8 @@
 </div>
 
 
-   
-
     <script src="./main.js"></script>
-    <script src="../node_modules/wowjs/dist/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
     <script src="../node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
-    <script src="../node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script> 
     <script src="../node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
-   
-
-
 </body>
 </html>

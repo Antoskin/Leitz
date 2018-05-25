@@ -763,7 +763,7 @@ section h3 {
   transform: rotate(-90deg);
 }
 
-.wrapper-steps .steps-tabler .steps-labels div {
+.wrapper-steps .steps-tabler .steps-labels .label {
   height: 35px;
   width: 139px;
   margin-bottom: 9px;
@@ -1188,6 +1188,7 @@ section h3 {
   flex-direction: column-reverse;
   justify-content: flex-start;
   z-index: 20;
+  margin-bottom: 10px;
 }
 
 .wrapper-feetback .the_wrap_feed .the_wrap_graf .year-wrap .graf .q {
@@ -1245,7 +1246,6 @@ section h3 {
   color: #007cbf;
   font-size: 13px;
   text-align: center;
-  padding-top: 15px;
   opacity: 0;
 }
 

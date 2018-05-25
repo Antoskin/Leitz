@@ -734,7 +734,7 @@ section h3 {
             right: 74px;
             top: -45px;
             transform: rotate(-90deg);
-            div {
+            .label {
                 height: 35px;
                 width: 139px;
                 margin-bottom: 9px;
@@ -1161,6 +1161,7 @@ section h3 {
                     flex-direction: column-reverse;
                     justify-content: flex-start;
                     z-index: 20;
+                    margin-bottom: 10px;
                     .q {
                         width: 35px;
                         height: 35px;
@@ -1229,7 +1230,7 @@ section h3 {
                     color: $hover;
                     font-size: 13px;
                     text-align: center;
-                    padding-top: 15px;
+                    // padding-top: 15px;
                     opacity: 0;
                 }
                 &:nth-child(even) {
