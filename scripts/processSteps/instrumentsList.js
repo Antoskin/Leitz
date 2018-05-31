@@ -11,7 +11,7 @@ const instrumentList = [
             { the_proc: 'Залишок ресурсу', status: false, description: 'Lorem Lorem Lorem Lorem' }
         ],
         description: 'Lorem Ipsum',
-        imageUrl: '../../img/l2.jpg'
+        imageUrl: './wp-content/themes/twentyseventeen/assets/img/l2.jpg'
     },
     {
         instrument : 'Пили для багатопилу',
@@ -24,7 +24,7 @@ const instrumentList = [
             { the_proc: 'Залишок ресурсу', status: false, description: 'Lorem Lorem Lorem Lorem' }
         ],
         description: 'Lorem Ipsum',
-        imageUrl: '../../img/l1.jpg'
+        imageUrl: './wp-content/themes/twentyseventeen/assets/img/l1.jpg'
     },
     {
         instrument : 'Пили дисковi(HSS)',
@@ -37,7 +37,7 @@ const instrumentList = [
             { the_proc: 'Залишок ресурсу', status: false, description: 'Lorem Lorem Lorem Lorem' }
         ],
         description: 'Lorem Ipsum',
-        imageUrl: '../../img/l2.jpg'
+        imageUrl: './wp-content/themes/twentyseventeen/assets/img/l2.jpg'
     },
     {
         instrument : 'Стругальні ножі (HW/HSS)',
@@ -50,7 +50,7 @@ const instrumentList = [
             { the_proc: 'Залишок ресурсу', status: false, description: 'Lorem Lorem Lorem Lorem' }
         ],
         description: 'Lorem Ipsum',
-        imageUrl: '../../img/l1.jpg'
+        imageUrl: './wp-content/themes/twentyseventeen/assets/img/l1.jpg'
     },
     {
         instrument : 'Профільні ножі (HW/HSS)',
@@ -63,7 +63,7 @@ const instrumentList = [
             { the_proc: 'Залишок ресурсу', status: false, description: 'Lorem Lorem Lorem Lorem' }
         ],
         description: 'Lorem Ipsum',
-        imageUrl: '../../img/l2.jpg'
+        imageUrl: './wp-content/themes/twentyseventeen/assets/img/l2.jpg'
     },
     {
         instrument : 'Кінцеві фрези (DIA/HW/HSS)',
@@ -76,7 +76,7 @@ const instrumentList = [
             { the_proc: 'Залишок ресурсу', status: true, description: 'Lorem Lorem Lorem Lorem' }
         ],
         description: 'Lorem Ipsum',
-        imageUrl: 'l2'
+        imageUrl: './wp-content/themes/twentyseventeen/assets/img/l1.jpg'
     },
     {
         instrument : 'Насадні фрези (DIA/HW/HSS)',
@@ -89,7 +89,7 @@ const instrumentList = [
             { the_proc: 'Залишок ресурсу', status: true, description: 'Lorem Lorem Lorem Lorem' }
         ],
         description: 'Lorem Ipsum',
-        imageUrl: '../../img/l3.jpg'
+        imageUrl: './wp-content/themes/twentyseventeen/assets/img/l3.jpg'
     },
 ]
 

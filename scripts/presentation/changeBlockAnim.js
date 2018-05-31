@@ -5,7 +5,7 @@ export default function() {
     // переключает на презентацию
     $('.presentation').click( function() {
         switchToPresentation()
-        
+      
         setTimeout( () => {
             $('.but-graf:eq(0)').click()
             TweenMax.fromTo('.left-blue-line', 2, {y:-20}, {opacity:1, y:0}).delay(1);
@@ -18,6 +18,7 @@ export default function() {
 
     // переключает обратно
     $(`.close-presentat`).click(function() {
+    
         switchToMain()
         $('.but-graf').removeClass('actived') 
     })

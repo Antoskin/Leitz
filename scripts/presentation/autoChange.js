@@ -27,8 +27,7 @@ export default function() {
 	} 
 
 
-
-	$(`.wrapper-text-grafic`).hover(function() {
+	$(`.the_content-presentation`).hover(function() {
 		++inMaine
 		updateInterval()
 	},() => {
