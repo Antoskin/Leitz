@@ -14,7 +14,7 @@ export default function() {
         let structure = `<div class="step-item">
                             <p data-id=${index} >
                                 ${i.instrument} 
-                                <img class="mob-proc-svgs" src="./wp-content/themes/twentyseventeen/assets/wright.png" alt=""> 
+                                <img class="mob-proc-svgs" src="./wp-content/themes/twentyseventeen/assets/img/wright.png" alt=""> 
                             </p>
                             <div class="quotres-cont">
                                 ${quatres}

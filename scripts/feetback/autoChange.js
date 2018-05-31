@@ -6,7 +6,7 @@ let timer = 0,
     timerValue = 0,
     inMain = 0,
     inChild = 0,
-    delay = 3000
+    delay = 7000
 
     function updateTimer() {
       if (inMain && !inChild) {
@@ -29,7 +29,7 @@ let timer = 0,
     }
 
 
-    $(".the_wrap_feed").hover(function() {
+    $(".wrapper-feetback").hover(function() {
           ++inMain;
           updateTimer();
         },function() {

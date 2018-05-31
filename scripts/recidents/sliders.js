@@ -3,8 +3,8 @@ import {slick} from 'slick-carousel'
 export default function() {
     //   TEAM
     $(`.slider-of-res`).slick({
-        prevArrow:"<span class='before-button'><img class='a-left control-c prev slick-prev' src='./wp-content/themes/twentyseventeen/assets/bleft.png'></span>",
-        nextArrow:"<span class='after-button'><img class='a-right control-c next slick-next' src='./wp-content/themes/twentyseventeen/assets/bright.png'></span>",
+        prevArrow:"<span class='before-button'><img class='a-left control-c prev slick-prev' src='./wp-content/themes/twentyseventeen/assets/img/bleft.png'></span>",
+        nextArrow:"<span class='after-button'><img class='a-right control-c next slick-next' src='./wp-content/themes/twentyseventeen/assets/img/bright.png'></span>",
         // centerMode: true,
         // centerPadding: '200px',
         draggable: false,
