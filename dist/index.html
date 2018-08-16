@@ -13,15 +13,15 @@
         <img src="../img/logo.png" alt="">    
     </div> 
     <header>
-        <section class="top-line">
-            <div class=" logo-menu-wrap">
-                <div class="logo">
+        <section class="top-line top">
+            <div class="logo-menu-wrap top__wrap">
+                <div class="logo top__logo">
                     <a href="/">
-                        <img class="logo-img" src="../img/logo.png" alt="">
+                        <img class="top__logo--img" src="../img/logo.png" alt="">
                     </a>
-                    <div class="input-fiel">
+                    <div class="input-fiel top__lang">
                         <!-- SELECT LANGUAGE -->
-                        <select class="browser-default">
+                        <select class="browser-default top__lang--select">
                         <option value="2">Укр</option>
                         <option value="3">De</option>
                         <option value="3">Eng</option>
@@ -30,61 +30,63 @@
                     </div>
                 </div>
                 <!-- MAIN NAV MENU -->
-                <nav class="main-nav-menu">
-                        <a href="#">Головна</a>
-                        <a href="#">Продукцiя</a>
-                        <a href="#">Сервiс</a>
-                        <a href="#">Новини</a>
-                        <a href="#">Про нас</a>
+                <nav class="main-nav-menu white top__nav">
+                        <a class="top__nav--href" href="#">Головна</a>
+                        <a class="top__nav--href" href="#">Продукцiя</a>
+                        <a class="top__nav--href" href="#">Сервiс</a>
+                        <a class="top__nav--href" href="#">Новини</a>
+                        <a class="top__nav--href" href="#">Про нас</a>
                 </nav>
                 <!-- mobile menu btn -->
-                <img class="burger-menu" src="../img/burger-img.png" alt="">
+                <img class="burger-menu top--burger-plashka" src="../img/burger-img.png" alt="">
             </div>
         </section>
 
-        <section class="main-presentation">
-            <div class="main-presentation-background"></div>
-            <div class="main-presentation-shadow">
-                <div class="presenatation-wrap">
-                    <div class="contact-phones">
-                        <a href="#">+380 44 499 2096</a> <span class="separate-slash">/</span> <a href="#">+380 44 499 2097</a>
+        <section class="main-presentation pres">
+            <div class="main-presentation-background pres--img"></div>
+            <div class="main-presentation-shadow pres__shadow">
+                <div class="presenatation-wrap pres__wrap">
+                    <div class="contact-phones pres__wrap--numbers">
+                        <a href="#">+380 44 499 2096</a> 
+                        <span class="separate-slash">/</span> 
+                        <a href="#">+380 44 499 2097</a>
                     </div>
                     <!-- BLOCK 1.1 -->
-                    <div class="container the-content-description">
-                        <h1>СЕРВIС З ЯКIСТЮ <br> ВИРОБНИКА</h1>
-                        <p class="main-description">
+                    <div class="container the-content-description pres__static static">
+                        <h1 class="static--title">СЕРВIС З ЯКIСТЮ <br> ВИРОБНИКА</h1>
+                        <p class="main-description static--text">
                                 Навіть найкращий високоякісний інструмент може
                                 забезпечити свою оптимальну продуктивність, отримавши
-                                регулярне технічне обслуговування силами фахівців 
                         </p>
 
-                        <div class="main-buttons">
-                            <button class="waves-effect waves-light siblin-button steps">ЕТАПИ ОБСЛУГОВУВАННЯ</button>
+                        <div class="main-buttons static__btns">
+                            <button class="waves-effect waves-light siblin-button steps static--btn">ЕТАПИ ОБСЛУГОВУВАННЯ</button>
                             <!-- click button - block 1.1 fade out, block 1.2 fade in -->
-                            <button class="waves-effect waves-light siblin-button presentation">ПРЕЗЕНТАЦIЯ СЕРВIСА</button>
+                            <button class="waves-effect waves-light siblin-button presentation static--btn">ПРЕЗЕНТАЦIЯ СЕРВIСА</button>
                         </div>
                     </div>
+
                     <!-- BLOCK 1.2 -->
-                    <div class="container  the_content-presentation">
-                        <div class="wrapper-text-grafic">
-                                <div class="left-text">
-                                        <span class="left-blue-line"></span>
+                    <div class="container  the_content-presentation pres__dinamic dinamic">
+                        <div class="wrapper-text-grafic dinamic__content-wrap ">
+                                <div class="left-text dinamic__wrap-text">
+                                        <span class="left-blue-line dinamic--blue-line"></span>
                                         <!-- render the title -->
-                                        <h2></h2>
+                                        <h2 class="dinamic--title-presentation"></h2>
                                         <!-- render descriptio -->
-                                        <p class="main-description-presentation"></p>
+                                        <p class="main-description-presentation dinamic--text-presentation"></p>
                                 </div>
-                                <div class="grafics">
+                                <div class="grafics graf">
                                     <!-- render blue grafic -->
-                                    <div class="dinamic-grag"></div>
+                                    <div class="dinamic-grag graf--blue"></div>
                                     <!-- static white grafic 100% -->
-                                    <div class="compare-grafic">
-                                        <div class="compare-item"></div>
-                                        <div class="compare-item"></div>
-                                        <div class="compare-item"></div>
-                                        <div class="compare-item"></div>
-                                        <div class="compare-item"></div>
-                                        <div class="compare-item"></div>
+                                    <div class="compare-grafic graf__white">
+                                        <div class="compare-item graf__white--item"></div>
+                                        <div class="compare-item graf__white--item"></div>
+                                        <div class="compare-item graf__white--item"></div>
+                                        <div class="compare-item graf__white--item"></div>
+                                        <div class="compare-item graf__white--item"></div>
+                                        <div class="compare-item graf__white--item"></div>
                                     </div>
                                 </div>
                         </div>
@@ -187,11 +189,11 @@
                             </div>
                         </div>
                         <!-- return to block 1.1 -->
-                        <button class="close-presentat"></button>
+                        <button class="close-presentat dinamic--close"></button>
                     </div>
                 </div>
                 <!--  animated SVG elements -->
-                <div id="area-for-header-svg">
+                <div id="area-for-header-svg" class="pres__svg">
                     <div class="wrapper-svg" id="w-sv">
                         <svg id="circle1" class="circle1"
                             xmlns="http://www.w3.org/2000/svg"
@@ -588,14 +590,14 @@
 </footer>
 
 <!-- mobile menu -->
-<nav class="mob-menu-wrap">
+<!-- <nav class="mob-menu-wrap">
     <img src="../img/mouse-clicker.png" class="close-it" alt="">
     <a href="#">Головна</a>
     <a href="#">Продукцiя</a>
     <a href="#">Сервiс</a>
     <a href="#">Новини</a>
     <a href="#">Про нас</a>
-</nav>
+</nav> -->
 
 
 <div class="move-up">

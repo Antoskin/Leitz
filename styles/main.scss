@@ -71,491 +71,40 @@ section h3 {
     align-items: center;
 }
 
-.logo-menu-wrap {
-        max-width: 1358px;
-        //border: 1px solid red;
-        margin: 0 auto;
-        padding: 0 10px;
-        display: flex;
-        justify-content: space-between;
-        .logo {
-            position: relative;
-            width: 50%;
-            .logo-img {
-                position: absolute;
-                left: 0;
-                top: 0;
-                z-index: 9;
-            }
-            //language
-            .browser-default {
-                max-width: 67px;
-                margin-left: 150px;
-                margin-top: 6px;
-                border-color: transparent;
-                background: transparent;
-                border: none;
-                outline: none;
-            }
-        }
-        .main-nav-menu {
-            width: 50%;
-            display: flex;
-            align-items: center;
-            height: 60px;
-            justify-content: flex-end;
-            a {
-                margin: 0px 22px;
-                color: #181515;
-                line-height: 25px;
-                font-size: 12px;
-                //font-family: 'reg';
-                // &:last-child {
-                //     margin-right: 0;
-                // }
-                &:hover {
-                    color: $hover;
-                    border-top: 3px solid transparent;
-                    border-bottom: 3px solid $hover;
-                }
-             
-            }
-      
-    }
-    .burger-menu {
-        position: absolute;
-        right: 10px;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        font-size: 25px;
-        height: 20px;
-        cursor: pointer;
-        display: none;
-    } 
-    position: relative;
-}
+@import './components/header';
+@import './components/presentation';
 
-.mob-menu-wrap {
+// .mob-menu-wrap {
 
-    position: fixed;
-    top:0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: -5;
-    visibility: hidden;
-    a {
-        color: #000;
-        margin: 10px 0
-    }
-    .close-it {
-        position: absolute;
-        right: 30px;
-        top:10px;
-        cursor: pointer;
-    }
-}
-.open_menu {
-    visibility: visible;
-    z-index: 60;
-}
+//     position: fixed;
+//     top:0;
+//     bottom: 0;
+//     width: 100%;
+//     height: 100%;
+//     background: #fff;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     z-index: -5;
+//     visibility: hidden;
+//     a {
+//         color: #000;
+//         margin: 10px 0
+//     }
+//     .close-it {
+//         position: absolute;
+//         right: 30px;
+//         top:10px;
+//         cursor: pointer;
+//     }
+// }
+// .open_menu {
+//     visibility: visible;
+//     z-index: 60;
+// }
 
-/*main presentation container */ 
-.main-presentation {
-    padding: auto;
-    position: relative;
-    overflow: hidden;
-    // background: url('../img/main.png') no-repeat;
-   
-    border-bottom: 10px solid $hover;
-   
-    /*shadow*/ 
-    .main-presentation-background {
-        //display: none;
-        background: url('../img/main.png') ;
-        background-repeat: no-repeat !important;
-        background-size: cover !important;
-        background-position: center !important;
-        
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-     
-        animation: plusMinusBackground 15s infinite;
-        animation-delay: 6s;
-    }
-    .main-presentation-video {
-        display: none;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        //background: red;
-    }
-    .main-presentation-shadow { 
-        overflow: hidden;
-        position: relative;
-        height: 621px;
-        //background: rgba(0, 0, 0, 0.5);
-      
-        box-sizing: border-box;
-        #area-for-header-svg {
-            //opacity: 0;
-            //display: none;
-            position: absolute;
-            right: 0;
-            top: 60px;
-            bottom: 0;
-            //border: 1px solid #fff;
-            height: 472px;
-            width: 472px;
-            margin: auto;
-            .wrapper-svg {
-                position: relative;
-                //border: 1px solid rgb(15, 12, 12);
-                height: 472px;
-                width: 472px;
-                .circle1 {
-                    position: absolute;
-                    left: 50%;
-                    z-index: 3;
-                    transform: rotate(180deg);
-                }
-                .circle2 {
-                    position: absolute;
-                    left: 59%;
-                    top: 0;
-                    bottom: 0;
-                    margin: auto;
-                    transform: rotate(180deg);
-                }
-                .line1 {
-                    position: absolute;
-                    width: 1440px;
-                    right:224px;
-                    top: 176px;
-                    transform: rotate(180deg);
-                }
-                .line2 {
-                    position: absolute;
-                    right: 161px;
-                    top: 132px;
-                    width: 415px;
-                    z-index: 5;
-                    transform: rotate(180deg);
-                }
-                .line2little {
-                    position: absolute;
-                    right: 300px;
-                    top: 122px;
-                    width: 122px;
-                    z-index: 5;
-                    height: 7px;
-                   
-                }
-                .line-vert1 {
-                    position: absolute;
-                    bottom: -147px;
-                    transform: rotate(90deg);
-                    right: -58px;
-                }
-                .line-vert2 {
-                    position: absolute;
-                    bottom: -120px;
-                    transform: rotate(90deg);
-                    right: -100px;
-                }
-                .circle-little {
-                    position: absolute;
-                    top: 119px;
-                    left: -66px;
-                    transform: rotate(-90deg);
-                }
-            }
-        }
-     }
-    .presenatation-wrap {
-        //border: 1px dashed #fff;
-        z-index: 5;
-        /*phoner*/ 
-        .contact-phones {
-            max-width: 1358px;
-            margin: 0 auto;
-            padding: 0 10px;
-            margin: 0 22px;
 
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            height: 60px;
-            padding-top: 5px;
-            a {
-                color: #fff;
-                font-size: 16px;
-            }
-            .separate-slash {
-                color: $hover;
-                margin: 0 15px;
-            }
-        }
-        /* div with title and main description */
-        .the-content-description {
-            //display: none;
-            //opacity: 0;
-            color: #fff;
-            h1 { 
-                
-                font-size: 64px;     
-                font-weight: 100;
-                letter-spacing: 3px;
-            line-height: 79px}
-            .main-description { /*p*/
-                padding-right: 13%;
-                font-size: 32px;
-                padding-top: 10px;
-                letter-spacing: 1.3px;
-                line-height: 39px;
-            }
-            .main-buttons {
-                /*first button*/ 
-                margin-top: 37px;
-                .siblin-button {
-                    width: 329px;
-                    background: transparent;
-                    padding: 15px 30px;
-                    border: 2px solid #fff;
-                    transition: .3s ease;
-                    //font-family: 'reg';
-                    font-size: 16px;
-                    letter-spacing: 2px;
-                    &:first-child {
-                        margin-right:44px;
-                    }
-                    &:hover {
-                        background: $hover;
-                        border-color: $hover;
-                    }
-                }
-            }
-        } 
-
-        .the_content-presentation {
-            display: none;
-            opacity: 0;
-            position: relative;
-            .close-presentat {
-                position: absolute;
-                right: 0;
-                top: 10px;
-                color: $hover;
-                cursor: pointer;
-                width: 28px;
-                height: 28px;
-                background: url('../img/cancel.svg') no-repeat;
-                background-size: cover;
-                border: none;
-            }
-            .wrapper-text-grafic {
-                display: flex;
-                align-items: flex-end;
-                justify-content: space-between;
-                .left-text {
-                    color: #fff;
-                    
-                    width: 555px;
-                    height: 355px;
-                    position: relative;
-                    .left-blue-line {
-                        opacity: 0;
-                        width: 1px;
-                        height: 91px;
-                        background: $hover;
-                        position: absolute;
-                        left: 0;
-                        top: 62px;
-                    }
-                    h2 { 
-                        padding-left: 53px;
-                        font-size: 45px;
-                        font-weight: 100;
-                        letter-spacing: 3px;
-                        line-height: 59px;
-                        margin-bottom: 31px;
-                        margin-top: 51px;           
-                    }
-                    .main-description-presentation {
-                        // width: 555px;
-                        font-size: 18px;
-                        padding-top: 10px;
-                        letter-spacing: 1.3px;
-                        line-height: 29px;
-                        
-                        height: 128px;
-                        display: flex;
-                        align-items: flex-end;
-                    }
-                }
-                .grafics {
-                  
-                    width: 100%;
-                    height: 322px;
-                    margin-left: 20px;
-                    max-width: 390px;
-                    
-                    .dinamic-grag {
-                        height: 299px;
-                        width: 37px;
-                        //border: 1px solid darkgoldenrod;
-                        margin-right: 5px;
-                        float: left;
-                        display: flex;
-                        flex-direction: column-reverse;
-                        justify-content: flex-start;
-                        .dinamic-item {
-                            width: 35px;
-                            height: 35px;
-                            background: $hover;
-                            margin-bottom: 8px;
-                            .stinger {
-                                border-top: 1px solid #fff;
-                                margin-left: 43px;
-                             
-                                color: #fff;
-                                position: relative;
-                                font-size: 42px;
-                                .type-service {
-                                    position: absolute;
-                                    right: 0;
-                                    top: -70px;
-                                }
-                                .grows-precent {
-                                    position: absolute;
-                                    right: 0;
-                                    margin-top: 5px;
-                                }
-                            }
-                        }
-                    }
-                    .compare-grafic {
-                        height: 299px;
-                        width: 39px;
-                        //border: 1px solid darkkhaki;
-                        float: left;
-                        display: flex;
-                        flex-direction: column-reverse;
-                        justify-content: flex-start;
-                        .compare-item {
-                            opacity: 0;
-                            width: 35px;
-                            height: 35px;
-                            background: #fff;
-                            margin-bottom: 8px;
-                        }
-                    }
-                }
-            }
-            #steps-in-graf {
-                //border: 1px solid #fff;
-                height: 156px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                position: relative;
-                max-width: 961px;
-                margin: 0 auto;
-                .but-graf {
-                  
-                    padding: 5px;
-                    border: 1px solid #fff;
-                    border-radius: 50%;
-                    transition: .5s ease;
-                    cursor: pointer;
-                    .wrapper-lizer {
-                        overflow: hidden;
-                        transition: .8s ease-in-out;
-                        width: 15px;
-                        height: 15px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        opacity: 0;
-                      
-                        .lizer {
-                            height: 5px;
-                            border: 1px solid #fff;
-                            width: 2px;
-                            margin: 0 2px;
-                            border-radius: 5px;
-                            opacity: 0;
-                            transition: .6s linear;
-                            transition-delay: 1s;
-                          
-                        }
-                    }
-                    
-                }
-                .actived {
-                    border-color: $hover;
-                    //border-color: transparent;
-                    .wrapper-lizer {
-                        width: 100px;
-                        height: 100px;
-                        // padding: 40px;
-                        opacity: 1;
-                        
-                        .lizer {
-                            opacity: 1;
-                                &:nth-child(2), &:nth-child(10) {
-                                height: 6px;
-                              }
-                              &:nth-child(3), &:nth-child(9) {
-                                height: 10px;
-                              }
-                              &:nth-child(4), &:nth-child(8) {
-                                height: 16px;
-                              }
-                              &:nth-child(5) {
-                                height: 25px;
-                              }
-                              &:nth-child(7) {
-                                 height: 30px;
-                              }
-                              &:nth-child(6) {
-                                height: 45px;
-                            }
-                        }
-                    }
-                }
-                .string-liner {
-                    border-top: 1px solid #fff;
-                    height: 2px;
-                    width: 100%;
-                }
-            }
-        }
-    } 
-}
-
-@keyframes plusMinusBackground {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
 
 //*TWO* 
 /*first slider*/
@@ -698,12 +247,13 @@ section h3 {
 
 /* THREE */ 
 .wrapper-steps {
-    height: 728px;
+   // height: 728px;
     background: url('../img/chertji.jpg') no-repeat;
     background-size: cover;
     border-bottom: 10px solid $hover;
     position: relative;
     overflow: hidden;
+    padding-bottom: 50px;
     .double-title-for-steps {
         h3 {
             color: #fff;
@@ -751,7 +301,7 @@ section h3 {
         .wrapper-stepses {
             //border: 1px solid skyblue;
             width: 100%;
-            height: 304px;
+            //height: 304px;
             margin-top: 211px;
             position: relative;
             .agranka {
@@ -1438,7 +988,7 @@ footer {
 
 @media (max-width:1200px) {
 // header
-.main-presentation .main-presentation-shadow #area-for-header-svg {
+.pres__svg {
     right: -56px
 }
 
@@ -1450,8 +1000,8 @@ footer {
 .first-slider-wrapper .control-point {right: 400px}
 .first-slider-wrapper .quatro-normal h4 {font-size: 25px}
 
-    .main-presentation .presenatation-wrap .the-content-description h1 {font-size: 55px}
-    .main-presentation .presenatation-wrap .the-content-description .main-description {font-size: 25px}
+    .pres .static--title {font-size: 55px}
+    .pres .static--text {font-size: 25px}
     .resident-slider-wrapper .slider-of-res .slick-slide .slide-item .right-side .contacts a, .resident-slider-wrapper .slider-of-res .slick-slide .slide-item .right-side .description {
         font-size: 15px
     }
@@ -1482,37 +1032,40 @@ footer {
 }
 
 @media (max-width:1020px) {
-    .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text h2 {
+    .pres .dinamic--title-presentation {
         font-size: 30px;
         margin-top: 65px;
         letter-spacing: 1;
         padding-left: 20px;
     }
-    .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text .main-description-presentation {
+    .pres .dinamic--text-presentation {
         font-size: 13px;
     }
-    .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag, .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .compare-grafic {
-       // width: 
-    }
-    .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text .left-blue-line {
+   
+    .pres .dinamic--blue-line {
         margin-top: 17px;
     
     }
-    .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag, .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .compare-grafic {
+    .pres .dinamic .graf__white, .pres .dinamic .graf--blue {
         width: 30px
     }
-    .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item, .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .compare-grafic .compare-item {
+    .pres .dinamic .graf--blue .dinamic-item, 
+    .pres .dinamic .graf__white--item {
         width: 27px;
         height: 27px;
     }
-    .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item .stinger {
+    // .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item, .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .compare-grafic .compare-item {
+    //     width: 27px;
+    //     height: 27px;
+    // }
+    .pres .dinamic .graf--blue .dinamic-item .stinger {
         max-width: 200px;
         font-size: 25px;
     }
-    .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item .stinger .type-service {
+    .pres .dinamic .graf--blue .dinamic-item .stinger .type-service {
         top: -45px;
     }
-    .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text {
+    .pres .dinamic__wrap-text {
         width: 870px;
     }
 }
@@ -1537,20 +1090,20 @@ footer {
 }
 
 @media (max-width:900px) {
-    .main-presentation .presenatation-wrap .the-content-description h1 {
+    .pres .static--title {
         font-size: 44px
     }
-    .main-presentation .main-presentation-shadow #area-for-header-svg {
+    .pres__svg {
         right: -135px
     }
-    .main-presentation .presenatation-wrap .the-content-description .main-description {
+    .pres .static--text {
         font-size: 20px
     }
-    .main-presentation .presenatation-wrap .the-content-description .main-buttons .siblin-button:first-child {
+    .pres .static--btn:first-child {
         margin-right: 10px
     }
 
-    .main-presentation .presenatation-wrap .the-content-description .main-buttons .siblin-button {
+    .pres .static--btn {
         width: 250px;
         padding: 12px 0px;
         font-size: 14px;
@@ -1694,8 +1247,8 @@ footer {
     .main-presentation .presenatation-wrap .contact-phones {
         display: none
     }
-    .top-line .logo-menu-wrap .logo .logo-img {
-        width: 49px;
+    .top__logo--img {
+        width: 49px !important;
     }
     .top-line .logo-menu-wrap .logo .browser-default {
         height: 30px;
@@ -1703,23 +1256,30 @@ footer {
         margin-left: 55px;
         margin-top: 0px;
     }
-    .main-presentation .presenatation-wrap .the-content-description h1 {
+    .pres .static--title {
         font-size: 24px;
         line-height: 33px;
         margin-top: 140px
     }
-    .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text h2 {
+    .pres .dinamic--blue-line {
+        margin-top: 0
+    }
+    .pres .dinamic--title-presentation {
         font-size: 24px;
         line-height: 33px;
         margin-top: 35px;
         letter-spacing: 0px;
         width: 290px;
     }
-    .main-presentation .presenatation-wrap .the-content-description .main-description, .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text .main-description-presentation {
+    .pres .dinamic .graf {
+        margin-left: 0
+    }
+    .pres .static--text, .pres .dinamic--text-presentation {
         line-height: 21px;
         font-size: 14px;
         //min-height: 130px;
         height: 136px;
+        padding-right: 5px;
         
         //width: 80%;
         font-size: 11px;
@@ -1730,92 +1290,93 @@ footer {
         margin-top: 115px;
         z-index: 90;
     }
-    .main-presentation .presenatation-wrap .the-content-description .main-buttons .siblin-button {
+    .pres .static--btn {
         width: 100%;
         margin-top: 10px;
     }
-    .main-presentation .main-presentation-shadow #area-for-header-svg {
+    .pres__svg {
         bottom: -340px;
         //top: 0;
         right: -235px;
     }
-    .main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .actived {
+    .pres .dinamic #steps-in-graf .actived {
         background: $hover
     }
-    .main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .actived .wrapper-lizer {
+    .pres .dinamic #steps-in-graf .actived .wrapper-lizer {
         width: 15px;
         height: 15px;
      
    
     }
-    .main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .but-graf {
+    .pres .dinamic #steps-in-graf .but-graf {
        // background: $hover;
     }
-    .main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .actived .wrapper-lizer .lizer {
+    .pres .dinamic #steps-in-graf .actived .wrapper-lizer .lizer {
         display: none;
     }
-    .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text {
+    .pres .dinamic__wrap-text {
         height: 322px;
         max-width: 50%;
     }
-    .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text .main-description-presentation {
+    .pres .dinamic--text-presentation {
         height: 155px;
         padding-top: 0;
         margin-top: 0;
     }
-    .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text{
-        max-width: 55%; 
-    }
-    .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag, .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .compare-grafic {
+
+    .pres .dinamic .graf__white, .pres .dinamic .graf--blue {
         width: 22px;
     }
-    .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item, .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .compare-grafic .compare-item {
+    ///
+        .pres .dinamic .graf--blue .dinamic-item, 
+        .pres .dinamic .graf__white--item  { 
         width: 20px;
         height: 20px;
         margin-bottom: 5px;
     }
-    .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item .stinger {
-        max-width: 70px;
+    .pres .dinamic .graf--blue .dinamic-item .stinger {
+        max-width: 110px;
     }
-    .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item .stinger .type-service {
+    .pres .dinamic .graf--blue .dinamic-item .stinger .type-service {
         font-size: 14px;
         top: -25px;
     }
     
-    .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item .stinger .grows-precent {
+    .pres .dinamic .graf--blue .dinamic-item .stinger .grows-precent {
         font-size: 14px;
         margin-top: 0;
     }
-    .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text h2 {
+    .pres .dinamic--title-presentation {
         padding-left: 17px;
         padding-top: 5px;
+        height: 71px;
     }
-    .main-presentation .main-presentation-shadow #area-for-header-svg {
+    .pres__svg {
         right: 0;
         width: 1%;
     }
-    .main-presentation .main-presentation-shadow #area-for-header-svg .wrapper-svg .line2 {
+    .pres__svg .wrapper-svg .line2 {
         right: 350px;
     }
-    .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text .left-blue-line {
+    .pres .dinamic--blue-line {
         height: 55px;
         top: 47px;
     }
     .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics {
         //margin-left: 0;
     }
-    .main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .but-graf .wrapper-lizer {
+    .pres .dinamic #steps-in-graf .but-graf .wrapper-lizer {
         width: 5px;
         height: 5px;
     }
-    .main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf {
+    .pres .dinamic #steps-in-graf {
         height: 110px;
         border-top: 1px solid $hover;
     }
-    .main-presentation .presenatation-wrap .the_content-presentation #steps-in-graf .but-graf {
+    .pres .dinamic #steps-in-graf .but-graf {
         padding: 3px;
     }
-    .main-presentation .main-presentation-shadow #area-for-header-svg .wrapper-svg .circle-little {
+    .pres__svg .wrapper-svg .circle-little {
         top: 132px;
         left: -255px;
     }
@@ -1842,7 +1403,7 @@ footer {
     }
 
     .first-slider-wrapper .quatro-normal .slider-fill-result .slick-dots {
-        top: -12px;
+        top: -39px;
         right: -250px;
     }
     .first-slider-wrapper .quatro-normal .slider-fill-result .slick-dots li {
@@ -1954,9 +1515,9 @@ footer {
         margin: auto;
         top: 170px;
     }
-    .wrapper-feetback .the_wrap_feed .place-for-ava .who-is {
-        margin-top: 10px;
-    }
+    // .wrapper-feetback .the_wrap_feed .place-for-ava .who-is {
+    //     margin-top: 10px;
+    // }
     .wrapper-feetback .the_wrap_feed .place-for-text {
         width: 98%;
         bottom: 0;
@@ -2044,13 +1605,13 @@ footer {
     .main-presentation .main-presentation-background {
         animation: none;
     }
-    .main-presentation .presenatation-wrap .the-content-description h1 {
+    .pres .static--title {
         margin-top: 107px;
         line-height: 31px;
         margin-bottom: 0;
         letter-spacing: 0px;
     }
-    .main-presentation .presenatation-wrap .the-content-description .main-description {
+    .pres .static--text {
         padding: 0px 0px 0 2px;
         margin-top: 7px;
         line-height: 17px;
@@ -2058,20 +1619,20 @@ footer {
         word-spacing: 0px;
 
     }
-    .main-presentation .main-presentation-shadow #area-for-header-svg {
+    .pres__svg {
         bottom: -270px;
     }
     .main-presentation .presenatation-wrap .the-content-description .main-buttons {
         margin-top: 37px;
     }
-    .main-presentation .presenatation-wrap .the-content-description .main-buttons .siblin-button {
+    .pres .static--btn {
         padding: 3px 0px;
         border: 1px solid #fff;
     }
-    .main-presentation .presenatation-wrap .the-content-description .main-buttons .siblin-button:first-child {
+    .pres .static--btn:first-child {
         margin: 10px 0 5px;
     }
-    .main-presentation .main-presentation-shadow #area-for-header-svg .wrapper-svg .line2 {
+    .pres__svg .wrapper-svg .line2 {
         top: 145px;
     }
 
@@ -2103,12 +1664,12 @@ footer {
         max-height: 151px;
     }
     .first-slider-wrapper, .wrapper-steps {
-        height: 480px
+        height: auto
     }
     .wrapper-steps .steps-tabler .wrapper-stepses {
-        height: 222px;
-        margin: 70px auto;
-        max-width: 500px;
+        //height: 222px;
+        //margin: 70px auto;
+        //max-width: 500px;
     }
     .wrapper-steps .double-title-for-steps h3 {
         margin: 20px 0 0;
@@ -2200,7 +1761,7 @@ footer {
         /* margin: 0 auto; */
         left: 0;
         right: 0;
-        margin: auto;
+        margin: 40px auto;
     }
 
     .wrapper-feetback .the_wrap_feed .the_wrap_graf {
@@ -2213,7 +1774,7 @@ footer {
       
     }
     .wrapper-feetback .the_wrap_feed .place-for-ava {
-        top: 135px;
+        top: 190px;
         bottom: inherit;
         width: 100%;
         padding: 0 10px;
@@ -2222,6 +1783,7 @@ footer {
     }
     .wrapper-feetback .the_wrap_feed .place-for-ava .who-is {
         margin-top: 25px;
+        margin-left: 10px
     }
     .wrapper-feetback .the_wrap_feed .place-for-ava .the-ava {
         width: 108px;
@@ -2231,12 +1793,10 @@ footer {
         width: auto;
         height: 100%;
     }
-    .wrapper-feetback {
-        height: 476px;
-    }
-    .wrapper-feetback .the_wrap_feed {
-        height: 350px
-    }
+   .wrapper-feetback .the_wrap_feed .the_wrap_graf
+    // .wrapper-feetback .the_wrap_feed {
+    //     height: 350px
+    // }
     .wrapper-feetback .the_wrap_feed .place-for-text {
         font-size: 11px;
         line-height: 13px;
@@ -2344,8 +1904,8 @@ footer {
 @media (max-width: 500px) {
     //ПРОЦЕС ОБСЛУГОВУВАННЯ 500
     .wrapper-steps .steps-tabler .wrapper-stepses {
-        max-width: 320px;
-        padding: 0 10px;
+        //max-width: 320px;
+        //padding: 0 10px;
     }
     .wrapper-steps .steps-tabler .wrapper-stepses .step-item .quotres-cont {
         display: none

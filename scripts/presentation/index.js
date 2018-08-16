@@ -6,7 +6,7 @@ import {changeItem} from './animation'
 import autoClicker from './autoChange';
 
 export default function() {
-    autoClicker();
+    //autoClicker();
     changeBlock() // click presentation button
 
     // dom targets title, text, blue_grafic 
