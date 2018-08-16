@@ -401,6 +401,8 @@ section h3 {
   line-height: 59px;
   margin-bottom: 31px;
   margin-top: 51px;
+  text-transform: uppercase;
+  min-height: 118px;
 }
 
 .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text .main-description-presentation {
@@ -416,7 +418,7 @@ section h3 {
 .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics {
   width: 100%;
   height: 322px;
-  margin-left: 20px;
+/*  margin-left: 20px;*/
   max-width: 390px;
 }
 
@@ -448,7 +450,12 @@ section h3 {
 .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item .stinger .type-service {
   position: absolute;
   right: 0;
-  top: -70px;
+  bottom:10px;
+      /*border: 1px solid;*/
+        width: 100%;
+    max-width: 270px;
+    text-align: right;
+    line-height: 40px;
 }
 
 .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item .stinger .grows-precent {
@@ -1506,6 +1513,8 @@ footer .footer-logo {
     margin-top: 65px;
     letter-spacing: 1;
     padding-left: 20px;
+
+
   }
   .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text .main-description-presentation {
     font-size: 13px;
@@ -1525,7 +1534,7 @@ footer .footer-logo {
     font-size: 25px;
   }
   .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item .stinger .type-service {
-    top: -45px;
+    /*top: -45px;*/
   }
   .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .left-text {
     width: 870px;
@@ -1742,7 +1751,7 @@ footer .footer-logo {
   }
   .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item .stinger .type-service {
     font-size: 14px;
-    top: -25px;
+    /*top: -25px;*/
   }
   .main-presentation .presenatation-wrap .the_content-presentation .wrapper-text-grafic .grafics .dinamic-grag .dinamic-item .stinger .grows-precent {
     font-size: 14px;

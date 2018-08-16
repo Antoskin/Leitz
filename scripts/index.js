@@ -34,12 +34,22 @@ $(document).ready(function() {
 
 	var up = $(`.move-up`)
 	$(window).scroll(function() { // если скролл ниже второго блока, показываем кнопку move up
-		let th = $(this).scrollTop()
+		let th = $(this).scrollTop() + $(window).height()
+		let footer_pos = $(`.wrap-footer`).offset().top;
+		
 		{ th>600 ? up.css({'opacity':'1'}) : up.css({'opacity':'0'}) }
+		{ th > footer_pos ? up.css({'opacity':'0'}) : up.css({'opacity':'1'}) }
+
+		console.log(`footer pos: ${footer_pos}`)
+		console.log(`pos: ${th}`)
+
 	})
 
 	up.click( () => {
 		$('body, html').animate({scrollTop:$('.top-line').offset().top},777)
 	} )
 
+
+
 })
+

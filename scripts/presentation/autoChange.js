@@ -5,7 +5,7 @@ export default function() {
 		inChild = 0,
 		timer = 0,
 		timerVal = 0,
-		delay = 3000
+		delay = 7000
 
 
 	function updateInterval() {
@@ -43,5 +43,11 @@ export default function() {
 		updateInterval()
 	})
 
+
+
+
+  	$(`.but-graf`).click(function() {
+        timerVal = $(this).attr(`data-ind`)
+    })
 
 }

@@ -35,17 +35,17 @@ export default function (e) {
         
      
         // switching process in card
-        $(`.quotr-cont .q`).click( function() {
-            let id = $(this).attr('data-keys')
+        // $(`.quotr-cont .q`).click( function() {
+        //     let id = $(this).attr('data-keys')
 
-                setTimeout( () => {
-                    title_descr.text(curentProcess['process'][id]['the_proc'])
-                    descript.text(curentProcess['process'][id]['description'])
-                    //console.log(curentProcess['process'][id]['the_proc'])
-                },500 )
+        //         setTimeout( () => {
+        //             title_descr.text(curentProcess['process'][id]['the_proc'])
+        //             descript.text(curentProcess['process'][id]['description'])
+        //             //console.log(curentProcess['process'][id]['the_proc'])
+        //         },500 )
                 
-                changeLabel()
-        } )
+        //         changeLabel()
+        // } )
 }
 
 

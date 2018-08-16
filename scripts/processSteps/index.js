@@ -8,7 +8,7 @@ import { switchNext } from './change_the_item'
 
 export default () => {
     renderProcesses() //render all steps
-    change()
+    
     
     $(`.step-item p`).click( function() { 
         fadeOut() // скрывает renderProcesses
@@ -25,6 +25,7 @@ export default () => {
         },2000 ) 
 
 
+        change(d_id)
     })
 
 

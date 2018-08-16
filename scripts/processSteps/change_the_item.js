@@ -5,7 +5,7 @@ import { changeItem } from './processesAnimation.js'
 //!!!!!!!!!!!!!! note  => add to .quotr-cont .q   opacity:0
 
 export default function(id) {
-	//console.log(id) //curent id
+	console.log(id) //curent id
 
 	let cur_id = id||1
 
@@ -14,7 +14,7 @@ export default function(id) {
 
 		if(th.hasClass(`fa-long-arrow-alt-right`)) {
 			{
-				cur_id >= 6 ?
+				cur_id >= 9 ?
 			 	cur_id = 0 :
 				cur_id++
 			}
@@ -22,13 +22,13 @@ export default function(id) {
 		} else if(th.hasClass(`fa-long-arrow-alt-left`)) {
 				{
 					cur_id == 0 ?
-				 	cur_id = 6 :
+				 	cur_id = 9 :
 					cur_id--
 				}
 			
 		}
 		
-		//console.log(cur_id)
+		console.log(cur_id)
 
 		changeItem()
 	
