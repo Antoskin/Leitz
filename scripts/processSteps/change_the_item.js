@@ -28,8 +28,6 @@ export default function(id) {
 			
 		}
 		
-		console.log(cur_id)
-
 		changeItem()
 	
 		setTimeout( () => {

@@ -1,11 +1,9 @@
 import sliders from './sliders'
-import {changeSlide} from './anima'
 
 export default () => {
     sliders()
 
     $(`.control-c`).click( function() {
-        //changeSlide()
 
        setTimeout( () => {
         let getPos = $(`.slick-current .change-position-of-slider`)

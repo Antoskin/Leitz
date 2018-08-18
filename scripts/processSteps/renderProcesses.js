@@ -1,7 +1,6 @@
 
 import  $ from 'jquery'
 import data from './instrumentsList'
-import the_process  from './render_the_item'
 
 export default function() {
     

@@ -1,4 +1,3 @@
-import $ from 'jquery'
 import { TweenMax } from 'gsap';
 
 
@@ -41,7 +40,6 @@ export function firstAppear() {
     tm.from(`.close-item`, .3, {opacity:0})
     tm.staggerFromTo(`.quotr-cont> div`, .3, { opacity:0, y: -10 },{opacity:1,y:0},.1)
     tm.fromTo(`.fas`, 1, {opacity:0, scale:.8},{opacity:1, scale:1})
-   
 }
 
 export function lastAppear() {

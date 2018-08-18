@@ -4,37 +4,55 @@ import renderProcesses from './renderProcesses'
 import renderCard from './render_the_item'
 import change from './change_the_item.js'
 
-import { switchNext } from './change_the_item'
+
+class Process {
+    constructor(id) {
+        this.id = id
+    }
+    render() {
+        renderProcesses()
+    }
+    hideAllanim() {
+        fadeOut()
+    }
+    renderItem() {
+        renderCard(this.id)
+    }
+    renderItemAnim() {
+        setTimeout( () => {
+            firstAppear()
+            document.querySelector('.item-processing').classList.add('showed');
+        }, 2000 )
+    }
+    hideItemAnim() {
+        setTimeout( () => {
+            fadeIn()
+            document.querySelector('.item-processing').classList.remove('showed')
+        },1500 )
+        lastAppear()
+    }
+    changeItem() {
+        change(this.id)
+    }
+}
 
 export default () => {
-    renderProcesses() //render all steps
-    
+    var processes = new Process()
+    processes.render()
     
     $(`.step-item p`).click( function() { 
-        fadeOut() // скрывает renderProcesses
+        const id = $(this).attr(`data-id`)
         
-        let d_id = $(this).attr(`data-id`) // get id выбранного пункта
-        renderCard(d_id) // передаём для рендера пункта
-    
-        setTimeout( () => {
-            $(`.item-processing`).addClass(`showed`) // show card of the current process
-        },2000 )
-
-       setTimeout( () => { //start first animation in 2 sec
-            firstAppear()
-        },2000 ) 
-
-
-        change(d_id)
+        var process = new Process(id)
+            process.hideAllanim()
+            process.renderItem() 
+            process.renderItemAnim()
+            process.changeItem()
     })
 
 
     $(`.instrument, .close-item`).click(function() { // go back to table process
-        lastAppear()
-        setTimeout( () => {
-            fadeIn()
-            $(`.item-processing`).removeClass(`showed`) // hide card of the current process
-        },2000 )
+        processes.hideItemAnim()        
     })
 
 }
