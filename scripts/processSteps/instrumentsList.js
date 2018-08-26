@@ -3,7 +3,7 @@ const instrumentList = [
     {//d
         instrument : 'Sägenschärfung',
         process: [
-            { the_proc:'', status: true, description: 'Wir schärfen – um es auf den Punkt zu bringen - keine Zähne sondern Sägen. Die Gesamtheit ist uns wichtig. So schärfen wir ausschließlich an Brust und Rücken: Wir haben keine Schärfer, wir haben Servicetechniker. Ein Mehr in Standzeit ist das Resultat. Sauber geschliffen, und nur unter Einsatz von speziellen Schleifölen, Schleifscheiben und entsprechenden Schleifzeiten, garantieren wir Schnittqualität wie Neu. '  },
+            { the_proc:'Миття', status: true, description: 'Wir schärfen – um es auf den Punkt zu bringen - keine Zähne sondern Sägen. Die Gesamtheit ist uns wichtig. So schärfen wir ausschließlich an Brust und Rücken: Wir haben keine Schärfer, wir haben Servicetechniker. Ein Mehr in Standzeit ist das Resultat. Sauber geschliffen, und nur unter Einsatz von speziellen Schleifölen, Schleifscheiben und entsprechenden Schleifzeiten, garantieren wir Schnittqualität wie Neu. '  },
              { the_proc:'Оцінка зносу', status: true, description: 'Lorem Ipsum' },
              { the_proc:'Загострення', status: true, description: 'Lorem Ipsum majoris' },
              { the_proc:'Балансування', status: true, description: 'Ipsum'  },
@@ -11,12 +11,12 @@ const instrumentList = [
              { the_proc: 'Залишок ресурсу', status: false, description: 'Lorem Lorem Lorem Lorem' }
         ],
         description: 'Lorem Ipsum',
-        imageUrl: './wp-content/themes/twentyseventeen/assets/img/c1.jpg'
+        imageUrl: '../../img/l1.jpg'
     },
     {
         instrument : 'Vielblatt/Dünnschnittsägen',
         process: [
-            { the_proc:'', status: true, description: 'Vielblatt, und Dünnschnittsägen bedürfen höchster Aufmerksamkeit. Nur absolute Genauigkeit und maximale mögliche Aufmerksamkeit ermöglichen Schnittgleiche unter höchsten Ansprüchen. Schließlich schont unsere Schärfung Ihren Sägenverbrauch. Alle Dünnschnittsägen werden darüber hinaus gerichtet und jede Säge verlässt unser Haus nur nach 100 % Prüfung. Wir sprechen dann von 100 % Prozesssicherheit. '  },
+            { the_proc:'Миття', status: true, description: 'Vielblatt, und Dünnschnittsägen bedürfen höchster Aufmerksamkeit. Nur absolute Genauigkeit und maximale mögliche Aufmerksamkeit ermöglichen Schnittgleiche unter höchsten Ansprüchen. Schließlich schont unsere Schärfung Ihren Sägenverbrauch. Alle Dünnschnittsägen werden darüber hinaus gerichtet und jede Säge verlässt unser Haus nur nach 100 % Prüfung. Wir sprechen dann von 100 % Prozesssicherheit. '  },
              { the_proc:'Оцінка зносу', status: true, description: 'Lorem Ipsum' },
              { the_proc:'Загострення', status: true, description: 'Lorem Ipsum majoris' },
              { the_proc:'Балансування', status: false, description: 'Ipsum'  },
@@ -24,12 +24,12 @@ const instrumentList = [
              { the_proc: 'Залишок ресурсу', status: true, description: 'Lorem Lorem Lorem Lorem' }
         ],
         description: 'Lorem Ipsum',
-        imageUrl: './wp-content/themes/twentyseventeen/assets/img/c2.jpg'
+        imageUrl: '../../img/l2.jpg'
     },
     { // d
         instrument : 'HSS Sägen',
         process: [
-            { the_proc:'', status: true, description: 'HSS zu schärfen verlangt Geduld und Wissen. Geometrie und 3 dimensionales Denken, Materialkenntnis, Einsatzparameter, Prozesssicherheit, Maschinenkenntnis, unter zeitnaher Ausführung ergibt ein Service, dass präzise die Mechanik beherrscht. Wir nehmen auch hier in Anspruch die Besten zu sein. '  },
+            { the_proc:'Миття', status: true, description: 'HSS zu schärfen verlangt Geduld und Wissen. Geometrie und 3 dimensionales Denken, Materialkenntnis, Einsatzparameter, Prozesssicherheit, Maschinenkenntnis, unter zeitnaher Ausführung ergibt ein Service, dass präzise die Mechanik beherrscht. Wir nehmen auch hier in Anspruch die Besten zu sein. '  },
              { the_proc:'Оцінка зносу', status: true, description: 'Lorem Ipsum' },
              { the_proc:'Загострення', status: true, description: 'Lorem Ipsum majoris' },
              { the_proc:'Балансування', status: true, description: 'Ipsum'  },
@@ -37,12 +37,12 @@ const instrumentList = [
              { the_proc: 'Залишок ресурсу', status: true, description: 'Lorem Lorem Lorem Lorem' }
         ],
         description: 'Lorem Ipsum',
-        imageUrl: './wp-content/themes/twentyseventeen/assets/img/c3.jpg'
+        imageUrl: '../../img/l3.jpg'
     },
     { //d
         instrument : 'Minizinken',
         process: [
-            { the_proc:'', status: true, description: 'Minizinkenfräser zu schärfen ist keine Kunst, richtig jedoch sehr wohl. Tausende Fräser in Profilgleichheit und Winkelgeometrie, Schleiftiefe, zu schärfen ist eine Herausforderung der wir uns gerne stellen. Mit speziellen 5 Achs Zentren und der nötigen Erfahrung und Wissen gelingt es uns weitaus höhere Leistungen zu erbringen als im Vergleich.  '  },
+            { the_proc:'Миття', status: true, description: 'Minizinkenfräser zu schärfen ist keine Kunst, richtig jedoch sehr wohl. Tausende Fräser in Profilgleichheit und Winkelgeometrie, Schleiftiefe, zu schärfen ist eine Herausforderung der wir uns gerne stellen. Mit speziellen 5 Achs Zentren und der nötigen Erfahrung und Wissen gelingt es uns weitaus höhere Leistungen zu erbringen als im Vergleich.  '  },
              { the_proc:'Оцінка зносу', status: true, description: 'Lorem Ipsum' },
              { the_proc:'Загострення', status: true, description: 'Lorem Ipsum majoris' },
              { the_proc:'Балансування', status: true, description: 'Ipsum'  },
@@ -50,12 +50,12 @@ const instrumentList = [
              { the_proc: 'Залишок ресурсу', status: true, description: 'Lorem Lorem Lorem Lorem' }
         ],
         description: 'Lorem Ipsum',
-        imageUrl: './wp-content/themes/twentyseventeen/assets/img/c4.jpg'
+        imageUrl: '../../img/l4.jpg'
     },
     { //d
         instrument : 'Fräser',
         process: [
-            { the_proc:'', status: true, description: 'Füllungsfräser, Profilfräser bestückt (HL/HW), Wagonka, und andere sind unsere Spezialität. Die Achswinkel, die Freiwinkel, sind Basis für unsere Schärfung. Unter höchstmöglicher Genauigkeit und auch ein wenig Gefühl schärfen wir die Fräser so als wären sie. Manchmal sogar besser. '  },
+            { the_proc:'Миття', status: true, description: 'Füllungsfräser, Profilfräser bestückt (HL/HW), Wagonka, und andere sind unsere Spezialität. Die Achswinkel, die Freiwinkel, sind Basis für unsere Schärfung. Unter höchstmöglicher Genauigkeit und auch ein wenig Gefühl schärfen wir die Fräser so als wären sie. Manchmal sogar besser. '  },
              { the_proc:'Оцінка зносу', status: true, description: 'Lorem Ipsum' },
              { the_proc:'Загострення', status: false, description: 'Lorem Ipsum majoris' },
              { the_proc:'Балансування', status: true, description: 'Ipsum'  },
@@ -63,12 +63,12 @@ const instrumentList = [
              { the_proc: 'Залишок ресурсу', status: true, description: 'Lorem Lorem Lorem Lorem' }
         ],
         description: 'Lorem Ipsum',
-        imageUrl: './wp-content/themes/twentyseventeen/assets/img/c5.jpg'
+        imageUrl: '../../img/l5.jpg'
     },
     { //d
         instrument : 'Hobelmesser',
         process: [
-            { the_proc:'', status: true, description: 'Spiegelflächenschliff sind bei uns an der Tagesordnung. Nur durch spezielle Anlagen, Ölen und Schleifscheiben gelingt es uns Ihre Messer auf Hochglanz und somit Ihre Holzoberflächen in Papierqualität zu meistern. Unsere Leistung hier bilden letztlichen einen Rahmen der Verpflichtung, Ihnen das bestmöglich zu bieten, was machbar ist. '  },
+            { the_proc:'Миття', status: true, description: 'Spiegelflächenschliff sind bei uns an der Tagesordnung. Nur durch spezielle Anlagen, Ölen und Schleifscheiben gelingt es uns Ihre Messer auf Hochglanz und somit Ihre Holzoberflächen in Papierqualität zu meistern. Unsere Leistung hier bilden letztlichen einen Rahmen der Verpflichtung, Ihnen das bestmöglich zu bieten, was machbar ist. '  },
              { the_proc:'Оцінка зносу', status: false, description: 'Lorem Ipsum' },
              { the_proc:'Загострення', status: true, description: 'Lorem Ipsum majoris' },
              { the_proc:'Балансування', status: true, description: 'Ipsum'  },
@@ -76,12 +76,12 @@ const instrumentList = [
              { the_proc: 'Залишок ресурсу', status: true, description: 'Lorem Lorem Lorem Lorem' }
         ],
         description: 'Lorem Ipsum',
-        imageUrl: './wp-content/themes/twentyseventeen/assets/img/c6.jpg'
+        imageUrl: '../../img/l2.jpg'
     },
     { //d
         instrument : 'Profilmesser',
         process: [
-            { the_proc:'', status: true, description: 'Blanketts, Ersatzmesser, und andere Profilmesser werden bei uns GORSSGESCHRIEBEN. Unsere Profilabteilung ist in der Lage Ihnen nach den Regeln der Technik neue Profile individuell professionell und vor allem schnell zu fertigen. Profile für die Tischfräse bis hin zu Hydroprofilen. Wir beherrschen das. Wir geben Ihnen Profil. '  },
+            { the_proc:'Миття', status: true, description: 'Blanketts, Ersatzmesser, und andere Profilmesser werden bei uns GORSSGESCHRIEBEN. Unsere Profilabteilung ist in der Lage Ihnen nach den Regeln der Technik neue Profile individuell professionell und vor allem schnell zu fertigen. Profile für die Tischfräse bis hin zu Hydroprofilen. Wir beherrschen das. Wir geben Ihnen Profil. '  },
              { the_proc:'Оцінка зносу', status: true, description: 'Lorem Ipsum' },
              { the_proc:'Загострення', status: true, description: 'Lorem Ipsum majoris' },
              { the_proc:'Балансування', status: true, description: 'Ipsum'  },
@@ -89,47 +89,47 @@ const instrumentList = [
              { the_proc: 'Залишок ресурсу', status: true, description: 'Lorem Lorem Lorem Lorem' }
         ],
         description: 'Lorem Ipsum',
-        imageUrl: './wp-content/themes/twentyseventeen/assets/img/c7.jpg'
+        imageUrl: '../../img/l1.jpg'
     },
-    { //d
-        instrument : 'Oberfräser/Bohrer',
-        process: [
-            { the_proc:'', status: true, description: 'Egal ob HS/HW oder DIA, Spiralfräser, UP-Down, CNC Nutfräser oder Formatfräser, hier kommt unsere Kombination: Maschinentechnik und Erfahrung voll zur Geltung. Im permanenten Dialog erzielen wir für Sie, Ziele und Leistungen die Sie sich auch versprechen.'  },
-             { the_proc:'Оцінка зносу', status: true, description: 'Lorem Ipsum' },
-             { the_proc:'Загострення', status: true, description: 'Lorem Ipsum majoris' },
-             { the_proc:'Балансування', status: false, description: 'Ipsum'  },
-             { the_proc:'Контроль', status: true, description: 'Ipsum Lorem' },
-             { the_proc: 'Залишок ресурсу', status: true, description: 'Lorem Lorem Lorem Lorem' }
-        ],
-        description: 'Lorem Ipsum',
-        imageUrl: './wp-content/themes/twentyseventeen/assets/img/c8.jpg'
-    },
-    {
-        instrument : 'Diawerkzeuge',
-        process: [
-            { the_proc:'', status: true, description: 'Im immer mehrwerdenden DIA Markt sich zu behaupten gelingt nur mit optimaler Qualität. Der Glaube dass es egal ist auf welcher Anlage ich erodiere, oder dass das ja nur von der Maschine abhängt, ist so falsch, dass der, der es bei uns probiert hat, versteht, wo der Unterscheid liegt. '  },
-             { the_proc:'Оцінка зносу', status: false, description: 'Lorem Ipsum' },
-             { the_proc:'Загострення', status: true, description: 'Lorem Ipsum majoris' },
-             { the_proc:'Балансування', status: true, description: 'Ipsum'  },
-             { the_proc:'Контроль', status: true, description: 'Ipsum Lorem' },
-             { the_proc: 'Залишок ресурсу', status: true, description: 'Lorem Lorem Lorem Lorem' }
-        ],
-        description: 'Lorem Ipsum',
-        imageUrl: './wp-content/themes/twentyseventeen/assets/img/c9.jpg'
-    },
-    {
-        instrument : 'Sonderwerkzeuge',
-        process: [
-            { the_proc:'', status: true, description: 'Sein es Guiletinmesser, Reparaturarbeiten wir Zahnersatz, spezielle HW Fräser für PU Schäume, und vieles andere mehr. Wir nehmen es persönlich, sodass Sie ein Werkzeug zurück erhalten mit dem Sie zufrieden und sicher arbeiten können. Gerne beraten wir Sie.'  },
-             { the_proc:'Оцінка зносу', status: false, description: 'Lorem Ipsum' },
-             { the_proc:'Загострення', status: true, description: 'Lorem Ipsum majoris' },
-             { the_proc:'Балансування', status: true, description: 'Ipsum'  },
-             { the_proc:'Контроль', status: true, description: 'Ipsum Lorem' },
-             { the_proc: 'Залишок ресурсу', status: true, description: 'Lorem Lorem Lorem Lorem' }
-        ],
-        description: 'Lorem Ipsum',
-        imageUrl: './wp-content/themes/twentyseventeen/assets/img/c10.jpg'
-    },
+    // { //d
+    //     instrument : 'Oberfräser/Bohrer',
+    //     process: [
+    //         { the_proc:'Миття', status: true, description: 'Egal ob HS/HW oder DIA, Spiralfräser, UP-Down, CNC Nutfräser oder Formatfräser, hier kommt unsere Kombination: Maschinentechnik und Erfahrung voll zur Geltung. Im permanenten Dialog erzielen wir für Sie, Ziele und Leistungen die Sie sich auch versprechen.'  },
+    //          { the_proc:'Оцінка зносу', status: true, description: 'Lorem Ipsum' },
+    //          { the_proc:'Загострення', status: true, description: 'Lorem Ipsum majoris' },
+    //          { the_proc:'Балансування', status: false, description: 'Ipsum'  },
+    //          { the_proc:'Контроль', status: true, description: 'Ipsum Lorem' },
+    //          { the_proc: 'Залишок ресурсу', status: true, description: 'Lorem Lorem Lorem Lorem' }
+    //     ],
+    //     description: 'Lorem Ipsum',
+    //     imageUrl: '../../img/l3.jpg'
+    // },
+    // {
+    //     instrument : 'Diawerkzeuge',
+    //     process: [
+    //         { the_proc:'Миття', status: true, description: 'Im immer mehrwerdenden DIA Markt sich zu behaupten gelingt nur mit optimaler Qualität. Der Glaube dass es egal ist auf welcher Anlage ich erodiere, oder dass das ja nur von der Maschine abhängt, ist so falsch, dass der, der es bei uns probiert hat, versteht, wo der Unterscheid liegt. '  },
+    //          { the_proc:'Оцінка зносу', status: false, description: 'Lorem Ipsum' },
+    //          { the_proc:'Загострення', status: true, description: 'Lorem Ipsum majoris' },
+    //          { the_proc:'Балансування', status: true, description: 'Ipsum'  },
+    //          { the_proc:'Контроль', status: true, description: 'Ipsum Lorem' },
+    //          { the_proc: 'Залишок ресурсу', status: true, description: 'Lorem Lorem Lorem Lorem' }
+    //     ],
+    //     description: 'Lorem Ipsum',
+    //     imageUrl: '../../img/l5.jpg'
+    // },
+    // {
+    //     instrument : 'Sonderwerkzeuge',
+    //     process: [
+    //         { the_proc:'Миття', status: true, description: 'Sein es Guiletinmesser, Reparaturarbeiten wir Zahnersatz, spezielle HW Fräser für PU Schäume, und vieles andere mehr. Wir nehmen es persönlich, sodass Sie ein Werkzeug zurück erhalten mit dem Sie zufrieden und sicher arbeiten können. Gerne beraten wir Sie.'  },
+    //          { the_proc:'Оцінка зносу', status: false, description: 'Lorem Ipsum' },
+    //          { the_proc:'Загострення', status: true, description: 'Lorem Ipsum majoris' },
+    //          { the_proc:'Балансування', status: true, description: 'Ipsum'  },
+    //          { the_proc:'Контроль', status: true, description: 'Ipsum Lorem' },
+    //          { the_proc: 'Залишок ресурсу', status: true, description: 'Lorem Lorem Lorem Lorem' }
+    //     ],
+    //     description: 'Lorem Ipsum',
+    //     imageUrl: '../../img/l4.jpg'
+    // },
 ]
 
 

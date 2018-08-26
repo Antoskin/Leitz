@@ -120,6 +120,7 @@
             position: absolute;
             left: 0;
             top: 60px;
+            display: none;
         }
         &--title-presentation{ 
             padding-left: 53px;
@@ -129,6 +130,14 @@
             line-height: 59px;
             margin-bottom: 31px;
             margin-top: 51px;           
+
+            //width: 1px;
+            //height: 91px;
+            //background: #007cbf;
+            border-left: 1px solid #007cbf;
+            //position: absolute;
+            //left: 0;
+            //top: 60px;
         }
         &--text-presentation {
             // width: 555px;

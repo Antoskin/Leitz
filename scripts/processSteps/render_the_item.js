@@ -1,5 +1,6 @@
 import $ from 'jquery'
 import data from './instrumentsList'
+import { changeLabel } from './processesAnimation'
 
 class Process {
     constructor(id) {
@@ -19,12 +20,32 @@ class Process {
         var curent_grafic = data[this.id]['process'].map( (i, ident ) => {
             return `<div class=${i['status'] ? `q` : `qw`} data-keys=${ident} ></div>`
         })
-        graficPlace.appendTo(curent_grafic)
+        graficPlace.append(curent_grafic)
+    }
+
+// при клике на квадрат процессов - меняем title, text активной детали
+    graficTextChange(f) {
+        document.querySelector('.porocess-title').innerHTML = data[this.id]['process'][f]['the_proc']
+        document.querySelector('.process-description').innerHTML = data[this.id]['process'][f]['description']
     }
 }
+
 
 export default function (e) {
     var the_process = new Process(e)
         the_process.dataInserts()
         the_process.graficInsert()
+
+    //var chanteStep = new ProcessQutro()
+   // switching process in card
+   $(`.quotr-cont .q`).click( function() {
+        let id = $(this).attr('data-keys')
+        
+        changeLabel()
+        setTimeout( () => {
+            the_process.graficTextChange(id)
+        },500 )
+        
+    } )
+
 }
